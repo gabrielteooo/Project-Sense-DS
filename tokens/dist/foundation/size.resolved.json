@@ -1,0 +1,426 @@
+{
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  },
+  "Size": {
+    "sizeStep": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49525"
+      }
+    },
+    "sizeUnit": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49522"
+      }
+    },
+    "controlInteractiveSize": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49458",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ]
+      }
+    },
+    "sizePopupArrow": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49523",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ]
+      }
+    },
+    "Base": {
+      "size": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49505",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "size4XL": {
+        "$type": "number",
+        "$value": 56,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:709:91536",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "size3XL": {
+        "$type": "number",
+        "$value": 48,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49500",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "size2L": {
+        "$type": "number",
+        "$value": 40,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:709:91199",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeXL": {
+        "$type": "number",
+        "$value": 32,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49501",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeLG": {
+        "$type": "number",
+        "$value": 24,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49502",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeMD": {
+        "$type": "number",
+        "$value": 20,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49503",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeMS": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49504",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeSM": {
+        "$type": "number",
+        "$value": 12,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49506",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeXS": {
+        "$type": "number",
+        "$value": 8,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49507",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "sizeXXS": {
+        "$type": "number",
+        "$value": 4,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49508",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    },
+    "Height": {
+      "controlHeight": {
+        "$type": "number",
+        "$value": 32,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49524",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      },
+      "controlHeightXL": {
+        "$type": "number",
+        "$value": 48,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:709:91200",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "controlHeightLG": {
+        "$type": "number",
+        "$value": 40,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49511",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      },
+      "controlHeightMD": {
+        "$type": "number",
+        "$value": 32,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:709:91518",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "controlHeightSM": {
+        "$type": "number",
+        "$value": 24,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49509",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      },
+      "controlHeightXS": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49510",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "Line Width": {
+      "lineWidth": {
+        "$type": "number",
+        "$value": 1,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49520",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "lineWidthBold": {
+        "$type": "number",
+        "$value": 2,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49519",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "lineWidthFocus": {
+        "$type": "number",
+        "$value": 4,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3769:30022"
+        }
+      },
+      "controlOutlineWidth": {
+        "$type": "number",
+        "$value": 2,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49457",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    },
+    "Screen Size": {
+      "screenLG": {
+        "$type": "number",
+        "$value": 992,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49486",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenLGMax": {
+        "$type": "number",
+        "$value": 1199,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49496",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenLGMin": {
+        "$type": "number",
+        "$value": 992,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49495",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenMD": {
+        "$type": "number",
+        "$value": 768,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49485",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenMDMax": {
+        "$type": "number",
+        "$value": 991,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49494",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenMDMin": {
+        "$type": "number",
+        "$value": 768,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49493",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenSM": {
+        "$type": "number",
+        "$value": 576,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49484",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenSMMax": {
+        "$type": "number",
+        "$value": 767,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49492",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenSMMin": {
+        "$type": "number",
+        "$value": 576,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49491",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXL": {
+        "$type": "number",
+        "$value": 1200,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49487",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXLMax": {
+        "$type": "number",
+        "$value": 1599,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49498",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXLMin": {
+        "$type": "number",
+        "$value": 1200,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49497",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXS": {
+        "$type": "number",
+        "$value": 480,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49483",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXSMax": {
+        "$type": "number",
+        "$value": 575,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49490",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXSMin": {
+        "$type": "number",
+        "$value": 480,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49489",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXXL": {
+        "$type": "number",
+        "$value": 1600,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49488",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "screenXXLMin": {
+        "$type": "number",
+        "$value": 1600,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49499",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    }
+  }
+}

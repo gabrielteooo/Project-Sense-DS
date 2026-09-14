@@ -1,0 +1,89 @@
+{
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  },
+  "Statistic": {
+    "Global": {
+      "colorText": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Text.colorText}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48548",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "colorTextDescription": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Text.colorTextDescription}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48549",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "colorTextHeading": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Text.colorTextHeading}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48550",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "fontSize": {
+        "$type": "number",
+        "$value": "{Typography.Font Size.Base}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3837:5179",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      },
+      "fontSizeHeading3": {
+        "$type": "number",
+        "$value": "{Typography.Font Size.Heading3}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3837:5180",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      },
+      "lineHeight": {
+        "$type": "number",
+        "$value": "{Typography.Line Height.Base}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3837:5181",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      },
+      "marginXXS": {
+        "$type": "number",
+        "$value": "{Space.Margin.marginXXS}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49311",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      },
+      "padding": {
+        "$type": "number",
+        "$value": "{Space.Padding.padding}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49312",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      }
+    }
+  }
+}

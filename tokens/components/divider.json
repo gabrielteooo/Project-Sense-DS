@@ -1,0 +1,99 @@
+{
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  },
+  "Divider": {
+    "Global": {
+      "colorSplit": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Border.colorSplit}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48697",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "colorText": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Text.colorText}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48698",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "colorTextHeading": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Text.colorTextHeading}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48699",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "fontSize": {
+        "$type": "number",
+        "$value": "{Typography.Font Size.Base}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3802:2215",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "fontSizeLG": {
+        "$type": "number",
+        "$value": "{Typography.Font Size.XS}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3802:2216",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "lineWidth": {
+        "$type": "number",
+        "$value": "{Size.Line Width.lineWidth}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49438",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "margin": {
+        "$type": "number",
+        "$value": "{Space.Margin.margin}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49439",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      },
+      "marginLG": {
+        "$type": "number",
+        "$value": "{Space.Margin.marginLG}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49440",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      },
+      "marginXS": {
+        "$type": "number",
+        "$value": "{Space.Margin.marginXS}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:49441",
+          "com.figma.scopes": [
+            "GAP"
+          ]
+        }
+      }
+    }
+  }
+}

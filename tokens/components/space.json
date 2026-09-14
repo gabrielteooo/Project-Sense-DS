@@ -1,0 +1,39 @@
+{
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  },
+  "Space": {
+    "Global": {
+      "padding": {
+        "$type": "number",
+        "$value": "{Space.Padding.padding}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3804:2283",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "paddingLG": {
+        "$type": "number",
+        "$value": "{Space.Padding.paddingLG}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3804:2284",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      },
+      "paddingXS": {
+        "$type": "number",
+        "$value": "{Space.Padding.paddingXS}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3804:2285",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    }
+  }
+}

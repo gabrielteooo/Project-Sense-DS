@@ -1,0 +1,8 @@
+{
+  "name": "project-sense-ds",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tokens:build": "node scripts/tokens-build.mjs"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "boxshadow": {
+    "name": "boxshadow",
+    "description": "Buttons, banners, cards, modal navigation drawers, sticky headers",
+    "layers": [
+      "0px 2px 4px 0px #0000000a",
+      "0px 0px 2px 0px #0000000a"
+    ],
+    "boxShadow": "0px 2px 4px 0px #0000000a, 0px 0px 2px 0px #0000000a"
+  },
+  "boxshadowsecondary": {
+    "name": "boxshadowsecondary",
+    "description": "Dropdown menus, tooltips",
+    "layers": [
+      "0px 4px 8px 0px #00000014",
+      "0px 0px 4px 0px #0000000a"
+    ],
+    "boxShadow": "0px 4px 8px 0px #00000014, 0px 0px 4px 0px #0000000a"
+  },
+  "boxshadowtertiary": {
+    "name": "boxshadowtertiary",
+    "description": "Modal dialogs, floating action buttons, date and time pickers",
+    "layers": [
+      "0px 8px 16px 0px #0000001a",
+      "0px 0px 4px 0px #0000000a"
+    ],
+    "boxShadow": "0px 8px 16px 0px #0000001a, 0px 0px 4px 0px #0000000a"
+  },
+  "component": {}
+}

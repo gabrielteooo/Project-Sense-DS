@@ -1,0 +1,57 @@
+{
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  },
+  "Border Radius": {
+    "borderRadius": {
+      "$type": "number",
+      "$value": 6,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49521",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "borderRadiusLG": {
+      "$type": "number",
+      "$value": 8,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49514",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "borderRadiusXL": {
+      "$type": "number",
+      "$value": 12,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:483:52311",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "borderRadiusSM": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49513",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    },
+    "borderRadiusXS": {
+      "$type": "number",
+      "$value": 2,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2806:49512",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ]
+      }
+    }
+  }
+}

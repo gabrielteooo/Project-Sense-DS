@@ -1,0 +1,19 @@
+{
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  },
+  "Empty": {
+    "Global": {
+      "colorTextDisabled": {
+        "$type": "color",
+        "$value": "{Colors.Neutral.Text.colorTextDisabled}",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:2806:48523",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      }
+    }
+  }
+}

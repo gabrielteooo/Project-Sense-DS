@@ -1,0 +1,38 @@
+{
+  "1640px - 12 col": {
+    "name": "1640px - 12 col",
+    "description": null,
+    "pattern": "columns",
+    "gutterSize": 16,
+    "alignment": "stretch",
+    "count": 12,
+    "offset": 40
+  },
+  "1640px - 24 col": {
+    "name": "1640px - 24 col",
+    "description": null,
+    "pattern": "columns",
+    "gutterSize": 24,
+    "alignment": "stretch",
+    "count": 24,
+    "offset": 24
+  },
+  "1200px – 12 col": {
+    "name": "1200px – 12 col",
+    "description": "3-4-4 grid",
+    "pattern": "columns",
+    "gutterSize": 24,
+    "alignment": "stretch",
+    "count": 12,
+    "offset": 24
+  },
+  "1120px – 12 col": {
+    "name": "1120px – 12 col",
+    "description": null,
+    "pattern": "columns",
+    "gutterSize": 24,
+    "alignment": "stretch",
+    "count": 12,
+    "offset": 24
+  }
+}

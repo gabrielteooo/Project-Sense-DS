@@ -1,0 +1,236 @@
+{
+  "components": [
+    {
+      "name": "Alert",
+      "file": "alert.json"
+    },
+    {
+      "name": "Anchor",
+      "file": "anchor.json"
+    },
+    {
+      "name": "AutoComplete",
+      "file": "auto-complete.json"
+    },
+    {
+      "name": "Avatar",
+      "file": "avatar.json"
+    },
+    {
+      "name": "Badge",
+      "file": "badge.json"
+    },
+    {
+      "name": "Breadcrumb",
+      "file": "breadcrumb.json"
+    },
+    {
+      "name": "Button",
+      "file": "button.json"
+    },
+    {
+      "name": "Calendar",
+      "file": "calendar.json"
+    },
+    {
+      "name": "Card",
+      "file": "card.json"
+    },
+    {
+      "name": "Carousel",
+      "file": "carousel.json"
+    },
+    {
+      "name": "Cascader",
+      "file": "cascader.json"
+    },
+    {
+      "name": "Checkbox",
+      "file": "checkbox.json"
+    },
+    {
+      "name": "Collapse",
+      "file": "collapse.json"
+    },
+    {
+      "name": "DatePicker",
+      "file": "date-picker.json"
+    },
+    {
+      "name": "Descriptions",
+      "file": "descriptions.json"
+    },
+    {
+      "name": "Divider",
+      "file": "divider.json"
+    },
+    {
+      "name": "Drawer",
+      "file": "drawer.json"
+    },
+    {
+      "name": "Dropdown",
+      "file": "dropdown.json"
+    },
+    {
+      "name": "Empty",
+      "file": "empty.json"
+    },
+    {
+      "name": "FloatButton",
+      "file": "float-button.json"
+    },
+    {
+      "name": "Form",
+      "file": "form.json"
+    },
+    {
+      "name": "Image",
+      "file": "image.json"
+    },
+    {
+      "name": "Input",
+      "file": "input.json"
+    },
+    {
+      "name": "InputNumber",
+      "file": "input-number.json"
+    },
+    {
+      "name": "List",
+      "file": "list.json"
+    },
+    {
+      "name": "Menu",
+      "file": "menu.json"
+    },
+    {
+      "name": "Message",
+      "file": "message.json"
+    },
+    {
+      "name": "Modal",
+      "file": "modal.json"
+    },
+    {
+      "name": "Notification",
+      "file": "notification.json"
+    },
+    {
+      "name": "Pagination",
+      "file": "pagination.json"
+    },
+    {
+      "name": "Popconfirm",
+      "file": "popconfirm.json"
+    },
+    {
+      "name": "Popover",
+      "file": "popover.json"
+    },
+    {
+      "name": "Progress",
+      "file": "progress.json"
+    },
+    {
+      "name": "QRCode",
+      "file": "qrcode.json"
+    },
+    {
+      "name": "Radio",
+      "file": "radio.json"
+    },
+    {
+      "name": "Rate",
+      "file": "rate.json"
+    },
+    {
+      "name": "Result",
+      "file": "result.json"
+    },
+    {
+      "name": "Segmented",
+      "file": "segmented.json"
+    },
+    {
+      "name": "Select",
+      "file": "select.json"
+    },
+    {
+      "name": "Skeleton",
+      "file": "skeleton.json"
+    },
+    {
+      "name": "Slider",
+      "file": "slider.json"
+    },
+    {
+      "name": "Space",
+      "file": "space.json"
+    },
+    {
+      "name": "Spin",
+      "file": "spin.json"
+    },
+    {
+      "name": "Statistic",
+      "file": "statistic.json"
+    },
+    {
+      "name": "Steps",
+      "file": "steps.json"
+    },
+    {
+      "name": "Switch",
+      "file": "switch.json"
+    },
+    {
+      "name": "Table",
+      "file": "table.json"
+    },
+    {
+      "name": "Tabs",
+      "file": "tabs.json"
+    },
+    {
+      "name": "Tag",
+      "file": "tag.json"
+    },
+    {
+      "name": "Timeline",
+      "file": "timeline.json"
+    },
+    {
+      "name": "TimePicker",
+      "file": "time-picker.json"
+    },
+    {
+      "name": "Tooltip",
+      "file": "tooltip.json"
+    },
+    {
+      "name": "Tour",
+      "file": "tour.json"
+    },
+    {
+      "name": "Transfer",
+      "file": "transfer.json"
+    },
+    {
+      "name": "Tree",
+      "file": "tree.json"
+    },
+    {
+      "name": "TreeSelect",
+      "file": "tree-select.json"
+    },
+    {
+      "name": "Typography",
+      "file": "typography.json"
+    },
+    {
+      "name": "Upload",
+      "file": "upload.json"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "fms gradient": {
+    "name": "fms gradient",
+    "description": "",
+    "css": "linear-gradient(180.0000006286003deg, #eeeeff 0%, #b6b6ff 50%, #636aff 100%)",
+    "stops": [
+      {
+        "position": 0,
+        "color": "#b8eeeeff"
+      },
+      {
+        "position": 0.5,
+        "color": "#46b6b6ff"
+      },
+      {
+        "position": 1,
+        "color": "#00636aff"
+      }
+    ]
+  }
+}
