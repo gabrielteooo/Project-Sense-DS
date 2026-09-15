@@ -6,6 +6,7 @@ import {
   walkW3C,
   pathToCssVar,
   colorToHex,
+  CSS_VAR_PREFIX,
 } from './lib/token-utils.mjs';
 
 const foundation = readJson(path.join(ROOT, 'tokens/dist/foundation.resolved.json'));
@@ -60,14 +61,14 @@ lines.push('');
 lines.push('  /* Composite text styles (font-size / line-height / weight) */');
 for (const style of textStyles.styles) {
   const slug = style.name.replace(/\//g, '-').replace(/\s+/g, '-').toLowerCase();
-  lines.push(`  --ps-text-${slug}-font-size: ${style.fontSize}px;`);
-  lines.push(`  --ps-text-${slug}-line-height: ${style.lineHeight}px;`);
-  lines.push(`  --ps-text-${slug}-font-weight: ${style.fontWeight};`);
+  lines.push(`  --${CSS_VAR_PREFIX}-text-${slug}-font-size: ${style.fontSize}px;`);
+  lines.push(`  --${CSS_VAR_PREFIX}-text-${slug}-line-height: ${style.lineHeight}px;`);
+  lines.push(`  --${CSS_VAR_PREFIX}-text-${slug}-font-weight: ${style.fontWeight};`);
   if (style.fontStyle === 'italic') {
-    lines.push(`  --ps-text-${slug}-font-style: italic;`);
+    lines.push(`  --${CSS_VAR_PREFIX}-text-${slug}-font-style: italic;`);
   }
   if (style.textDecoration !== 'none') {
-    lines.push(`  --ps-text-${slug}-text-decoration: ${style.textDecoration};`);
+    lines.push(`  --${CSS_VAR_PREFIX}-text-${slug}-text-decoration: ${style.textDecoration};`);
   }
 }
 

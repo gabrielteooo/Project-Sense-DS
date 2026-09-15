@@ -11,6 +11,7 @@ const steps = [
   'resolve-tokens.mjs',
   'build-css.mjs',
   'build-antd-theme.mjs',
+  'build-handbook-base-colors.mjs',
 ];
 
 for (const step of steps) {

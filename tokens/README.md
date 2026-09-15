@@ -29,4 +29,6 @@ This runs: **split → normalize effects → text styles → resolve aliases →
 | `tokens/typography/` | Composite text styles |
 | `tokens/dist/` | Resolved JSON, `css/foundation.css`, `antd/theme.json` |
 
-Icons use **Font Awesome 6 Free** in generated CSS (`--ps-typography-font-icons`); Figma may still reference Pro in source.
+Icons use **Font Awesome 6 Free** in generated CSS (`--fms-typography-font-icons`); Figma may still reference Pro in source.
+
+All CSS variables use the **`--fms-*`** prefix (FMS design system).

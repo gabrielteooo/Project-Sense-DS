@@ -87,8 +87,11 @@ export function pathToKebab(pathParts) {
     .replace(/-+/g, '-');
 }
 
+/** CSS custom property namespace (e.g. `--fms-colors-brand-primary-color-primary`). */
+export const CSS_VAR_PREFIX = 'fms';
+
 /** @param {string[]} pathParts */
-export function pathToCssVar(pathParts, prefix = 'ps') {
+export function pathToCssVar(pathParts, prefix = CSS_VAR_PREFIX) {
   return `--${prefix}-${pathToKebab(pathParts)}`;
 }
 

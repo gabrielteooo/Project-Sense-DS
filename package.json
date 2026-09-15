@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "tokens:build": "node scripts/tokens-build.mjs"
+    "tokens:build": "node scripts/tokens-build.mjs",
+    "handbook:dev": "npm run dev --prefix handbook",
+    "handbook:build": "npm run build --prefix handbook"
   }
 }

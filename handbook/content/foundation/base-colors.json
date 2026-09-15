@@ -1,0 +1,823 @@
+{
+  "title": "Base colour",
+  "summary": "Primitive colour ramps (steps 1–10). Use semantic tokens (Brand, System, Neutral) in UI; Base is the source palette for those aliases.",
+  "usage": "Step 1–2: backgrounds and hover tints. Step 6: primary on-ramp. Steps 7–10: active states and text on tinted surfaces.",
+  "palettes": [
+    {
+      "id": "Blue_Ant",
+      "title": "Blue",
+      "description": "Cool blue ramp for information and link-adjacent accents. Feeds System Info semantic tokens.",
+      "semantic": "System → Info",
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#E6F4FF",
+          "token": "Colors.Base.Blue_Ant.1",
+          "cssVar": "--fms-colors-base-blue-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#BAE0FF",
+          "token": "Colors.Base.Blue_Ant.2",
+          "cssVar": "--fms-colors-base-blue-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#91CAFF",
+          "token": "Colors.Base.Blue_Ant.3",
+          "cssVar": "--fms-colors-base-blue-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#69B1FF",
+          "token": "Colors.Base.Blue_Ant.4",
+          "cssVar": "--fms-colors-base-blue-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#4096FF",
+          "token": "Colors.Base.Blue_Ant.5",
+          "cssVar": "--fms-colors-base-blue-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#1677FF",
+          "token": "Colors.Base.Blue_Ant.6",
+          "cssVar": "--fms-colors-base-blue-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#0958D9",
+          "token": "Colors.Base.Blue_Ant.7",
+          "cssVar": "--fms-colors-base-blue-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#003EB3",
+          "token": "Colors.Base.Blue_Ant.8",
+          "cssVar": "--fms-colors-base-blue-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#002C8C",
+          "token": "Colors.Base.Blue_Ant.9",
+          "cssVar": "--fms-colors-base-blue-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#001D66",
+          "token": "Colors.Base.Blue_Ant.10",
+          "cssVar": "--fms-colors-base-blue-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Cyan_Ant",
+      "title": "Cyan",
+      "description": "Primary brand ramp. Feeds Brand Primary semantic tokens across the product.",
+      "semantic": "Brand → Primary",
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#C7EBEA",
+          "token": "Colors.Base.Cyan_Ant.1",
+          "cssVar": "--fms-colors-base-cyan-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#7ADADA",
+          "token": "Colors.Base.Cyan_Ant.2",
+          "cssVar": "--fms-colors-base-cyan-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#46B6B6",
+          "token": "Colors.Base.Cyan_Ant.3",
+          "cssVar": "--fms-colors-base-cyan-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#25A6A6",
+          "token": "Colors.Base.Cyan_Ant.4",
+          "cssVar": "--fms-colors-base-cyan-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#008585",
+          "token": "Colors.Base.Cyan_Ant.5",
+          "cssVar": "--fms-colors-base-cyan-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#00636A",
+          "token": "Colors.Base.Cyan_Ant.6",
+          "cssVar": "--fms-colors-base-cyan-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#005055",
+          "token": "Colors.Base.Cyan_Ant.7",
+          "cssVar": "--fms-colors-base-cyan-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#003E43",
+          "token": "Colors.Base.Cyan_Ant.8",
+          "cssVar": "--fms-colors-base-cyan-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#00282A",
+          "token": "Colors.Base.Cyan_Ant.9",
+          "cssVar": "--fms-colors-base-cyan-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#001A1A",
+          "token": "Colors.Base.Cyan_Ant.10",
+          "cssVar": "--fms-colors-base-cyan-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Geekblue_Ant",
+      "title": "Geek blue",
+      "description": "Deep blue-violet accent for supplementary UI (e.g. calendar highlights).",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#F0F5FF",
+          "token": "Colors.Base.Geekblue_Ant.1",
+          "cssVar": "--fms-colors-base-geekblue-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#D6E4FF",
+          "token": "Colors.Base.Geekblue_Ant.2",
+          "cssVar": "--fms-colors-base-geekblue-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#ADC6FF",
+          "token": "Colors.Base.Geekblue_Ant.3",
+          "cssVar": "--fms-colors-base-geekblue-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#85A5FF",
+          "token": "Colors.Base.Geekblue_Ant.4",
+          "cssVar": "--fms-colors-base-geekblue-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#597EF7",
+          "token": "Colors.Base.Geekblue_Ant.5",
+          "cssVar": "--fms-colors-base-geekblue-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#2F54EB",
+          "token": "Colors.Base.Geekblue_Ant.6",
+          "cssVar": "--fms-colors-base-geekblue-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#1D39C4",
+          "token": "Colors.Base.Geekblue_Ant.7",
+          "cssVar": "--fms-colors-base-geekblue-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#10239E",
+          "token": "Colors.Base.Geekblue_Ant.8",
+          "cssVar": "--fms-colors-base-geekblue-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#061178",
+          "token": "Colors.Base.Geekblue_Ant.9",
+          "cssVar": "--fms-colors-base-geekblue-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#030852",
+          "token": "Colors.Base.Geekblue_Ant.10",
+          "cssVar": "--fms-colors-base-geekblue-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Gold_Ant",
+      "title": "Gold",
+      "description": "Warm gold accent for highlights and decorative emphasis.",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FFFBE6",
+          "token": "Colors.Base.Gold_Ant.1",
+          "cssVar": "--fms-colors-base-gold-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#FFF1B8",
+          "token": "Colors.Base.Gold_Ant.2",
+          "cssVar": "--fms-colors-base-gold-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#FFE58F",
+          "token": "Colors.Base.Gold_Ant.3",
+          "cssVar": "--fms-colors-base-gold-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#FFD666",
+          "token": "Colors.Base.Gold_Ant.4",
+          "cssVar": "--fms-colors-base-gold-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#FFC53D",
+          "token": "Colors.Base.Gold_Ant.5",
+          "cssVar": "--fms-colors-base-gold-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#FAAD14",
+          "token": "Colors.Base.Gold_Ant.6",
+          "cssVar": "--fms-colors-base-gold-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#D48806",
+          "token": "Colors.Base.Gold_Ant.7",
+          "cssVar": "--fms-colors-base-gold-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#AD6800",
+          "token": "Colors.Base.Gold_Ant.8",
+          "cssVar": "--fms-colors-base-gold-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#874D00",
+          "token": "Colors.Base.Gold_Ant.9",
+          "cssVar": "--fms-colors-base-gold-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#613400",
+          "token": "Colors.Base.Gold_Ant.10",
+          "cssVar": "--fms-colors-base-gold-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Green_Ant",
+      "title": "Green",
+      "description": "Positive and success states. Feeds System Success semantic tokens.",
+      "semantic": "System → Success",
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#F0F9EA",
+          "token": "Colors.Base.Green_Ant.1",
+          "cssVar": "--fms-colors-base-green-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#C1E7AA",
+          "token": "Colors.Base.Green_Ant.2",
+          "cssVar": "--fms-colors-base-green-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#C1E7AA",
+          "token": "Colors.Base.Green_Ant.3",
+          "cssVar": "--fms-colors-base-green-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#A2DB7F",
+          "token": "Colors.Base.Green_Ant.4",
+          "cssVar": "--fms-colors-base-green-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#83CF55",
+          "token": "Colors.Base.Green_Ant.5",
+          "cssVar": "--fms-colors-base-green-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#64C32A",
+          "token": "Colors.Base.Green_Ant.6",
+          "cssVar": "--fms-colors-base-green-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#509C22",
+          "token": "Colors.Base.Green_Ant.7",
+          "cssVar": "--fms-colors-base-green-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#3C7519",
+          "token": "Colors.Base.Green_Ant.8",
+          "cssVar": "--fms-colors-base-green-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#1E3B0D",
+          "token": "Colors.Base.Green_Ant.9",
+          "cssVar": "--fms-colors-base-green-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#142708",
+          "token": "Colors.Base.Green_Ant.10",
+          "cssVar": "--fms-colors-base-green-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Lime_Ant",
+      "title": "Lime",
+      "description": "Yellow-green accent for supplementary status and highlights.",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FCFFE6",
+          "token": "Colors.Base.Lime_Ant.1",
+          "cssVar": "--fms-colors-base-lime-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#F4FFB8",
+          "token": "Colors.Base.Lime_Ant.2",
+          "cssVar": "--fms-colors-base-lime-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#EAFF8F",
+          "token": "Colors.Base.Lime_Ant.3",
+          "cssVar": "--fms-colors-base-lime-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#D3F261",
+          "token": "Colors.Base.Lime_Ant.4",
+          "cssVar": "--fms-colors-base-lime-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#BAE637",
+          "token": "Colors.Base.Lime_Ant.5",
+          "cssVar": "--fms-colors-base-lime-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#A0D911",
+          "token": "Colors.Base.Lime_Ant.6",
+          "cssVar": "--fms-colors-base-lime-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#7CB305",
+          "token": "Colors.Base.Lime_Ant.7",
+          "cssVar": "--fms-colors-base-lime-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#5B8C00",
+          "token": "Colors.Base.Lime_Ant.8",
+          "cssVar": "--fms-colors-base-lime-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#3F6600",
+          "token": "Colors.Base.Lime_Ant.9",
+          "cssVar": "--fms-colors-base-lime-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#254000",
+          "token": "Colors.Base.Lime_Ant.10",
+          "cssVar": "--fms-colors-base-lime-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Magenta_Ant",
+      "title": "Magenta",
+      "description": "Pink-magenta accent for supplementary emphasis.",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FFF0F6",
+          "token": "Colors.Base.Magenta_Ant.1",
+          "cssVar": "--fms-colors-base-magenta-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#FFD6E7",
+          "token": "Colors.Base.Magenta_Ant.2",
+          "cssVar": "--fms-colors-base-magenta-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#FFADD2",
+          "token": "Colors.Base.Magenta_Ant.3",
+          "cssVar": "--fms-colors-base-magenta-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#FF85C0",
+          "token": "Colors.Base.Magenta_Ant.4",
+          "cssVar": "--fms-colors-base-magenta-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#F759AB",
+          "token": "Colors.Base.Magenta_Ant.5",
+          "cssVar": "--fms-colors-base-magenta-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#EB2F96",
+          "token": "Colors.Base.Magenta_Ant.6",
+          "cssVar": "--fms-colors-base-magenta-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#C41D7F",
+          "token": "Colors.Base.Magenta_Ant.7",
+          "cssVar": "--fms-colors-base-magenta-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#9E1068",
+          "token": "Colors.Base.Magenta_Ant.8",
+          "cssVar": "--fms-colors-base-magenta-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#780650",
+          "token": "Colors.Base.Magenta_Ant.9",
+          "cssVar": "--fms-colors-base-magenta-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#520339",
+          "token": "Colors.Base.Magenta_Ant.10",
+          "cssVar": "--fms-colors-base-magenta-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Orange_Ant",
+      "title": "Orange",
+      "description": "Attention and warning contexts. Feeds System Warning semantic tokens.",
+      "semantic": "System → Warning",
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FFF7E6",
+          "token": "Colors.Base.Orange_Ant.1",
+          "cssVar": "--fms-colors-base-orange-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#FFE7BA",
+          "token": "Colors.Base.Orange_Ant.2",
+          "cssVar": "--fms-colors-base-orange-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#FFD591",
+          "token": "Colors.Base.Orange_Ant.3",
+          "cssVar": "--fms-colors-base-orange-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#FFC069",
+          "token": "Colors.Base.Orange_Ant.4",
+          "cssVar": "--fms-colors-base-orange-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#FFA940",
+          "token": "Colors.Base.Orange_Ant.5",
+          "cssVar": "--fms-colors-base-orange-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#FA8C16",
+          "token": "Colors.Base.Orange_Ant.6",
+          "cssVar": "--fms-colors-base-orange-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#D46B08",
+          "token": "Colors.Base.Orange_Ant.7",
+          "cssVar": "--fms-colors-base-orange-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#AD4E00",
+          "token": "Colors.Base.Orange_Ant.8",
+          "cssVar": "--fms-colors-base-orange-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#873800",
+          "token": "Colors.Base.Orange_Ant.9",
+          "cssVar": "--fms-colors-base-orange-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#612500",
+          "token": "Colors.Base.Orange_Ant.10",
+          "cssVar": "--fms-colors-base-orange-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Purple_Ant",
+      "title": "Purple",
+      "description": "Purple accent for supplementary emphasis and data-adjacent UI.",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#F9F0FF",
+          "token": "Colors.Base.Purple_Ant.1",
+          "cssVar": "--fms-colors-base-purple-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#EFDBFF",
+          "token": "Colors.Base.Purple_Ant.2",
+          "cssVar": "--fms-colors-base-purple-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#D3ADF7",
+          "token": "Colors.Base.Purple_Ant.3",
+          "cssVar": "--fms-colors-base-purple-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#B37FEB",
+          "token": "Colors.Base.Purple_Ant.4",
+          "cssVar": "--fms-colors-base-purple-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#9254DE",
+          "token": "Colors.Base.Purple_Ant.5",
+          "cssVar": "--fms-colors-base-purple-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#722ED1",
+          "token": "Colors.Base.Purple_Ant.6",
+          "cssVar": "--fms-colors-base-purple-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#531DAB",
+          "token": "Colors.Base.Purple_Ant.7",
+          "cssVar": "--fms-colors-base-purple-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#391085",
+          "token": "Colors.Base.Purple_Ant.8",
+          "cssVar": "--fms-colors-base-purple-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#22075E",
+          "token": "Colors.Base.Purple_Ant.9",
+          "cssVar": "--fms-colors-base-purple-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#120338",
+          "token": "Colors.Base.Purple_Ant.10",
+          "cssVar": "--fms-colors-base-purple-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Red_Ant",
+      "title": "Red",
+      "description": "Error and destructive emphasis. Feeds System Error semantic tokens.",
+      "semantic": "System → Error",
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FFF1F0",
+          "token": "Colors.Base.Red_Ant.1",
+          "cssVar": "--fms-colors-base-red-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#FFCCC7",
+          "token": "Colors.Base.Red_Ant.2",
+          "cssVar": "--fms-colors-base-red-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#FFA39E",
+          "token": "Colors.Base.Red_Ant.3",
+          "cssVar": "--fms-colors-base-red-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#FF7875",
+          "token": "Colors.Base.Red_Ant.4",
+          "cssVar": "--fms-colors-base-red-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#FF4D4F",
+          "token": "Colors.Base.Red_Ant.5",
+          "cssVar": "--fms-colors-base-red-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#F5222D",
+          "token": "Colors.Base.Red_Ant.6",
+          "cssVar": "--fms-colors-base-red-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#CF1322",
+          "token": "Colors.Base.Red_Ant.7",
+          "cssVar": "--fms-colors-base-red-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#A8071A",
+          "token": "Colors.Base.Red_Ant.8",
+          "cssVar": "--fms-colors-base-red-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#820014",
+          "token": "Colors.Base.Red_Ant.9",
+          "cssVar": "--fms-colors-base-red-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#5C0011",
+          "token": "Colors.Base.Red_Ant.10",
+          "cssVar": "--fms-colors-base-red-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Volcano_Ant",
+      "title": "Volcano",
+      "description": "Red-orange accent for strong warm emphasis.",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FFF2E8",
+          "token": "Colors.Base.Volcano_Ant.1",
+          "cssVar": "--fms-colors-base-volcano-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#FFD8BF",
+          "token": "Colors.Base.Volcano_Ant.2",
+          "cssVar": "--fms-colors-base-volcano-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#FFBB96",
+          "token": "Colors.Base.Volcano_Ant.3",
+          "cssVar": "--fms-colors-base-volcano-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#FF9C6E",
+          "token": "Colors.Base.Volcano_Ant.4",
+          "cssVar": "--fms-colors-base-volcano-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#FF7A45",
+          "token": "Colors.Base.Volcano_Ant.5",
+          "cssVar": "--fms-colors-base-volcano-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#FA541C",
+          "token": "Colors.Base.Volcano_Ant.6",
+          "cssVar": "--fms-colors-base-volcano-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#D4380D",
+          "token": "Colors.Base.Volcano_Ant.7",
+          "cssVar": "--fms-colors-base-volcano-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#AD2102",
+          "token": "Colors.Base.Volcano_Ant.8",
+          "cssVar": "--fms-colors-base-volcano-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#871400",
+          "token": "Colors.Base.Volcano_Ant.9",
+          "cssVar": "--fms-colors-base-volcano-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#610B00",
+          "token": "Colors.Base.Volcano_Ant.10",
+          "cssVar": "--fms-colors-base-volcano-ant-10"
+        }
+      ]
+    },
+    {
+      "id": "Yellow_Ant",
+      "title": "Yellow",
+      "description": "Bright yellow accent for highlights and alerts.",
+      "semantic": null,
+      "steps": [
+        {
+          "step": 1,
+          "hex": "#FEFFE6",
+          "token": "Colors.Base.Yellow_Ant.1",
+          "cssVar": "--fms-colors-base-yellow-ant-1"
+        },
+        {
+          "step": 2,
+          "hex": "#FFFFB8",
+          "token": "Colors.Base.Yellow_Ant.2",
+          "cssVar": "--fms-colors-base-yellow-ant-2"
+        },
+        {
+          "step": 3,
+          "hex": "#FFFB8F",
+          "token": "Colors.Base.Yellow_Ant.3",
+          "cssVar": "--fms-colors-base-yellow-ant-3"
+        },
+        {
+          "step": 4,
+          "hex": "#FFF566",
+          "token": "Colors.Base.Yellow_Ant.4",
+          "cssVar": "--fms-colors-base-yellow-ant-4"
+        },
+        {
+          "step": 5,
+          "hex": "#FFEC3D",
+          "token": "Colors.Base.Yellow_Ant.5",
+          "cssVar": "--fms-colors-base-yellow-ant-5"
+        },
+        {
+          "step": 6,
+          "hex": "#FADB14",
+          "token": "Colors.Base.Yellow_Ant.6",
+          "cssVar": "--fms-colors-base-yellow-ant-6"
+        },
+        {
+          "step": 7,
+          "hex": "#D4B106",
+          "token": "Colors.Base.Yellow_Ant.7",
+          "cssVar": "--fms-colors-base-yellow-ant-7"
+        },
+        {
+          "step": 8,
+          "hex": "#AD8B00",
+          "token": "Colors.Base.Yellow_Ant.8",
+          "cssVar": "--fms-colors-base-yellow-ant-8"
+        },
+        {
+          "step": 9,
+          "hex": "#876800",
+          "token": "Colors.Base.Yellow_Ant.9",
+          "cssVar": "--fms-colors-base-yellow-ant-9"
+        },
+        {
+          "step": 10,
+          "hex": "#614700",
+          "token": "Colors.Base.Yellow_Ant.10",
+          "cssVar": "--fms-colors-base-yellow-ant-10"
+        }
+      ]
+    }
+  ]
+}
