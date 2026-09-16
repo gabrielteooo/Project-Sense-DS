@@ -1,3 +1,4 @@
 .DS_Store
+**/.npmrc
 handbook/node_modules/
 handbook/dist/

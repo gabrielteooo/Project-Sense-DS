@@ -1,0 +1,250 @@
+{
+  "sections": [
+    {
+      "id": "text",
+      "title": "Text",
+      "tokens": [
+        {
+          "token": "ColorTextBase",
+          "value": "#000000",
+          "swatchHex": "#000000",
+          "description": "Base text colour used to derive text tokens."
+        },
+        {
+          "token": "ColorText",
+          "value": "#000000 (88%)",
+          "swatchHex": "#000000E0",
+          "description": "Primary text colour for body copy and default labels."
+        },
+        {
+          "token": "ColorTextSecondary",
+          "value": "#000000 (65%)",
+          "swatchHex": "#000000A6",
+          "description": "Secondary text colour for supporting content."
+        },
+        {
+          "token": "ColorTextTertiary",
+          "value": "#000000 (55%)",
+          "swatchHex": "#0000008C",
+          "description": "Tertiary text colour for de-emphasised content."
+        },
+        {
+          "token": "ColorTextQuaternary",
+          "value": "#000000 (25%)",
+          "swatchHex": "#00000040",
+          "description": "Quaternary text colour for the weakest emphasis."
+        },
+        {
+          "token": "ColorTextLightSolid",
+          "value": "#FFFFFF",
+          "swatchHex": "#FFFFFF",
+          "description": "Solid light text on dark or saturated backgrounds."
+        },
+        {
+          "token": "ColorTextHeading",
+          "value": "ColorText",
+          "swatchHex": "#000000E0",
+          "description": "Heading text colour."
+        },
+        {
+          "token": "ColorTextLabel",
+          "value": "ColorTextSecondary",
+          "swatchHex": "#000000A6",
+          "description": "Label text colour."
+        },
+        {
+          "token": "ColorTextDescription",
+          "value": "ColorTextTertiary",
+          "swatchHex": "#0000008C",
+          "description": "Description and helper text colour."
+        },
+        {
+          "token": "ColorTextDisabled",
+          "value": "ColorTextQuaternary",
+          "swatchHex": "#00000040",
+          "description": "Disabled text colour."
+        },
+        {
+          "token": "ColorTextPlaceholder",
+          "value": "#000000 (40%)",
+          "swatchHex": "#00000066",
+          "description": "Placeholder text in inputs and fields."
+        },
+        {
+          "token": "ColourTextSolidButton",
+          "value": "#000000 (88%)",
+          "swatchHex": "#000000E0",
+          "description": "Text colour on solid light button backgrounds."
+        }
+      ]
+    },
+    {
+      "id": "icon",
+      "title": "Icon",
+      "tokens": [
+        {
+          "token": "ColorIcon",
+          "value": "ColorTextTertiary",
+          "swatchHex": "#0000008C",
+          "description": "Default icon colour."
+        },
+        {
+          "token": "ColorIconHover",
+          "value": "ColorTextSecondary",
+          "swatchHex": "#000000A6",
+          "description": "Icon colour on hover."
+        }
+      ]
+    },
+    {
+      "id": "background",
+      "title": "Background",
+      "tokens": [
+        {
+          "token": "ColorWhite",
+          "value": "#FFFFFF",
+          "swatchHex": "#FFFFFF",
+          "description": "Pure white surface colour."
+        },
+        {
+          "token": "ColorBgBase",
+          "value": "#F5F5F5",
+          "swatchHex": "#F5F5F5",
+          "description": "Base page background colour."
+        },
+        {
+          "token": "ColorBgContainer",
+          "value": "#FFFFFF",
+          "swatchHex": "#FFFFFF",
+          "description": "Container background for cards, panels, and inputs."
+        },
+        {
+          "token": "ColorBgElevated",
+          "value": "#F5F5F5",
+          "swatchHex": "#F5F5F5",
+          "description": "Elevated surface background."
+        },
+        {
+          "token": "ColorBgLayout",
+          "value": "ColorBgBase",
+          "swatchHex": "#F5F5F5",
+          "description": "Application layout background."
+        },
+        {
+          "token": "ColorBgMask",
+          "value": "#000000 (45%)",
+          "swatchHex": "#00000073",
+          "description": "Modal and overlay mask background."
+        },
+        {
+          "token": "ColorBgSpotlight",
+          "value": "#F5F5F5 (85%)",
+          "swatchHex": "#F5F5F5D9",
+          "description": "Spotlight / tooltip background."
+        },
+        {
+          "token": "ColorBgContainerDisabled",
+          "value": "ColorFillTertiary",
+          "swatchHex": "#0000000A",
+          "description": "Disabled container background."
+        },
+        {
+          "token": "ColorBgTextActive",
+          "value": "ColorFill",
+          "swatchHex": "#00000026",
+          "description": "Active background for text-style controls."
+        },
+        {
+          "token": "ColorBgTextHover",
+          "value": "ColorFillSecondary",
+          "swatchHex": "#0000000F",
+          "description": "Hover background for text-style controls."
+        },
+        {
+          "token": "ColorBorderBg",
+          "value": "ColorBgContainer",
+          "swatchHex": "#FFFFFF",
+          "description": "Background used behind bordered elements."
+        },
+        {
+          "token": "ColorBgSolidDark",
+          "value": "#191B1E (90%)",
+          "swatchHex": "#191B1EE6",
+          "description": "Dark solid background for inverse surfaces."
+        }
+      ]
+    },
+    {
+      "id": "border",
+      "title": "Border",
+      "tokens": [
+        {
+          "token": "ColorBorder",
+          "value": "#D9D9D9",
+          "swatchHex": "#D9D9D9",
+          "description": "Default border colour for components and tables."
+        },
+        {
+          "token": "ColorBorderSecondary",
+          "value": "#F0F0F0",
+          "swatchHex": "#F0F0F0",
+          "description": "Secondary, lighter border colour."
+        },
+        {
+          "token": "ColorSplit",
+          "value": "#E2E2E2",
+          "swatchHex": "#E2E2E2",
+          "description": "Divider and split line colour."
+        }
+      ]
+    },
+    {
+      "id": "fill",
+      "title": "Fill",
+      "tokens": [
+        {
+          "token": "ColorFill",
+          "value": "#000000 (15%)",
+          "swatchHex": "#00000026",
+          "description": "Default fill for interactive and selected states."
+        },
+        {
+          "token": "ColorFillSecondary",
+          "value": "#000000 (6%)",
+          "swatchHex": "#0000000F",
+          "description": "Secondary fill for subtle hover states."
+        },
+        {
+          "token": "ColorFillTertiary",
+          "value": "#000000 (4%)",
+          "swatchHex": "#0000000A",
+          "description": "Tertiary fill for disabled containers."
+        },
+        {
+          "token": "ColorFillQuaternary",
+          "value": "#000000 (2%)",
+          "swatchHex": "#00000005",
+          "description": "Quaternary fill for tags and weak emphasis."
+        },
+        {
+          "token": "ColorFillContent",
+          "value": "ColorFillSecondary",
+          "swatchHex": "#0000000F",
+          "description": "Fill for content blocks on hover."
+        },
+        {
+          "token": "ColorFillContentHover",
+          "value": "ColorFill",
+          "swatchHex": "#00000026",
+          "description": "Fill for content blocks in active hover."
+        },
+        {
+          "token": "ColorFillAlter",
+          "value": "ColorBgBase",
+          "swatchHex": "#F5F5F5",
+          "description": "Alternate fill, typically table header backgrounds."
+        }
+      ]
+    }
+  ]
+}

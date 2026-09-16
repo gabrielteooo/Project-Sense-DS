@@ -13,9 +13,12 @@ export const FIGMA_NODES = {
   globalHeaderTab: '1:12914',
   handbookFrame: '1:10873',
   sideMenuBar: '1:12439',
+  foundationsSideMenuTypography: '62:21857',
   pageHeader: '1:10480',
   menuItem: '1:10814',
   baseColourTable: '1:10488',
+  tagDefault: '48:14196',
+  tagColourValue: '58:15689',
   contrast: '1:10808',
   preview: '1:10805',
 } as const;
@@ -27,7 +30,7 @@ export const HANDBOOK_VIEWPORT = {
 
 export const HANDBOOK_SHELL = {
   sidebarWidthPx: 280,
-  globalHeaderPaddingLeftPx: 16,
+  globalHeaderPaddingLeftPx: 32,
   globalHeaderPaddingRightPx: 40,
   globalHeaderTitlePaddingBlockPx: 24,
   /** Tabs.Component.horizontalItemGutter */
@@ -42,11 +45,13 @@ export const HANDBOOK_SHELL = {
   contentPaddingBlockPx: 40,
   menuPaddingTopPx: 16,
   /** Figma side menu 1:12439 — horizontal gutter */
-  menuPaddingInlinePx: 16,
+  menuPaddingInlinePx: 24,
   menuItemHeightPx: 40,
   /** Figma web-menu-item 1:10814 — padding inside each row */
   menuItemPaddingInlinePx: 16,
   menuItemGapPx: 4,
+  /** Figma side menu 62:21857 — gap between foundation sections (e.g. below Colours) */
+  menuSectionGapPx: 8,
   menuSubIndentPx: 28,
   /** Figma page header 1:10480 — title to description */
   pageHeaderGapPx: 16,
@@ -61,4 +66,9 @@ export const HANDBOOK_SHELL = {
   tableRadiusPx: 6,
   /** Figma content 1:11212 */
   baseColourTableMaxWidthPx: 1080,
+  /** Figma base colour table 1:10488 — fixed column widths (shared across palettes) */
+  baseColourTableColPreviewPx: 140,
+  baseColourTableColHexPx: 140,
+  baseColourTableColContrastPx: 80,
+  baseColourTableColTokenPx: 280,
 } as const;

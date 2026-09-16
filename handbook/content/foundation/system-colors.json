@@ -1,0 +1,297 @@
+{
+  "sections": [
+    {
+      "id": "success",
+      "title": "Success",
+      "tokens": [
+        {
+          "token": "ColorSuccessBg",
+          "value": "Green/1",
+          "description": "Light background colour of success colour, usually used for weak visual level selection state."
+        },
+        {
+          "token": "ColorSuccessBgHover",
+          "value": "Green/2",
+          "description": "The hover state colour corresponding to the light background colour of the success colour."
+        },
+        {
+          "token": "ColorSuccessBorder",
+          "value": "Green/3",
+          "description": "The stroke colour under the success colour gradient, used on the stroke of components such as Slider."
+        },
+        {
+          "token": "ColorSuccessBorderHover",
+          "value": "Green/4",
+          "description": "The hover state of the stroke colour under the success colour gradient, used when the stroke hover of components such as Slider and Button."
+        },
+        {
+          "token": "ColorSuccessHover",
+          "value": "Green/5",
+          "description": "Hover state under the success colour gradient."
+        },
+        {
+          "token": "ColorSuccess",
+          "value": "Green/7",
+          "description": "Success colour. Used to indicate a successful operation or positive state in the interface."
+        },
+        {
+          "token": "ColorSuccessActive",
+          "value": "Green/7",
+          "description": "Dark active state under the success colour gradient."
+        },
+        {
+          "token": "ColorSuccessTextHover",
+          "value": "Green/8",
+          "description": "Hover state of text colour under the success colour gradient."
+        },
+        {
+          "token": "ColorSuccessText",
+          "value": "Green/9",
+          "description": "Text colour under the success colour gradient."
+        },
+        {
+          "token": "ColorSuccessTextActive",
+          "value": "Green/10",
+          "description": "Active state of text colour under the success colour gradient."
+        }
+      ]
+    },
+    {
+      "id": "warning",
+      "title": "Warning",
+      "tokens": [
+        {
+          "token": "ColorWarningBg",
+          "value": "Orange/1",
+          "description": "Light background colour of warning colour, usually used for weak visual level selection state."
+        },
+        {
+          "token": "ColorWarningBgHover",
+          "value": "Orange/2",
+          "description": "The hover state colour corresponding to the light background colour of the warning colour."
+        },
+        {
+          "token": "ColorWarningBorder",
+          "value": "Orange/3",
+          "description": "The stroke colour under the warning colour gradient, used on the stroke of components such as Slider."
+        },
+        {
+          "token": "ColorWarningBorderHover",
+          "value": "Orange/4",
+          "description": "The hover state of the stroke colour under the warning colour gradient, used when the stroke hover of components such as Slider and Button."
+        },
+        {
+          "token": "ColorWarningHover",
+          "value": "Orange/5",
+          "description": "Hover state under the warning colour gradient."
+        },
+        {
+          "token": "ColorWarning",
+          "value": "Orange/7",
+          "description": "Warning colour. Used to indicate a cautionary state or action that may need attention."
+        },
+        {
+          "token": "ColorWarningActive",
+          "value": "Orange/6",
+          "description": "Dark active state under the warning colour gradient."
+        },
+        {
+          "token": "ColorWarningTextHover",
+          "value": "Orange/8",
+          "description": "Hover state of text colour under the warning colour gradient."
+        },
+        {
+          "token": "ColorWarningText",
+          "value": "Orange/9",
+          "description": "Text colour under the warning colour gradient."
+        },
+        {
+          "token": "ColorWarningTextActive",
+          "value": "Orange/10",
+          "description": "Active state of text colour under the warning colour gradient."
+        }
+      ]
+    },
+    {
+      "id": "error",
+      "title": "Error",
+      "tokens": [
+        {
+          "token": "ColorErrorBg",
+          "value": "Red/1",
+          "description": "Light background colour of error colour, usually used for weak visual level selection state."
+        },
+        {
+          "token": "ColorErrorBgHover",
+          "value": "Red/2",
+          "description": "The hover state colour corresponding to the light background colour of the error colour."
+        },
+        {
+          "token": "ColorErrorBorder",
+          "value": "Red/3",
+          "description": "The stroke colour under the error colour gradient, used on the stroke of components such as Slider."
+        },
+        {
+          "token": "ColorErrorBorderHover",
+          "value": "Red/6",
+          "description": "The hover state of the stroke colour under the error colour gradient, used when the stroke hover of components such as Slider and Button."
+        },
+        {
+          "token": "ColorErrorHover",
+          "value": "Red/4",
+          "description": "Hover state under the error colour gradient."
+        },
+        {
+          "token": "ColorError",
+          "value": "Red/8",
+          "description": "Error colour. Used to indicate a failed operation or destructive outcome."
+        },
+        {
+          "token": "ColorErrorActive",
+          "value": "Red/7",
+          "description": "Dark active state under the error colour gradient."
+        },
+        {
+          "token": "ColorErrorTextHover",
+          "value": "Red/7",
+          "description": "Hover state of text colour under the error colour gradient."
+        },
+        {
+          "token": "ColorErrorText",
+          "value": "Red/8",
+          "description": "Text colour under the error colour gradient."
+        },
+        {
+          "token": "ColorErrorTextActive",
+          "value": "Red/9",
+          "description": "Active state of text colour under the error colour gradient."
+        }
+      ]
+    },
+    {
+      "id": "info",
+      "title": "Information",
+      "tokens": [
+        {
+          "token": "ColorInfoBg",
+          "value": "Blue/1",
+          "description": "Light background colour of information colour, usually used for weak visual level selection state."
+        },
+        {
+          "token": "ColorInfoBgHover",
+          "value": "Blue/2",
+          "description": "The hover state colour corresponding to the light background colour of the information colour."
+        },
+        {
+          "token": "ColorInfoBorder",
+          "value": "Blue/3",
+          "description": "The stroke colour under the information colour gradient, used on the stroke of components such as Slider."
+        },
+        {
+          "token": "ColorInfoBorderHover",
+          "value": "Blue/4",
+          "description": "The hover state of the stroke colour under the information colour gradient, used when the stroke hover of components such as Slider and Button."
+        },
+        {
+          "token": "ColorInfoHover",
+          "value": "Blue/5",
+          "description": "Hover state under the information colour gradient."
+        },
+        {
+          "token": "ColorInfo",
+          "value": "Blue/7",
+          "description": "Information colour. Used to highlight neutral informational messages and hints."
+        },
+        {
+          "token": "ColorInfoActive",
+          "value": "Blue/7",
+          "description": "Dark active state under the information colour gradient."
+        },
+        {
+          "token": "ColorInfoTextHover",
+          "value": "Blue/8",
+          "description": "Hover state of text colour under the information colour gradient."
+        },
+        {
+          "token": "ColorInfoText",
+          "value": "Blue/9",
+          "description": "Text colour under the information colour gradient."
+        },
+        {
+          "token": "ColorInfoTextActive",
+          "value": "Blue/10",
+          "description": "Active state of text colour under the information colour gradient."
+        }
+      ]
+    },
+    {
+      "id": "link",
+      "title": "Link",
+      "tokens": [
+        {
+          "token": "ColorLink",
+          "value": "Cyan/6",
+          "description": "Default colour for text links."
+        },
+        {
+          "token": "ColorLinkHover",
+          "value": "Cyan/5",
+          "description": "Hover state colour for text links."
+        },
+        {
+          "token": "ColorLinkActive",
+          "value": "Cyan/7",
+          "description": "Active state colour for text links."
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Control",
+      "tokens": [
+        {
+          "token": "ControlItemBgHover",
+          "value": "#F0F0F0",
+          "swatchHex": "#F0F0F0",
+          "description": "Background colour for control items on hover (e.g. menu, select options)."
+        },
+        {
+          "token": "ControlItemBgActive",
+          "value": "#F0F0F0",
+          "swatchHex": "#F0F0F0",
+          "description": "Background colour for the active or selected control item."
+        },
+        {
+          "token": "ControlItemBgActiveHover",
+          "value": "#FAFAFA",
+          "swatchHex": "#FAFAFA",
+          "description": "Background colour for the active control item on hover."
+        },
+        {
+          "token": "ControlItemBgActiveDisabled",
+          "value": "Neutral/Fill",
+          "swatchHex": "#00000026",
+          "description": "Background colour for a disabled active control item."
+        },
+        {
+          "token": "ControlItemBgHover",
+          "value": "#000000 (5%)",
+          "swatchHex": "#0000000D",
+          "description": "Background colour for control items on hover (e.g. menu, select options)."
+        },
+        {
+          "token": "ControlOutline",
+          "value": "#0591FF (10%)",
+          "swatchHex": "#0591FF1A",
+          "description": "Outline colour for focused controls."
+        },
+        {
+          "token": "ControlTmpOutline",
+          "value": "Neutral/FillQuaternary",
+          "swatchHex": "#F5F5F5",
+          "description": "Temporary outline colour used during control interactions."
+        }
+      ]
+    }
+  ]
+}

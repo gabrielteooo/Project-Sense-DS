@@ -33,6 +33,10 @@ export function HandbookAppShell() {
               className="handbook-app-shell__content-inner"
               style={{
                 ['--handbook-base-colour-table-max-width' as string]: `${HANDBOOK_SHELL.baseColourTableMaxWidthPx}px`,
+                ['--handbook-base-colour-table-col-preview' as string]: `${HANDBOOK_SHELL.baseColourTableColPreviewPx}px`,
+                ['--handbook-base-colour-table-col-hex' as string]: `${HANDBOOK_SHELL.baseColourTableColHexPx}px`,
+                ['--handbook-base-colour-table-col-contrast' as string]: `${HANDBOOK_SHELL.baseColourTableColContrastPx}px`,
+                ['--handbook-base-colour-table-col-token' as string]: `${HANDBOOK_SHELL.baseColourTableColTokenPx}px`,
               }}
             >
               <Outlet />

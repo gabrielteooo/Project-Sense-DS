@@ -1,0 +1,60 @@
+{
+  "sections": [
+    {
+      "id": "primary",
+      "title": "Primary",
+      "tokens": [
+        {
+          "token": "ColorPrimaryBg",
+          "value": "Cyan/1",
+          "description": "Light background colour of primary colour, usually used for weak visual level selection state."
+        },
+        {
+          "token": "ColorPrimaryBgHover",
+          "value": "Cyan/2",
+          "description": "The hover state colour corresponding to the light background colour of the primary colour."
+        },
+        {
+          "token": "ColorPrimaryBorder",
+          "value": "Cyan/3",
+          "description": "The stroke colour under the main colour gradient, used on the stroke of components such as Slider."
+        },
+        {
+          "token": "ColorPrimaryBorderHover",
+          "value": "Cyan/4",
+          "description": "The hover state of the stroke colour under the main colour gradient, which will be used when the stroke hover of components such as Slider and Button."
+        },
+        {
+          "token": "ColorPrimaryHover",
+          "value": "Cyan/5",
+          "description": "Hover state under the main colour gradient."
+        },
+        {
+          "token": "ColorPrimary",
+          "value": "Cyan/6",
+          "description": "Brand colour. It reflects the product's characteristics. Selecting a brand colour automatically generates a complete palette with effective design semantics."
+        },
+        {
+          "token": "ColorPrimaryActive",
+          "value": "Cyan/7",
+          "description": "Dark active state under the main colour gradient."
+        },
+        {
+          "token": "ColorPrimaryTextHover",
+          "value": "Cyan/8",
+          "description": "Hover state of text colour under the main colour gradient."
+        },
+        {
+          "token": "ColorPrimaryText",
+          "value": "Cyan/9",
+          "description": "Text colour under the main colour gradient."
+        },
+        {
+          "token": "ColorPrimaryTextActive",
+          "value": "Cyan/10",
+          "description": "Active state of text colour under the main colour gradient."
+        }
+      ]
+    }
+  ]
+}

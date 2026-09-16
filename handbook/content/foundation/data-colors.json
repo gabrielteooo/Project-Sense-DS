@@ -1,0 +1,490 @@
+{
+  "sections": [
+    {
+      "id": "purple",
+      "title": "Data Purple",
+      "tokens": [
+        {
+          "token": "ColorDataPurple1",
+          "value": "#D4B3EB",
+          "swatchHex": "#D4B3EB",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataPurple2",
+          "value": "#CAA2E7",
+          "swatchHex": "#CAA2E7",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataPurple3",
+          "value": "#B47ADD",
+          "swatchHex": "#B47ADD",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataPurple4",
+          "value": "#9D52D3",
+          "swatchHex": "#9D52D3",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataPurple5",
+          "value": "#7E2FB6",
+          "swatchHex": "#7E2FB6",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataPurple6",
+          "value": "#63258F",
+          "swatchHex": "#63258F",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataPurple7",
+          "value": "#461A66",
+          "swatchHex": "#461A66",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataPurple8",
+          "value": "#34134C",
+          "swatchHex": "#34134C",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "blue",
+      "title": "Data Blue",
+      "tokens": [
+        {
+          "token": "ColorDataBlue1",
+          "value": "#CDD6F4",
+          "swatchHex": "#CDD6F4",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataBlue2",
+          "value": "#9FB1E9",
+          "swatchHex": "#9FB1E9",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataBlue3",
+          "value": "#788EE0",
+          "swatchHex": "#788EE0",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataBlue4",
+          "value": "#516ED7",
+          "swatchHex": "#516ED7",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataBlue5",
+          "value": "#2D4DC3",
+          "swatchHex": "#2D4DC3",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataBlue6",
+          "value": "#233C99",
+          "swatchHex": "#233C99",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataBlue7",
+          "value": "#192B6C",
+          "swatchHex": "#192B6C",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataBlue8",
+          "value": "#122050",
+          "swatchHex": "#122050",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "title": "Data Green",
+      "tokens": [
+        {
+          "token": "ColorDataGreen1",
+          "value": "#B2E6D8",
+          "swatchHex": "#B2E6D8",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataGreen2",
+          "value": "#82D4BE",
+          "swatchHex": "#82D4BE",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataGreen3",
+          "value": "#52C3A5",
+          "swatchHex": "#52C3A5",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataGreen4",
+          "value": "#25A582",
+          "swatchHex": "#25A582",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataGreen5",
+          "value": "#1D8469",
+          "swatchHex": "#1D8469",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataGreen6",
+          "value": "#16644F",
+          "swatchHex": "#16644F",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataGreen7",
+          "value": "#114E3E",
+          "swatchHex": "#114E3E",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataGreen8",
+          "value": "#0C372C",
+          "swatchHex": "#0C372C",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "title": "Data Orange",
+      "tokens": [
+        {
+          "token": "ColorDataOrange1",
+          "value": "#F9D9B3",
+          "swatchHex": "#F9D9B3",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataOrange2",
+          "value": "#F4B56C",
+          "swatchHex": "#F4B56C",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataOrange3",
+          "value": "#EE942C",
+          "swatchHex": "#EE942C",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataOrange4",
+          "value": "#DA7A0C",
+          "swatchHex": "#DA7A0C",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataOrange5",
+          "value": "#AF620A",
+          "swatchHex": "#AF620A",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataOrange6",
+          "value": "#844A07",
+          "swatchHex": "#844A07",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataOrange7",
+          "value": "#673A06",
+          "swatchHex": "#673A06",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataOrange8",
+          "value": "#492904",
+          "swatchHex": "#492904",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "title": "Data Red",
+      "tokens": [
+        {
+          "token": "ColorDataRed1",
+          "value": "#F5CDCD",
+          "swatchHex": "#F5CDCD",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataRed2",
+          "value": "#EA9E9E",
+          "swatchHex": "#EA9E9E",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataRed3",
+          "value": "#E07474",
+          "swatchHex": "#E07474",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataRed4",
+          "value": "#DA4B4B",
+          "swatchHex": "#DA4B4B",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataRed5",
+          "value": "#CB2A2A",
+          "swatchHex": "#CB2A2A",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataRed6",
+          "value": "#A62121",
+          "swatchHex": "#A62121",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataRed7",
+          "value": "#7B1818",
+          "swatchHex": "#7B1818",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataRed8",
+          "value": "#551111",
+          "swatchHex": "#551111",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "yellow",
+      "title": "Data Yellow",
+      "tokens": [
+        {
+          "token": "ColorDataYellow1",
+          "value": "#F5E7A5",
+          "swatchHex": "#F5E7A5",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataYellow2",
+          "value": "#F2D866",
+          "swatchHex": "#F2D866",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataYellow3",
+          "value": "#EDC824",
+          "swatchHex": "#EDC824",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataYellow4",
+          "value": "#D0AC0A",
+          "swatchHex": "#D0AC0A",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataYellow5",
+          "value": "#A3870C",
+          "swatchHex": "#A3870C",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataYellow6",
+          "value": "#866E06",
+          "swatchHex": "#866E06",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataYellow7",
+          "value": "#655303",
+          "swatchHex": "#655303",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataYellow8",
+          "value": "#443800",
+          "swatchHex": "#443800",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "grey",
+      "title": "Data Grey",
+      "tokens": [
+        {
+          "token": "ColorDataGrey1",
+          "value": "#DADADA",
+          "swatchHex": "#DADADA",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataGrey2",
+          "value": "#C0C0C0",
+          "swatchHex": "#C0C0C0",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataGrey3",
+          "value": "#A5A5A5",
+          "swatchHex": "#A5A5A5",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataGrey4",
+          "value": "#8D8D8D",
+          "swatchHex": "#8D8D8D",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataGrey5",
+          "value": "#727272",
+          "swatchHex": "#727272",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataGrey6",
+          "value": "#5A5A5A",
+          "swatchHex": "#5A5A5A",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataGrey7",
+          "value": "#3F3F3F",
+          "swatchHex": "#3F3F3F",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataGrey8",
+          "value": "#272727",
+          "swatchHex": "#272727",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "cyan",
+      "title": "Data Cyan",
+      "tokens": [
+        {
+          "token": "ColorDataCyan1",
+          "value": "#A2E2E1",
+          "swatchHex": "#A2E2E1",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataCyan2",
+          "value": "#5FD3D1",
+          "swatchHex": "#5FD3D1",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataCyan3",
+          "value": "#23BDBB",
+          "swatchHex": "#23BDBB",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataCyan4",
+          "value": "#1EA3A1",
+          "swatchHex": "#1EA3A1",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataCyan5",
+          "value": "#188281",
+          "swatchHex": "#188281",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataCyan6",
+          "value": "#126261",
+          "swatchHex": "#126261",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataCyan7",
+          "value": "#0D4544",
+          "swatchHex": "#0D4544",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataCyan8",
+          "value": "#092F2F",
+          "swatchHex": "#092F2F",
+          "description": "Darkest"
+        }
+      ]
+    },
+    {
+      "id": "pink",
+      "title": "Data Pink",
+      "tokens": [
+        {
+          "token": "ColorDataPink1",
+          "value": "#F6BDCF",
+          "swatchHex": "#F6BDCF",
+          "description": "Lightest"
+        },
+        {
+          "token": "ColorDataPink2",
+          "value": "#F08FB1",
+          "swatchHex": "#F08FB1",
+          "description": "Lighter"
+        },
+        {
+          "token": "ColorDataPink3",
+          "value": "#EA6897",
+          "swatchHex": "#EA6897",
+          "description": "Light"
+        },
+        {
+          "token": "ColorDataPink4",
+          "value": "#E64779",
+          "swatchHex": "#E64779",
+          "description": "Default"
+        },
+        {
+          "token": "ColorDataPink5",
+          "value": "#CE1C5B",
+          "swatchHex": "#CE1C5B",
+          "description": "Medium"
+        },
+        {
+          "token": "ColorDataPink6",
+          "value": "#A6174B",
+          "swatchHex": "#A6174B",
+          "description": "Dark"
+        },
+        {
+          "token": "ColorDataPink7",
+          "value": "#7E1139",
+          "swatchHex": "#7E1139",
+          "description": "Darker"
+        },
+        {
+          "token": "ColorDataPink8",
+          "value": "#560B27",
+          "swatchHex": "#560B27",
+          "description": "Darkest"
+        }
+      ]
+    }
+  ]
+}

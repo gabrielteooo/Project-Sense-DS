@@ -53,12 +53,49 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
         label: 'Base colour',
         href: '/foundation/colours/base',
       },
-      { id: 'brand', label: 'Brand colour' },
-      { id: 'system', label: 'System colour' },
-      { id: 'neutral', label: 'Neutral colour' },
-      { id: 'data', label: 'Data colour' },
+      {
+        id: 'brand',
+        label: 'Brand colour',
+        href: '/foundation/colours/brand',
+      },
+      {
+        id: 'system',
+        label: 'System colour',
+        href: '/foundation/colours/system',
+      },
+      {
+        id: 'neutral',
+        label: 'Neutral colour',
+        href: '/foundation/colours/neutral',
+      },
+      {
+        id: 'data',
+        label: 'Data colour',
+        href: '/foundation/colours/data',
+      },
+    ],
+  },
+  {
+    id: 'typography',
+    label: 'Typography',
+    children: [
+      {
+        id: 'typography-overview',
+        label: 'Overview',
+        href: '/foundation/typography/overview',
+      },
+      {
+        id: 'text-styles',
+        label: 'Text Styles',
+        href: '/foundation/typography/text-styles',
+      },
+      {
+        id: 'text-system',
+        label: 'Text System',
+        href: '/foundation/typography/text-system',
+      },
     ],
   },
 ];
 
-export const HANDBOOK_NAV_DEFAULT_OPEN = ['colours'] as const;
+export const HANDBOOK_NAV_DEFAULT_OPEN = ['colours', 'typography'] as const;

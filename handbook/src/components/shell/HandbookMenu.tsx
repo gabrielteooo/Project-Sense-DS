@@ -4,7 +4,6 @@ import { HANDBOOK_NAV_DEFAULT_OPEN } from '../../config/navigation';
 import { HANDBOOK_SHELL } from '../../figma/metrics';
 import { handbookMenuItemPadding } from '../../utils/menuItemPadding';
 import { HandbookMenuItem } from './HandbookMenuItem';
-import { HandbookMenuSearch } from './HandbookMenuSearch';
 
 type Props = {
   items: HandbookNavItem[];
@@ -53,7 +52,9 @@ function NavBranch({
           type="button"
           className={[
             'handbook-menu-item handbook-menu-item--branch',
-            item.id === 'colours' ? 'handbook-menu-item--section-title' : '',
+            item.id === 'colours' || item.id === 'typography'
+              ? 'handbook-menu-item--section-title'
+              : '',
           ]
             .filter(Boolean)
             .join(' ')}
@@ -63,7 +64,7 @@ function NavBranch({
         >
           <span>{item.label}</span>
           <i
-            className={`fa-solid fa-chevron-${expanded ? 'up' : 'down'} handbook-menu__chevron`}
+            className={`fa-regular fa-chevron-${expanded ? 'up' : 'down'} handbook-menu__chevron`}
             aria-hidden
           />
         </button>
@@ -92,7 +93,7 @@ function NavBranch({
       label={item.label}
       href={item.href}
       indentLevel={indentLevel}
-      end={item.href === '/foundation/colours/base'}
+      end
     />
   );
 }
@@ -108,9 +109,9 @@ export function HandbookMenu({ items }: Props) {
         width: HANDBOOK_SHELL.sidebarWidthPx,
         paddingTop: HANDBOOK_SHELL.menuPaddingTopPx,
         paddingInline: HANDBOOK_SHELL.menuPaddingInlinePx,
+        ['--handbook-menu-section-gap' as string]: `${HANDBOOK_SHELL.menuSectionGapPx}px`,
       }}
     >
-      <HandbookMenuSearch />
       {items.map((item) => (
         <NavBranch
           key={item.id}

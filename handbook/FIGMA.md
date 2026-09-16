@@ -12,9 +12,12 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Header tabs | `1:12912` |
 | Header tab | `1:12914` |
 | Side menu bar (search + nav) | `1:12439` |
+| Foundations side menu (Typography) | `62:21857` |
 | Page header | `1:10480` |
 | Menu item (`web-menu-item` + interaction) | `1:10814` |
 | Base colour table | `1:10488` |
+| Tag (default) | `48:14196` |
+| Tag — value with colour swatch | `58:15689` |
 | Contrast | `1:10808` |
 | Preview | `1:10805` |
 

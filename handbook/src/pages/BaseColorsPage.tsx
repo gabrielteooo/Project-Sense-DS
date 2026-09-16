@@ -14,7 +14,7 @@ export function BaseColorsPage() {
       <HandbookPageHeader title="Base colour" description={PAGE_DESCRIPTION} />
 
       <section className="base-colours-section">
-        <h2 className="base-colours-section__title">Primary colour tokens</h2>
+        <h2 className="base-colours-section__title">Colour tokens</h2>
 
         {baseColors.palettes.map((palette, index) => (
           <div

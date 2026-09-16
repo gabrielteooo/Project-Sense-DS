@@ -15,6 +15,7 @@ export function ContrastBadge({ hex }: Props) {
           ? 'contrast-badge contrast-badge--on-light'
           : 'contrast-badge contrast-badge--on-dark'
       }
+      style={{ color: hex }}
       aria-hidden
     >
       A
