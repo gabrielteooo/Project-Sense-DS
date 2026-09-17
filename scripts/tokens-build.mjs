@@ -13,6 +13,7 @@ const steps = [
   'build-antd-theme.mjs',
   'build-handbook-base-colors.mjs',
   'build-handbook-data-colors.mjs',
+  'build-handbook-text-styles.mjs',
 ];
 
 for (const step of steps) {

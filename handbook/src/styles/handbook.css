@@ -396,6 +396,59 @@ body {
   );
 }
 
+.typography-prose {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fms-space-margin-margin, 16px);
+}
+
+.typography-prose__paragraph {
+  margin: 0;
+  font-family: inherit;
+  font-size: var(--fms-text-base-normal-font-size, 16px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
+  font-weight: var(--fms-text-base-normal-font-weight, 400);
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
+.typography-prose__strong {
+  font-weight: var(--fms-text-base-strong-font-weight, 600);
+}
+
+.typography-prose__intro {
+  margin: 0;
+  font-family: inherit;
+  font-size: var(--fms-text-base-strong-font-size, 16px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
+  font-weight: var(--fms-text-base-strong-font-weight, 600);
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
+.typography-guidelines__list {
+  margin: 0;
+  padding-left: var(--fms-space-padding-padding-lg, 24px);
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fms-space-margin-margin-xs, 8px);
+}
+
+.typography-guidelines__item {
+  font-family: inherit;
+  font-size: var(--fms-text-base-normal-font-size, 16px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
+  font-weight: var(--fms-text-base-normal-font-weight, 400);
+  color: color-mix(
+    in srgb,
+    var(--fms-colors-neutral-text-color-text, #000) 55%,
+    transparent
+  );
+}
+
+.typography-guidelines__item--text {
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
 .base-palette:first-of-type {
   margin-top: 0 !important;
   padding-top: 0;
@@ -440,6 +493,41 @@ body {
 
 .semantic-colour-token-table .semantic-colour-token-table__col--value {
   width: 240px;
+}
+
+/* Typography — Text Styles (Figma 62:21858) */
+.text-styles-section {
+  max-width: var(--handbook-base-colour-table-max-width, 1080px);
+}
+
+.text-styles-section__description {
+  margin: 0 0 var(--fms-space-margin-margin, 16px);
+  max-width: var(--handbook-base-colour-table-max-width, 1080px);
+  font-family: inherit;
+  font-size: var(--fms-text-base-normal-font-size, 16px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
+  font-weight: var(--fms-text-base-normal-font-weight, 400);
+  color: color-mix(
+    in srgb,
+    var(--fms-colors-neutral-text-color-text, #000) 55%,
+    transparent
+  );
+}
+
+.text-style-table__col--style {
+  width: 220px;
+}
+
+.text-style-table__col--size {
+  width: 160px;
+}
+
+.text-style-table__col--prefix {
+  width: 200px;
+}
+
+.text-style-table__sample {
+  white-space: nowrap;
 }
 
 /* Tag 48:14196 / value tag with swatch 58:15689 */

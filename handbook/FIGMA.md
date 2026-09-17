@@ -13,6 +13,7 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Header tab | `1:12914` |
 | Side menu bar (search + nav) | `1:12439` |
 | Foundations side menu (Typography) | `62:21857` |
+| Typography — Text Styles page | `62:21858` |
 | Page header | `1:10480` |
 | Menu item (`web-menu-item` + interaction) | `1:10814` |
 | Base colour table | `1:10488` |

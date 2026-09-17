@@ -1,0 +1,181 @@
+{
+  "pageDescription": "Text styles follow the website's hierarchy, using the specified font family (Inter) and its styles. Base styles are applied to components such as buttons, paragraphs, inputs. Headings serve as titles within components.",
+  "sections": [
+    {
+      "id": "heading",
+      "title": "Heading",
+      "description": "Use display styles to add strong visual emphasis to key content, including metric card numbers, page headers, and section titles.",
+      "styleNames": ["Heading/1", "Heading/2", "Heading/3", "Heading/4", "Heading/5"],
+      "rows": {
+        "Heading/1": {
+          "styleLabel": "Heading 1",
+          "usage": "Top level heading used in primary metric cards"
+        },
+        "Heading/2": {
+          "styleLabel": "Heading 2",
+          "usage": "Major heading used in secondary metric cards"
+        },
+        "Heading/3": {
+          "styleLabel": "Heading 3",
+          "usage": "Default headings used in page headers, modal header, and common content hierarchy"
+        },
+        "Heading/4": {
+          "styleLabel": "Heading 4",
+          "usage": "Medium headings used in containers"
+        },
+        "Heading/5": {
+          "styleLabel": "Heading 5",
+          "usage": "Small section headings used in grouped content titles and card headings"
+        }
+      }
+    },
+    {
+      "id": "lg",
+      "title": "LG",
+      "description": "Large body styles for introductory paragraphs, empty states, and content that needs more presence than base text.",
+      "styleNames": [
+        "LG/Normal",
+        "LG/Strong",
+        "LG/Underline",
+        "LG/Delete",
+        "LG/Italic"
+      ],
+      "rows": {
+        "LG/Normal": {
+          "styleLabel": "LG Normal",
+          "usage": "Introductory body copy and emphasized descriptions"
+        },
+        "LG/Strong": {
+          "styleLabel": "LG Strong",
+          "usage": "Bold large text for highlighted values or lead sentences"
+        },
+        "LG/Underline": {
+          "styleLabel": "LG Underline",
+          "usage": "Underlined large text for inline links or emphasis"
+        },
+        "LG/Delete": {
+          "styleLabel": "LG Delete",
+          "usage": "Strikethrough for removed or superseded large copy"
+        },
+        "LG/Italic": {
+          "styleLabel": "LG Italic",
+          "usage": "Italic emphasis in large body content"
+        }
+      }
+    },
+    {
+      "id": "base",
+      "title": "Base",
+      "description": "Default scale for UI copy in buttons, inputs, paragraphs, lists, and table cells.",
+      "styleNames": [
+        "Base/Normal",
+        "Base/Strong",
+        "Base/Underline",
+        "Base/Delete",
+        "Base/Italic"
+      ],
+      "rows": {
+        "Base/Normal": {
+          "styleLabel": "Base Normal",
+          "usage": "Standard body text and form labels"
+        },
+        "Base/Strong": {
+          "styleLabel": "Base Strong",
+          "usage": "Bold labels, selected items, and inline emphasis"
+        },
+        "Base/Underline": {
+          "styleLabel": "Base Underline",
+          "usage": "Underlined text for links and inline actions"
+        },
+        "Base/Delete": {
+          "styleLabel": "Base Delete",
+          "usage": "Strikethrough for deprecated or removed content"
+        },
+        "Base/Italic": {
+          "styleLabel": "Base Italic",
+          "usage": "Italic emphasis in body copy"
+        }
+      }
+    },
+    {
+      "id": "sm",
+      "title": "SM",
+      "description": "Compact styles for secondary information, helper text, metadata, and dense layouts.",
+      "styleNames": [
+        "SM/Normal",
+        "SM/Strong",
+        "SM/Underline",
+        "SM/Delete",
+        "SM/Italic"
+      ],
+      "rows": {
+        "SM/Normal": {
+          "styleLabel": "SM Normal",
+          "usage": "Secondary text, captions, and compact list items"
+        },
+        "SM/Strong": {
+          "styleLabel": "SM Strong",
+          "usage": "Bold secondary labels and table column headers"
+        },
+        "SM/Underline": {
+          "styleLabel": "SM Underline",
+          "usage": "Underlined small text for tertiary links"
+        },
+        "SM/Delete": {
+          "styleLabel": "SM Delete",
+          "usage": "Strikethrough in compact or secondary copy"
+        },
+        "SM/Italic": {
+          "styleLabel": "SM Italic",
+          "usage": "Italic emphasis at small sizes"
+        }
+      }
+    },
+    {
+      "id": "xs",
+      "title": "XS",
+      "description": "Fine print for timestamps, legal copy, badges, and the smallest readable UI labels.",
+      "styleNames": [
+        "XS/Normal",
+        "XS/Strong",
+        "XS/Underline",
+        "XS/Delete",
+        "XS/Italic"
+      ],
+      "rows": {
+        "XS/Normal": {
+          "styleLabel": "XS Normal",
+          "usage": "Timestamps, footnotes, and supplementary labels"
+        },
+        "XS/Strong": {
+          "styleLabel": "XS Strong",
+          "usage": "Bold fine print and compact emphasis"
+        },
+        "XS/Underline": {
+          "styleLabel": "XS Underline",
+          "usage": "Underlined fine print links"
+        },
+        "XS/Delete": {
+          "styleLabel": "XS Delete",
+          "usage": "Strikethrough in fine print"
+        },
+        "XS/Italic": {
+          "styleLabel": "XS Italic",
+          "usage": "Italic fine print"
+        }
+      }
+    },
+    {
+      "id": "badge-count",
+      "title": "Badge count",
+      "description": "Micro type for numeric badges and count indicators on avatars, tabs, and icons.",
+      "styleNames": ["Badge count"],
+      "rows": {
+        "Badge count": {
+          "styleLabel": "Badge count",
+          "usage": "Numeric labels on notification and status badges"
+        }
+      }
+    }
+  ]
+}

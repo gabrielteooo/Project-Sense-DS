@@ -1,0 +1,307 @@
+{
+  "pageDescription": "Text styles follow the website's hierarchy, using the specified font family (Inter) and its styles. Base styles are applied to components such as buttons, paragraphs, inputs. Headings serve as titles within components.",
+  "sections": [
+    {
+      "id": "heading",
+      "title": "Heading",
+      "description": "Use display styles to add strong visual emphasis to key content, including metric card numbers, page headers, and section titles.",
+      "rows": [
+        {
+          "styleLabel": "Heading 1",
+          "figmaPrefix": "Heading/1",
+          "sizeLineHeight": "38 / 46",
+          "fontSize": 38,
+          "lineHeight": 46,
+          "usage": "Top level heading used in primary metric cards",
+          "cssSlug": "heading-1",
+          "cssVarPrefix": "--fms-text-heading-1"
+        },
+        {
+          "styleLabel": "Heading 2",
+          "figmaPrefix": "Heading/2",
+          "sizeLineHeight": "30 / 38",
+          "fontSize": 30,
+          "lineHeight": 38,
+          "usage": "Major heading used in secondary metric cards",
+          "cssSlug": "heading-2",
+          "cssVarPrefix": "--fms-text-heading-2"
+        },
+        {
+          "styleLabel": "Heading 3",
+          "figmaPrefix": "Heading/3",
+          "sizeLineHeight": "24 / 32",
+          "fontSize": 24,
+          "lineHeight": 32,
+          "usage": "Default headings used in page headers, modal header, and common content hierarchy",
+          "cssSlug": "heading-3",
+          "cssVarPrefix": "--fms-text-heading-3"
+        },
+        {
+          "styleLabel": "Heading 4",
+          "figmaPrefix": "Heading/4",
+          "sizeLineHeight": "20 / 28",
+          "fontSize": 20,
+          "lineHeight": 28,
+          "usage": "Medium headings used in containers",
+          "cssSlug": "heading-4",
+          "cssVarPrefix": "--fms-text-heading-4"
+        },
+        {
+          "styleLabel": "Heading 5",
+          "figmaPrefix": "Heading/5",
+          "sizeLineHeight": "16 / 24",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "usage": "Small section headings used in grouped content titles and card headings",
+          "cssSlug": "heading-5",
+          "cssVarPrefix": "--fms-text-heading-5"
+        }
+      ]
+    },
+    {
+      "id": "lg",
+      "title": "LG",
+      "description": "Large body styles for introductory paragraphs, empty states, and content that needs more presence than base text.",
+      "rows": [
+        {
+          "styleLabel": "LG Normal",
+          "figmaPrefix": "LG/Normal",
+          "sizeLineHeight": "20 / 28",
+          "fontSize": 20,
+          "lineHeight": 28,
+          "usage": "Introductory body copy and emphasized descriptions",
+          "cssSlug": "lg-normal",
+          "cssVarPrefix": "--fms-text-lg-normal"
+        },
+        {
+          "styleLabel": "LG Strong",
+          "figmaPrefix": "LG/Strong",
+          "sizeLineHeight": "20 / 28",
+          "fontSize": 20,
+          "lineHeight": 28,
+          "usage": "Bold large text for highlighted values or lead sentences",
+          "cssSlug": "lg-strong",
+          "cssVarPrefix": "--fms-text-lg-strong"
+        },
+        {
+          "styleLabel": "LG Underline",
+          "figmaPrefix": "LG/Underline",
+          "sizeLineHeight": "20 / 28",
+          "fontSize": 20,
+          "lineHeight": 28,
+          "usage": "Underlined large text for inline links or emphasis",
+          "cssSlug": "lg-underline",
+          "cssVarPrefix": "--fms-text-lg-underline"
+        },
+        {
+          "styleLabel": "LG Delete",
+          "figmaPrefix": "LG/Delete",
+          "sizeLineHeight": "20 / 28",
+          "fontSize": 20,
+          "lineHeight": 28,
+          "usage": "Strikethrough for removed or superseded large copy",
+          "cssSlug": "lg-delete",
+          "cssVarPrefix": "--fms-text-lg-delete"
+        },
+        {
+          "styleLabel": "LG Italic",
+          "figmaPrefix": "LG/Italic",
+          "sizeLineHeight": "20 / 28",
+          "fontSize": 20,
+          "lineHeight": 28,
+          "usage": "Italic emphasis in large body content",
+          "cssSlug": "lg-italic",
+          "cssVarPrefix": "--fms-text-lg-italic"
+        }
+      ]
+    },
+    {
+      "id": "base",
+      "title": "Base",
+      "description": "Default scale for UI copy in buttons, inputs, paragraphs, lists, and table cells.",
+      "rows": [
+        {
+          "styleLabel": "Base Normal",
+          "figmaPrefix": "Base/Normal",
+          "sizeLineHeight": "16 / 24",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "usage": "Standard body text and form labels",
+          "cssSlug": "base-normal",
+          "cssVarPrefix": "--fms-text-base-normal"
+        },
+        {
+          "styleLabel": "Base Strong",
+          "figmaPrefix": "Base/Strong",
+          "sizeLineHeight": "16 / 24",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "usage": "Bold labels, selected items, and inline emphasis",
+          "cssSlug": "base-strong",
+          "cssVarPrefix": "--fms-text-base-strong"
+        },
+        {
+          "styleLabel": "Base Underline",
+          "figmaPrefix": "Base/Underline",
+          "sizeLineHeight": "16 / 24",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "usage": "Underlined text for links and inline actions",
+          "cssSlug": "base-underline",
+          "cssVarPrefix": "--fms-text-base-underline"
+        },
+        {
+          "styleLabel": "Base Delete",
+          "figmaPrefix": "Base/Delete",
+          "sizeLineHeight": "16 / 24",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "usage": "Strikethrough for deprecated or removed content",
+          "cssSlug": "base-delete",
+          "cssVarPrefix": "--fms-text-base-delete"
+        },
+        {
+          "styleLabel": "Base Italic",
+          "figmaPrefix": "Base/Italic",
+          "sizeLineHeight": "16 / 24",
+          "fontSize": 16,
+          "lineHeight": 24,
+          "usage": "Italic emphasis in body copy",
+          "cssSlug": "base-italic",
+          "cssVarPrefix": "--fms-text-base-italic"
+        }
+      ]
+    },
+    {
+      "id": "sm",
+      "title": "SM",
+      "description": "Compact styles for secondary information, helper text, metadata, and dense layouts.",
+      "rows": [
+        {
+          "styleLabel": "SM Normal",
+          "figmaPrefix": "SM/Normal",
+          "sizeLineHeight": "14 / 22",
+          "fontSize": 14,
+          "lineHeight": 22,
+          "usage": "Secondary text, captions, and compact list items",
+          "cssSlug": "sm-normal",
+          "cssVarPrefix": "--fms-text-sm-normal"
+        },
+        {
+          "styleLabel": "SM Strong",
+          "figmaPrefix": "SM/Strong",
+          "sizeLineHeight": "14 / 22",
+          "fontSize": 14,
+          "lineHeight": 22,
+          "usage": "Bold secondary labels and table column headers",
+          "cssSlug": "sm-strong",
+          "cssVarPrefix": "--fms-text-sm-strong"
+        },
+        {
+          "styleLabel": "SM Underline",
+          "figmaPrefix": "SM/Underline",
+          "sizeLineHeight": "14 / 22",
+          "fontSize": 14,
+          "lineHeight": 22,
+          "usage": "Underlined small text for tertiary links",
+          "cssSlug": "sm-underline",
+          "cssVarPrefix": "--fms-text-sm-underline"
+        },
+        {
+          "styleLabel": "SM Delete",
+          "figmaPrefix": "SM/Delete",
+          "sizeLineHeight": "14 / 22",
+          "fontSize": 14,
+          "lineHeight": 22,
+          "usage": "Strikethrough in compact or secondary copy",
+          "cssSlug": "sm-delete",
+          "cssVarPrefix": "--fms-text-sm-delete"
+        },
+        {
+          "styleLabel": "SM Italic",
+          "figmaPrefix": "SM/Italic",
+          "sizeLineHeight": "14 / 22",
+          "fontSize": 14,
+          "lineHeight": 22,
+          "usage": "Italic emphasis at small sizes",
+          "cssSlug": "sm-italic",
+          "cssVarPrefix": "--fms-text-sm-italic"
+        }
+      ]
+    },
+    {
+      "id": "xs",
+      "title": "XS",
+      "description": "Fine print for timestamps, legal copy, badges, and the smallest readable UI labels.",
+      "rows": [
+        {
+          "styleLabel": "XS Normal",
+          "figmaPrefix": "XS/Normal",
+          "sizeLineHeight": "12 / 22",
+          "fontSize": 12,
+          "lineHeight": 22,
+          "usage": "Timestamps, footnotes, and supplementary labels",
+          "cssSlug": "xs-normal",
+          "cssVarPrefix": "--fms-text-xs-normal"
+        },
+        {
+          "styleLabel": "XS Strong",
+          "figmaPrefix": "XS/Strong",
+          "sizeLineHeight": "12 / 22",
+          "fontSize": 12,
+          "lineHeight": 22,
+          "usage": "Bold fine print and compact emphasis",
+          "cssSlug": "xs-strong",
+          "cssVarPrefix": "--fms-text-xs-strong"
+        },
+        {
+          "styleLabel": "XS Underline",
+          "figmaPrefix": "XS/Underline",
+          "sizeLineHeight": "12 / 22",
+          "fontSize": 12,
+          "lineHeight": 22,
+          "usage": "Underlined fine print links",
+          "cssSlug": "xs-underline",
+          "cssVarPrefix": "--fms-text-xs-underline"
+        },
+        {
+          "styleLabel": "XS Delete",
+          "figmaPrefix": "XS/Delete",
+          "sizeLineHeight": "12 / 22",
+          "fontSize": 12,
+          "lineHeight": 22,
+          "usage": "Strikethrough in fine print",
+          "cssSlug": "xs-delete",
+          "cssVarPrefix": "--fms-text-xs-delete"
+        },
+        {
+          "styleLabel": "XS Italic",
+          "figmaPrefix": "XS/Italic",
+          "sizeLineHeight": "12 / 22",
+          "fontSize": 12,
+          "lineHeight": 22,
+          "usage": "Italic fine print",
+          "cssSlug": "xs-italic",
+          "cssVarPrefix": "--fms-text-xs-italic"
+        }
+      ]
+    },
+    {
+      "id": "badge-count",
+      "title": "Badge count",
+      "description": "Micro type for numeric badges and count indicators on avatars, tabs, and icons.",
+      "rows": [
+        {
+          "styleLabel": "Badge count",
+          "figmaPrefix": "Badge count",
+          "sizeLineHeight": "8 / 22",
+          "fontSize": 8,
+          "lineHeight": 22,
+          "usage": "Numeric labels on notification and status badges",
+          "cssSlug": "badge-count",
+          "cssVarPrefix": "--fms-text-badge-count"
+        }
+      ]
+    }
+  ]
+}

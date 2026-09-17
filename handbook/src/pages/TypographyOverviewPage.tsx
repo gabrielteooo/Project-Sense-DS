@@ -1,4 +1,6 @@
+import { Tag } from '../components/ui/Tag';
 import { HandbookPageHeader } from '../components/shell/HandbookPageHeader';
+import { HANDBOOK_SHELL } from '../figma/metrics';
 
 const PAGE_DESCRIPTION =
   'Typography sets the visual rhythm of our applications. By applying consistent text styles, line heights, and scale, you establish a clear hierarchy that guides users naturally through complex information while ensuring high legibility across all screen sizes.';
@@ -18,6 +20,15 @@ const PRINCIPLES = [
   },
 ] as const;
 
+const GUIDELINES = [
+  'Heavier weights (e.g., Bold/700) grab attention for headings and important text.',
+  'Lighter weights (e.g., Regular/400) used for body text and supporting content.',
+  'Bold colour for heading makes it stand out and draw attention.',
+  'Subdued colour for supporting content to reduce visual prominence.',
+] as const;
+
+const sectionGapStyle = { marginTop: HANDBOOK_SHELL.paletteSectionGapPx };
+
 /** Typography — Overview */
 export function TypographyOverviewPage() {
   return (
@@ -34,6 +45,40 @@ export function TypographyOverviewPage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className="typography-section" style={sectionGapStyle}>
+        <h2 className="base-colours-section__title">Typeface</h2>
+        <ul className="typography-guidelines__list">
+          <li className="typography-guidelines__item typography-guidelines__item--text">
+            FMS uses Inter Regular 400 and Bold 700.
+          </li>
+          <li className="typography-guidelines__item typography-guidelines__item--text">
+            FMS uses a base text size of{' '}
+            <strong className="typography-prose__strong">16px</strong> with increments of 4px
+            for font sizing, with the exception of H1, H2, and Caption.
+          </li>
+          <li className="typography-guidelines__item typography-guidelines__item--text">
+            The base colour for the type is{' '}
+            <Tag swatchHex="#000000E0">Colors/Neutral/Text-colorText</Tag>.
+          </li>
+        </ul>
+      </section>
+
+      <section className="typography-section" style={sectionGapStyle}>
+        <h2 className="base-colours-section__title">Guidelines</h2>
+        <div className="typography-prose">
+          <p className="typography-prose__intro">
+            Use weights and colours to create information hierarchy:
+          </p>
+          <ul className="typography-guidelines__list">
+            {GUIDELINES.map((item) => (
+              <li key={item} className="typography-guidelines__item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     </article>
   );

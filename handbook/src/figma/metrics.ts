@@ -14,6 +14,7 @@ export const FIGMA_NODES = {
   handbookFrame: '1:10873',
   sideMenuBar: '1:12439',
   foundationsSideMenuTypography: '62:21857',
+  typographyTextStylesPage: '62:21858',
   pageHeader: '1:10480',
   menuItem: '1:10814',
   baseColourTable: '1:10488',
