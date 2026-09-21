@@ -495,7 +495,7 @@ body {
   width: 240px;
 }
 
-/* Typography — Text Styles (Figma 62:21858) */
+/* Typography — Text styles (Figma 62:21858) */
 .text-styles-section {
   max-width: var(--handbook-base-colour-table-max-width, 1080px);
 }
@@ -522,12 +522,43 @@ body {
   width: 160px;
 }
 
-.text-style-table__col--prefix {
+.text-style-table__col--token {
   width: 200px;
 }
 
 .text-style-table__sample {
   white-space: nowrap;
+}
+
+/* Typography — Text system (Figma 62:21858) */
+.text-system-section {
+  max-width: var(--handbook-base-colour-table-max-width, 1080px);
+}
+
+.text-system-section__title {
+  margin: 0 0 var(--fms-space-margin-margin, 16px);
+  font-size: var(--fms-text-heading-2-font-size, 30px);
+  line-height: var(--fms-text-heading-2-line-height, 38px);
+  font-weight: var(--fms-text-heading-2-font-weight, 600);
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
+.text-system-section .text-styles-section__description {
+  margin-bottom: var(--fms-space-margin-margin-lg, 24px);
+}
+
+.text-system-table__col--preview {
+  width: 450px;
+}
+
+.text-system-table__col--token {
+  width: 240px;
+}
+
+.text-system-table__preview {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
 }
 
 /* Tag 48:14196 / value tag with swatch 58:15689 */

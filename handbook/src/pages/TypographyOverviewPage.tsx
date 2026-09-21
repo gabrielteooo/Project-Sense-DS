@@ -21,7 +21,7 @@ const PRINCIPLES = [
 ] as const;
 
 const GUIDELINES = [
-  'Heavier weights (e.g., Bold/700) grab attention for headings and important text.',
+  'Heavier weights (e.g., Semi Bold/600) grab attention for headings and important text.',
   'Lighter weights (e.g., Regular/400) used for body text and supporting content.',
   'Bold colour for heading makes it stand out and draw attention.',
   'Subdued colour for supporting content to reduce visual prominence.',
@@ -51,7 +51,7 @@ export function TypographyOverviewPage() {
         <h2 className="base-colours-section__title">Typeface</h2>
         <ul className="typography-guidelines__list">
           <li className="typography-guidelines__item typography-guidelines__item--text">
-            FMS uses Inter Regular 400 and Bold 700.
+            FMS uses Inter Regular 400 and Semi Bold 600.
           </li>
           <li className="typography-guidelines__item typography-guidelines__item--text">
             FMS uses a base text size of{' '}

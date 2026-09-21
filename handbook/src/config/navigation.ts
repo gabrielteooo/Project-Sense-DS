@@ -86,12 +86,12 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
       },
       {
         id: 'text-styles',
-        label: 'Text Styles',
+        label: 'Text styles',
         href: '/foundation/typography/text-styles',
       },
       {
         id: 'text-system',
-        label: 'Text System',
+        label: 'Text system',
         href: '/foundation/typography/text-system',
       },
     ],

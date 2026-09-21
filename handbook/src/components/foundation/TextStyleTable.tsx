@@ -3,7 +3,7 @@ import { Tag } from '../ui/Tag';
 
 export type TextStyleTableRow = {
   styleLabel: string;
-  figmaPrefix: string;
+  figmaToken: string;
   sizeLineHeight: string;
   usage: string;
   cssSlug: string;
@@ -30,7 +30,7 @@ function sampleStyle(slug: string): CSSProperties {
   };
 }
 
-/** Figma Text Styles reference table — Style, Size / Line height, Usage, Figma prefix */
+/** Figma Text styles reference table — Style, Size / Line height, Usage, Figma token */
 export function TextStyleTable({ rows }: Props) {
   return (
     <div className="base-colour-table-wrap">
@@ -39,19 +39,19 @@ export function TextStyleTable({ rows }: Props) {
           <col className="text-style-table__col--style" />
           <col className="text-style-table__col--size" />
           <col className="text-style-table__col--usage" />
-          <col className="text-style-table__col--prefix" />
+          <col className="text-style-table__col--token" />
         </colgroup>
         <thead>
           <tr>
             <th scope="col">Style</th>
             <th scope="col">Size / Line height</th>
             <th scope="col">Usage</th>
-            <th scope="col">Figma prefix</th>
+            <th scope="col">Figma token</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row) => (
-            <tr key={row.figmaPrefix}>
+            <tr key={row.figmaToken}>
               <td>
                 <p className="text-style-table__sample" style={sampleStyle(row.cssSlug)}>
                   {row.styleLabel}
@@ -62,7 +62,7 @@ export function TextStyleTable({ rows }: Props) {
               </td>
               <td>{row.usage}</td>
               <td>
-                <Tag>{row.figmaPrefix}</Tag>
+                <Tag>{row.figmaToken}</Tag>
               </td>
             </tr>
           ))}

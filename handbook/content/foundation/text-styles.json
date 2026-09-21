@@ -8,7 +8,7 @@
       "rows": [
         {
           "styleLabel": "Heading 1",
-          "figmaPrefix": "Heading/1",
+          "figmaToken": "Heading/1",
           "sizeLineHeight": "38 / 46",
           "fontSize": 38,
           "lineHeight": 46,
@@ -18,7 +18,7 @@
         },
         {
           "styleLabel": "Heading 2",
-          "figmaPrefix": "Heading/2",
+          "figmaToken": "Heading/2",
           "sizeLineHeight": "30 / 38",
           "fontSize": 30,
           "lineHeight": 38,
@@ -28,7 +28,7 @@
         },
         {
           "styleLabel": "Heading 3",
-          "figmaPrefix": "Heading/3",
+          "figmaToken": "Heading/3",
           "sizeLineHeight": "24 / 32",
           "fontSize": 24,
           "lineHeight": 32,
@@ -38,7 +38,7 @@
         },
         {
           "styleLabel": "Heading 4",
-          "figmaPrefix": "Heading/4",
+          "figmaToken": "Heading/4",
           "sizeLineHeight": "20 / 28",
           "fontSize": 20,
           "lineHeight": 28,
@@ -48,7 +48,7 @@
         },
         {
           "styleLabel": "Heading 5",
-          "figmaPrefix": "Heading/5",
+          "figmaToken": "Heading/5",
           "sizeLineHeight": "16 / 24",
           "fontSize": 16,
           "lineHeight": 24,
@@ -65,7 +65,7 @@
       "rows": [
         {
           "styleLabel": "LG Normal",
-          "figmaPrefix": "LG/Normal",
+          "figmaToken": "LG/Normal",
           "sizeLineHeight": "20 / 28",
           "fontSize": 20,
           "lineHeight": 28,
@@ -75,17 +75,17 @@
         },
         {
           "styleLabel": "LG Strong",
-          "figmaPrefix": "LG/Strong",
+          "figmaToken": "LG/Strong",
           "sizeLineHeight": "20 / 28",
           "fontSize": 20,
           "lineHeight": 28,
-          "usage": "Bold large text for highlighted values or lead sentences",
+          "usage": "Semi bold large text for highlighted values or lead sentences",
           "cssSlug": "lg-strong",
           "cssVarPrefix": "--fms-text-lg-strong"
         },
         {
           "styleLabel": "LG Underline",
-          "figmaPrefix": "LG/Underline",
+          "figmaToken": "LG/Underline",
           "sizeLineHeight": "20 / 28",
           "fontSize": 20,
           "lineHeight": 28,
@@ -95,7 +95,7 @@
         },
         {
           "styleLabel": "LG Delete",
-          "figmaPrefix": "LG/Delete",
+          "figmaToken": "LG/Delete",
           "sizeLineHeight": "20 / 28",
           "fontSize": 20,
           "lineHeight": 28,
@@ -105,7 +105,7 @@
         },
         {
           "styleLabel": "LG Italic",
-          "figmaPrefix": "LG/Italic",
+          "figmaToken": "LG/Italic",
           "sizeLineHeight": "20 / 28",
           "fontSize": 20,
           "lineHeight": 28,
@@ -122,7 +122,7 @@
       "rows": [
         {
           "styleLabel": "Base Normal",
-          "figmaPrefix": "Base/Normal",
+          "figmaToken": "Base/Normal",
           "sizeLineHeight": "16 / 24",
           "fontSize": 16,
           "lineHeight": 24,
@@ -132,17 +132,17 @@
         },
         {
           "styleLabel": "Base Strong",
-          "figmaPrefix": "Base/Strong",
+          "figmaToken": "Base/Strong",
           "sizeLineHeight": "16 / 24",
           "fontSize": 16,
           "lineHeight": 24,
-          "usage": "Bold labels, selected items, and inline emphasis",
+          "usage": "Semi bold labels, selected items, and inline emphasis",
           "cssSlug": "base-strong",
           "cssVarPrefix": "--fms-text-base-strong"
         },
         {
           "styleLabel": "Base Underline",
-          "figmaPrefix": "Base/Underline",
+          "figmaToken": "Base/Underline",
           "sizeLineHeight": "16 / 24",
           "fontSize": 16,
           "lineHeight": 24,
@@ -152,7 +152,7 @@
         },
         {
           "styleLabel": "Base Delete",
-          "figmaPrefix": "Base/Delete",
+          "figmaToken": "Base/Delete",
           "sizeLineHeight": "16 / 24",
           "fontSize": 16,
           "lineHeight": 24,
@@ -162,7 +162,7 @@
         },
         {
           "styleLabel": "Base Italic",
-          "figmaPrefix": "Base/Italic",
+          "figmaToken": "Base/Italic",
           "sizeLineHeight": "16 / 24",
           "fontSize": 16,
           "lineHeight": 24,
@@ -179,7 +179,7 @@
       "rows": [
         {
           "styleLabel": "SM Normal",
-          "figmaPrefix": "SM/Normal",
+          "figmaToken": "SM/Normal",
           "sizeLineHeight": "14 / 22",
           "fontSize": 14,
           "lineHeight": 22,
@@ -189,17 +189,17 @@
         },
         {
           "styleLabel": "SM Strong",
-          "figmaPrefix": "SM/Strong",
+          "figmaToken": "SM/Strong",
           "sizeLineHeight": "14 / 22",
           "fontSize": 14,
           "lineHeight": 22,
-          "usage": "Bold secondary labels and table column headers",
+          "usage": "Semi bold secondary labels and table column headers",
           "cssSlug": "sm-strong",
           "cssVarPrefix": "--fms-text-sm-strong"
         },
         {
           "styleLabel": "SM Underline",
-          "figmaPrefix": "SM/Underline",
+          "figmaToken": "SM/Underline",
           "sizeLineHeight": "14 / 22",
           "fontSize": 14,
           "lineHeight": 22,
@@ -209,7 +209,7 @@
         },
         {
           "styleLabel": "SM Delete",
-          "figmaPrefix": "SM/Delete",
+          "figmaToken": "SM/Delete",
           "sizeLineHeight": "14 / 22",
           "fontSize": 14,
           "lineHeight": 22,
@@ -219,7 +219,7 @@
         },
         {
           "styleLabel": "SM Italic",
-          "figmaPrefix": "SM/Italic",
+          "figmaToken": "SM/Italic",
           "sizeLineHeight": "14 / 22",
           "fontSize": 14,
           "lineHeight": 22,
@@ -236,7 +236,7 @@
       "rows": [
         {
           "styleLabel": "XS Normal",
-          "figmaPrefix": "XS/Normal",
+          "figmaToken": "XS/Normal",
           "sizeLineHeight": "12 / 22",
           "fontSize": 12,
           "lineHeight": 22,
@@ -246,17 +246,17 @@
         },
         {
           "styleLabel": "XS Strong",
-          "figmaPrefix": "XS/Strong",
+          "figmaToken": "XS/Strong",
           "sizeLineHeight": "12 / 22",
           "fontSize": 12,
           "lineHeight": 22,
-          "usage": "Bold fine print and compact emphasis",
+          "usage": "Semi bold fine print and compact emphasis",
           "cssSlug": "xs-strong",
           "cssVarPrefix": "--fms-text-xs-strong"
         },
         {
           "styleLabel": "XS Underline",
-          "figmaPrefix": "XS/Underline",
+          "figmaToken": "XS/Underline",
           "sizeLineHeight": "12 / 22",
           "fontSize": 12,
           "lineHeight": 22,
@@ -266,7 +266,7 @@
         },
         {
           "styleLabel": "XS Delete",
-          "figmaPrefix": "XS/Delete",
+          "figmaToken": "XS/Delete",
           "sizeLineHeight": "12 / 22",
           "fontSize": 12,
           "lineHeight": 22,
@@ -276,7 +276,7 @@
         },
         {
           "styleLabel": "XS Italic",
-          "figmaPrefix": "XS/Italic",
+          "figmaToken": "XS/Italic",
           "sizeLineHeight": "12 / 22",
           "fontSize": 12,
           "lineHeight": 22,
@@ -293,7 +293,7 @@
       "rows": [
         {
           "styleLabel": "Badge count",
-          "figmaPrefix": "Badge count",
+          "figmaToken": "Badge count",
           "sizeLineHeight": "8 / 22",
           "fontSize": 8,
           "lineHeight": 22,

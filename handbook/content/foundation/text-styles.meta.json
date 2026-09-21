@@ -47,7 +47,7 @@
         },
         "LG/Strong": {
           "styleLabel": "LG Strong",
-          "usage": "Bold large text for highlighted values or lead sentences"
+          "usage": "Semi bold large text for highlighted values or lead sentences"
         },
         "LG/Underline": {
           "styleLabel": "LG Underline",
@@ -81,7 +81,7 @@
         },
         "Base/Strong": {
           "styleLabel": "Base Strong",
-          "usage": "Bold labels, selected items, and inline emphasis"
+          "usage": "Semi bold labels, selected items, and inline emphasis"
         },
         "Base/Underline": {
           "styleLabel": "Base Underline",
@@ -115,7 +115,7 @@
         },
         "SM/Strong": {
           "styleLabel": "SM Strong",
-          "usage": "Bold secondary labels and table column headers"
+          "usage": "Semi bold secondary labels and table column headers"
         },
         "SM/Underline": {
           "styleLabel": "SM Underline",
@@ -149,7 +149,7 @@
         },
         "XS/Strong": {
           "styleLabel": "XS Strong",
-          "usage": "Bold fine print and compact emphasis"
+          "usage": "Semi bold fine print and compact emphasis"
         },
         "XS/Underline": {
           "styleLabel": "XS Underline",

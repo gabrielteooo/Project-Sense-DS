@@ -3,12 +3,12 @@ import { TextStyleTable } from '../components/foundation/TextStyleTable';
 import { HandbookPageHeader } from '../components/shell/HandbookPageHeader';
 import { HANDBOOK_SHELL } from '../figma/metrics';
 
-/** Typography — Text Styles (Figma 62:21858) */
+/** Typography — Text styles (Figma 62:21858) */
 export function TypographyTextStylesPage() {
   return (
     <article className="foundation-typography-page">
       <HandbookPageHeader
-        title="Text Styles"
+        title="Text styles"
         description={textStyles.pageDescription}
       />
 

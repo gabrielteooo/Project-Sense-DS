@@ -24,7 +24,7 @@ const sections = meta.sections.map((section) => {
     const slug = cssSlugFromFigmaName(figmaName);
     return {
       styleLabel: rowMeta.styleLabel,
-      figmaPrefix: figmaName,
+      figmaToken: figmaName,
       sizeLineHeight: `${style.fontSize} / ${style.lineHeight}`,
       fontSize: style.fontSize,
       lineHeight: style.lineHeight,

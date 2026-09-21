@@ -1,0 +1,96 @@
+{
+  "pageDescription": "Defines the foundational typography rules for FMS, including font family, font size, and font weight. Use these guidelines to ensure visual consistency, optimal readability, and clear information hierarchy across all interfaces.",
+  "sections": [
+    {
+      "id": "font-family",
+      "title": "Font family",
+      "description": "Font family tokens define the brand typeface used across FMS typography.",
+      "rows": [
+        {
+          "previewType": "text",
+          "previewText": "This is Inter",
+          "value": "Inter",
+          "figmaToken": "Font/Inter",
+          "tokenPath": ["Typography", "Font", "Inter"]
+        }
+      ]
+    },
+    {
+      "id": "font-size",
+      "title": "Font size / scale",
+      "description": "Font size tokens define every step of the type scale. Use these tokens to build custom text styles that remain in sync with system typography.",
+      "rows": [
+        {
+          "previewType": "scale",
+          "fontSizePx": 8,
+          "value": "8px",
+          "figmaToken": "font-size-8",
+          "tokenPath": ["Typography", "Font Size", "XXS"]
+        },
+        {
+          "previewType": "scale",
+          "fontSizePx": 12,
+          "value": "12px",
+          "figmaToken": "font-size-12",
+          "tokenPath": ["Typography", "Font Size", "XS"]
+        },
+        {
+          "previewType": "scale",
+          "fontSizePx": 16,
+          "value": "16px",
+          "figmaToken": "font-size-16",
+          "tokenPath": ["Typography", "Font Size", "Base"]
+        },
+        {
+          "previewType": "scale",
+          "fontSizePx": 20,
+          "value": "20px",
+          "figmaToken": "font-size-20",
+          "tokenPath": ["Typography", "Font Size", "LG"]
+        },
+        {
+          "previewType": "scale",
+          "fontSizePx": 24,
+          "value": "24px",
+          "figmaToken": "font-size-24",
+          "tokenPath": ["Typography", "Font Size", "Heading3"]
+        },
+        {
+          "previewType": "scale",
+          "fontSizePx": 30,
+          "value": "30px",
+          "figmaToken": "font-size-30",
+          "tokenPath": ["Typography", "Font Size", "Heading2"]
+        },
+        {
+          "previewType": "scale",
+          "fontSizePx": 38,
+          "value": "38px",
+          "figmaToken": "font-size-38",
+          "tokenPath": ["Typography", "Font Size", "Heading1"]
+        }
+      ]
+    },
+    {
+      "id": "font-weight",
+      "title": "Font weight",
+      "description": "Font weight tokens control text stroke thickness. FMS uses Regular (400) for body text and Semi Bold (600) for headings and emphasis.",
+      "rows": [
+        {
+          "previewType": "weight",
+          "fontWeight": 400,
+          "value": "Regular / 400",
+          "figmaToken": "font-weight-normal",
+          "tokenPath": ["Typography", "Font Weight", "Regular"]
+        },
+        {
+          "previewType": "weight",
+          "fontWeight": 600,
+          "value": "Semi Bold / 600",
+          "figmaToken": "font-weight-strong",
+          "tokenPath": ["Typography", "Font Weight", "Strong"]
+        }
+      ]
+    }
+  ]
+}
