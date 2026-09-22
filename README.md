@@ -18,6 +18,14 @@ npm run handbook:dev   # Local handbook at http://localhost:5173
 npm run handbook:build # Production build → handbook/dist/ (gitignored)
 ```
 
+## Deploy on Vercel
+
+1. **Root Directory:** leave empty (repo root) *or* set to `handbook` — both include a `vercel.json`.
+2. **Environment variable:** `FONTAWESOME_NPM_AUTH_TOKEN` — your [Font Awesome npm token](https://fontawesome.com/account/general) (required for `@awesome.me/kit` on install).
+3. Redeploy after the variable is set. Output is `handbook/dist` (or `dist` when Root Directory is `handbook`).
+
+Local Font Awesome auth: copy `handbook/.npmrc.example` to `handbook/.npmrc` (gitignored).
+
 ## Conventions
 
 - **Page copy:** JSON under `handbook/content/` (imported in React pages).

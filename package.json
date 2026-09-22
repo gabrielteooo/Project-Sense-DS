@@ -5,6 +5,7 @@
   "scripts": {
     "tokens:build": "node scripts/tokens-build.mjs",
     "handbook:dev": "npm run dev --prefix handbook",
-    "handbook:build": "npm run build --prefix handbook"
+    "handbook:build": "npm run build --prefix handbook",
+    "build": "npm run tokens:build && npm run handbook:build"
   }
 }
