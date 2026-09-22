@@ -1,4 +1,10 @@
 .DS_Store
 **/.npmrc
+.cursor/
+*.log
+
 handbook/node_modules/
 handbook/dist/
+
+# Accidental nested copy of handbook assets (use handbook/public/ instead)
+handbook/handbook/
