@@ -5,7 +5,7 @@ import { HandbookPageHeader } from '../components/shell/HandbookPageHeader';
 
 const SECTION_GAP_PX = 40;
 
-/** Icons — Developer guide (Figma 97:1152) */
+/** Icons — Developer guide (implementation; Do/Don’t aligned with designer guide) */
 export function IconsDeveloperGuidePage() {
   const { guidelinesTable, install, basicMarkup, sizeAndColour } = guide;
 

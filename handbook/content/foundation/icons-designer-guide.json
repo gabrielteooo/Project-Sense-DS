@@ -1,0 +1,59 @@
+{
+  "pageTitle": "Icons in FMS: designer guide",
+  "pageDescription": "FMS uses Font Awesome 6 Pro for UI icons (Solid, Regular, and Light). The design system handbook documents principles and usage at Foundations → Icons → Overview (/foundation/icons/overview).",
+  "guidelinesTable": {
+    "columns": ["Do", "Don't"],
+    "rows": [
+      [
+        "Font Awesome 6 Pro via the shared Font Awesome Kit npm package",
+        "Emojis, random SVGs, or other icon libraries unless design specifies otherwise"
+      ],
+      [
+        "Match Figma: style (solid / regular / light) and icon name",
+        "Guess icon names or swap styles without checking design"
+      ],
+      [
+        "Monochrome icons using text/icon colour tokens",
+        "Multicolour icons (breaks contrast rules)"
+      ]
+    ]
+  },
+  "figmaUsage": {
+    "title": "Figma Usage",
+    "steps": [
+      {
+        "number": 1,
+        "label": "Step 1:",
+        "body": "Find the icon frame component in the assets and drag the result to the workspace.",
+        "imageKey": "step1",
+        "imageAlt": "Figma assets panel showing the icon frame component"
+      },
+      {
+        "number": 2,
+        "label": "Step 2:",
+        "bodyBeforeLink": "Visit Font Awesome web page and search for the Icon that you want to use. ",
+        "link": {
+          "label": "https://fontawesome.com/",
+          "href": "https://fontawesome.com/"
+        },
+        "bodyAfterLink": "",
+        "imageKey": "step2",
+        "imageAlt": "Font Awesome website search for an icon"
+      },
+      {
+        "number": 3,
+        "label": "Step 3:",
+        "body": "You can copy it by clicking on the Icon Name on the popup / Copy Glyph",
+        "imageKey": "step3",
+        "imageAlt": "Font Awesome icon detail showing copy glyph"
+      },
+      {
+        "number": 4,
+        "label": "Step 4:",
+        "body": "Go back to Figma canvas and paste the icon name. All done!",
+        "imageKey": "step4",
+        "imageAlt": "Figma icon frame properties with icon name pasted"
+      }
+    ]
+  }
+}

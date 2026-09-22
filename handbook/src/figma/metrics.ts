@@ -21,7 +21,7 @@ export const FIGMA_NODES = {
   spacingPaddingPage: '91:1701',
   iconsOverviewPage: '92:8259',
   iconsOverviewUsageHeaderFrame: '97:1041',
-  iconsDeveloperGuidePage: '97:1152',
+  iconsDesignerGuidePage: '97:1152',
   writingGuidelinesPage: '100:2180',
   contentFormattingPage: '100:5465',
   numbersFormattingPage: '101:5532',

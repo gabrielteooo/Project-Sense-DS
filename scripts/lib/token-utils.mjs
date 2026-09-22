@@ -99,7 +99,21 @@ export function pathToCssVar(pathParts, prefix = CSS_VAR_PREFIX) {
 export function colorToHex(val) {
   if (typeof val === 'string') return val;
   if (val && typeof val === 'object' && 'hex' in val) {
-    return /** @type {{ hex: string }} */ (val).hex;
+    const color = /** @type {{ hex: string; alpha?: number; components?: number[] }} */ (val);
+    const alpha = color.alpha;
+    const components = color.components;
+    if (
+      typeof alpha === 'number' &&
+      alpha < 1 &&
+      Array.isArray(components) &&
+      components.length >= 3
+    ) {
+      const [r, g, b] = components;
+      const to255 = (channel) => Math.round(channel * 255);
+      const alphaRounded = Math.round(alpha * 1000) / 1000;
+      return `rgba(${to255(r)}, ${to255(g)}, ${to255(b)}, ${alphaRounded})`;
+    }
+    return color.hex;
   }
   return val;
 }

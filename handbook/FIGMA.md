@@ -20,7 +20,8 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Spacing — Padding | `91:1701` |
 | Icons — Overview | `92:8259` |
 | Icons — Usage (Header frame) | `97:1041` |
-| Icons — Developer guide | `97:1152` |
+| Icons — Designer guide | `97:1152` |
+| Icons — Developer guide | *(handbook; implementation — see designer frame for Do/Don’t)* |
 | Get started — Content Writing Guidelines | `100:2180` |
 | Get started — Content formatting | `100:5465` |
 | Get started — Numbers formatting | `101:5532` |

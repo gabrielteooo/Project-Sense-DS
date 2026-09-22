@@ -13,6 +13,7 @@ import { SpacingMarginPage } from './pages/SpacingMarginPage';
 import { SpacingOverviewPage } from './pages/SpacingOverviewPage';
 import { SpacingPaddingPage } from './pages/SpacingPaddingPage';
 import { IconsOverviewPage } from './pages/IconsOverviewPage';
+import { IconsDesignerGuidePage } from './pages/IconsDesignerGuidePage';
 import { IconsDeveloperGuidePage } from './pages/IconsDeveloperGuidePage';
 import { GetStartedDocPage } from './pages/GetStartedDocPage';
 import { GetStartedPage } from './pages/GetStartedPage';
@@ -72,6 +73,10 @@ export default function App() {
         <Route path="foundation/spacing/margin" element={<SpacingMarginPage />} />
         <Route path="foundation/spacing/padding" element={<SpacingPaddingPage />} />
         <Route path="foundation/icons/overview" element={<IconsOverviewPage />} />
+        <Route
+          path="foundation/icons/designer-guide"
+          element={<IconsDesignerGuidePage />}
+        />
         <Route
           path="foundation/icons/developer-guide"
           element={<IconsDeveloperGuidePage />}

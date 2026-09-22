@@ -927,9 +927,9 @@ body {
 }
 
 .icons-overview-showcase__icon {
-  font-size: 24px;
+  font-size: 40px;
   line-height: 1;
-  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+  color: var(--fms-colors-neutral-icon-color-icon, rgba(0, 0, 0, 0.55));
 }
 
 .icons-overview-showcase__label {
@@ -1095,6 +1095,54 @@ body {
 
 .icons-dev-guide__topic + .icons-dev-guide__topic {
   margin-top: var(--fms-space-margin-margin-xs, 8px);
+}
+
+.icons-designer-guide__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.icons-designer-guide__step {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.icons-designer-guide__step-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
+.icons-designer-guide__step-label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.icons-designer-guide__frame {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.icons-designer-guide__frame--step1 {
+  max-width: 433px;
+  height: 300px;
+}
+
+.icons-designer-guide__frame--step4 {
+  max-width: 572px;
+}
+
+.icons-designer-guide__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .icons-dev-guide__topic-label {

@@ -53,12 +53,6 @@ export const HANDBOOK_GET_STARTED_NAV: HandbookNavItem[] = [
     emphasis: 'section',
   },
   {
-    id: 'enhancement-backlog',
-    label: 'Enhancement backlog',
-    href: '/get-started/enhancement-backlog',
-    emphasis: 'section',
-  },
-  {
     id: 'content',
     label: 'Content',
     children: [
@@ -191,6 +185,11 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
         id: 'icons-overview',
         label: 'Overview',
         href: '/foundation/icons/overview',
+      },
+      {
+        id: 'icons-designer-guide',
+        label: 'Designer guide',
+        href: '/foundation/icons/designer-guide',
       },
       {
         id: 'icons-developer-guide',

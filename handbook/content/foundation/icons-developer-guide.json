@@ -1,6 +1,6 @@
 {
   "pageTitle": "Icons in FMS: developer guide",
-  "pageDescription": "FMS uses Font Awesome 6 Pro for UI icons (Solid, Regular, and Light). The design system handbook documents principles and usage at Foundations → Icons → Overview (/foundation/icons/overview).",
+  "pageDescription": "Implementation reference for Font Awesome 6 Pro in code. Designers: use the Designer guide for Figma workflow. Principles and examples: Overview.",
   "guidelinesTable": {
     "columns": ["Do", "Don't"],
     "rows": [

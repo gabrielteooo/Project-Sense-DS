@@ -40,10 +40,6 @@
       {
         "title": "Templates",
         "body": "Common page and layout patterns as they are documented (added after Get started)."
-      },
-      {
-        "title": "Enhancement backlog",
-        "body": "Agreed Figma changes queued for handbook updates before they appear in the main guidelines."
       }
     ]
   },
@@ -51,8 +47,7 @@
     "title": "How to use this handbook",
     "items": [
       "Start under Foundations when choosing colours, type, spacing, or icons.",
-      "Use the Get started pages for writing, formatting, and behavioural guidelines before specifying UI in designs or backlog items.",
-      "Check Enhancement backlog for decisions that are agreed in Figma but not yet published here.",
+      "Use the Get started pages for writing, formatting, and behavioural guidelines before specifying UI in designs or user stories.",
       "Treat this site as the handover-friendly source of truth for what the design system team has agreed and documented."
     ]
   }
