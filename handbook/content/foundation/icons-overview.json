@@ -1,0 +1,33 @@
+{
+  "pageDescription": "Font Awesome enriches the visual language with a diverse set of iconic elements that elevate the FMS Design System, providing users with a comprehensive and integrated toolkit for crafting exceptional user interfaces.",
+  "fontAwesome": {
+    "title": "Icons: Fontawesome 6 Pro",
+    "body": "All Icons in FMS will be using Fontawesome 6 Pro.",
+    "variants": [
+      { "label": "Solid", "style": "solid" },
+      { "label": "Regular", "style": "regular" },
+      { "label": "Light", "style": "light" }
+    ]
+  },
+  "guidelines": [
+    "Icons should always be in monochromatic colour in order to pass the same colour contrast ratio as typography.",
+    "Centre-align icons when they are positioned alongside text.",
+    "Icon-only buttons will display the labels as tooltips."
+  ],
+  "usage": {
+    "title": "Usage",
+    "intro": "System icons are best used in a design to enhance user experience and aid in navigation. They should be employed when they can effectively communicate information or actions in a more visually engaging and intuitive manner compared to text alone. Below are some examples of icon usage in the FMS system.",
+    "examples": [
+      {
+        "label": "Header",
+        "imageSrc": "/foundation/icons/header.png",
+        "imageAlt": "Header bar showing notification, help, and profile icons"
+      },
+      {
+        "label": "Menu item",
+        "imageSrc": "/foundation/icons/menu item.png",
+        "imageAlt": "Sidebar menu showing search and navigation icons"
+      }
+    ]
+  }
+}

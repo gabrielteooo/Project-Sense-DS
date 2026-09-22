@@ -30,39 +30,39 @@ function sampleStyle(slug: string): CSSProperties {
   };
 }
 
-/** Figma Text styles reference table — Style, Size / Line height, Usage, Figma token */
+/** Figma Text styles reference table — Figma token, Size / Line height, Usage, Style */
 export function TextStyleTable({ rows }: Props) {
   return (
     <div className="base-colour-table-wrap">
       <table className="base-colour-table text-style-table">
         <colgroup>
-          <col className="text-style-table__col--style" />
+          <col className="text-style-table__col--token" />
           <col className="text-style-table__col--size" />
           <col className="text-style-table__col--usage" />
-          <col className="text-style-table__col--token" />
+          <col className="text-style-table__col--style" />
         </colgroup>
         <thead>
           <tr>
-            <th scope="col">Style</th>
+            <th scope="col">Figma token</th>
             <th scope="col">Size / Line height</th>
             <th scope="col">Usage</th>
-            <th scope="col">Figma token</th>
+            <th scope="col">Style</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row) => (
             <tr key={row.figmaToken}>
               <td>
-                <p className="text-style-table__sample" style={sampleStyle(row.cssSlug)}>
-                  {row.styleLabel}
-                </p>
+                <Tag>{row.figmaToken}</Tag>
               </td>
               <td>
                 <code>{row.sizeLineHeight}</code>
               </td>
               <td>{row.usage}</td>
               <td>
-                <Tag>{row.figmaToken}</Tag>
+                <p className="text-style-table__sample" style={sampleStyle(row.cssSlug)}>
+                  {row.styleLabel}
+                </p>
               </td>
             </tr>
           ))}

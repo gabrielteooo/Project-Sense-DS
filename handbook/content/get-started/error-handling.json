@@ -1,0 +1,7 @@
+{
+  "pageTitle": "Error handling",
+  "pageDescription": "How errors, warnings, and validation are communicated — messaging, placement, recovery, and limitations.",
+  "introParagraphs": [
+    "Content for this page will capture agreed error-handling patterns so designers, developers, and BAs specify behaviour users can understand and recover from."
+  ]
+}

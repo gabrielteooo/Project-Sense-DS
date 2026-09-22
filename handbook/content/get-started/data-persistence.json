@@ -1,0 +1,7 @@
+{
+  "pageTitle": "Data persistence",
+  "pageDescription": "Expectations for what the system remembers — saved filters, drafts, session state, and user preferences.",
+  "introParagraphs": [
+    "Content for this page will document agreed behaviour for what persists between visits, what clears on logout, and what users should be told."
+  ]
+}

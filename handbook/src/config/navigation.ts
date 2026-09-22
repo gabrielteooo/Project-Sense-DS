@@ -3,6 +3,8 @@ export type HandbookNavItem = {
   label: string;
   href?: string;
   children?: HandbookNavItem[];
+  /** Top-level link styled like foundation section titles (semibold). */
+  emphasis?: 'section';
 };
 
 export type HandbookTab = {
@@ -17,16 +19,16 @@ export type HandbookTab = {
 /** Figma global header 1:10453 */
 export const HANDBOOK_TABS: HandbookTab[] = [
   {
-    id: 'guidelines',
-    label: 'Guidelines',
-    matchPath: '/guidelines',
-    href: '/guidelines',
+    id: 'get-started',
+    label: 'Get started',
+    matchPath: '/get-started',
+    href: '/get-started',
   },
   {
     id: 'foundations',
     label: 'Foundations',
     matchPath: '/foundation',
-    href: '/foundation/colours/base',
+    href: '/foundation/colours/overview',
   },
   {
     id: 'components',
@@ -42,12 +44,76 @@ export const HANDBOOK_TABS: HandbookTab[] = [
   },
 ];
 
+/** Get started tab — section links + Content group */
+export const HANDBOOK_GET_STARTED_NAV: HandbookNavItem[] = [
+  {
+    id: 'get-started-home',
+    label: 'Get started',
+    href: '/get-started',
+    emphasis: 'section',
+  },
+  {
+    id: 'enhancement-backlog',
+    label: 'Enhancement backlog',
+    href: '/get-started/enhancement-backlog',
+    emphasis: 'section',
+  },
+  {
+    id: 'content',
+    label: 'Content',
+    children: [
+      {
+        id: 'writing-guidelines',
+        label: 'Writing guidelines',
+        href: '/get-started/writing-guidelines',
+      },
+      {
+        id: 'content-formatting',
+        label: 'Content formatting',
+        href: '/get-started/content-formatting',
+      },
+      {
+        id: 'numbers-formatting',
+        label: 'Numbers formatting',
+        href: '/get-started/numbers-formatting',
+      },
+      {
+        id: 'date-time-formatting',
+        label: 'Date time formatting',
+        href: '/get-started/date-time-formatting',
+      },
+      {
+        id: 'results-formatting',
+        label: 'Results formatting',
+        href: '/get-started/results-formatting',
+      },
+    ],
+  },
+  {
+    id: 'data-persistence',
+    label: 'Data persistence',
+    href: '/get-started/data-persistence',
+    emphasis: 'section',
+  },
+  {
+    id: 'error-handling',
+    label: 'Error handling',
+    href: '/get-started/error-handling',
+    emphasis: 'section',
+  },
+];
+
 /** Figma side menu 1:12439 — Foundations tab */
 export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'colours',
     label: 'Colours',
     children: [
+      {
+        id: 'colours-overview',
+        label: 'Overview',
+        href: '/foundation/colours/overview',
+      },
       {
         id: 'base',
         label: 'Base colour',
@@ -76,6 +142,27 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
     ],
   },
   {
+    id: 'spacing',
+    label: 'Spacing',
+    children: [
+      {
+        id: 'spacing-overview',
+        label: 'Overview',
+        href: '/foundation/spacing/overview',
+      },
+      {
+        id: 'spacing-margin',
+        label: 'Margin',
+        href: '/foundation/spacing/margin',
+      },
+      {
+        id: 'spacing-padding',
+        label: 'Padding',
+        href: '/foundation/spacing/padding',
+      },
+    ],
+  },
+  {
     id: 'typography',
     label: 'Typography',
     children: [
@@ -96,6 +183,28 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
       },
     ],
   },
+  {
+    id: 'icons',
+    label: 'Icons',
+    children: [
+      {
+        id: 'icons-overview',
+        label: 'Overview',
+        href: '/foundation/icons/overview',
+      },
+      {
+        id: 'icons-developer-guide',
+        label: 'Developer guide',
+        href: '/foundation/icons/developer-guide',
+      },
+    ],
+  },
 ];
 
-export const HANDBOOK_NAV_DEFAULT_OPEN = ['colours', 'typography'] as const;
+export const HANDBOOK_NAV_DEFAULT_OPEN = [
+  'colours',
+  'spacing',
+  'typography',
+  'icons',
+  'content',
+] as const;

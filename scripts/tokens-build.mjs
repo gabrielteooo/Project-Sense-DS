@@ -15,6 +15,7 @@ const steps = [
   'build-handbook-data-colors.mjs',
   'build-handbook-text-styles.mjs',
   'build-handbook-text-system.mjs',
+  'build-handbook-spacing.mjs',
 ];
 
 for (const step of steps) {

@@ -1,0 +1,122 @@
+{
+  "pageTitle": "Results formatting",
+  "pageDescription": "Presenting data clearly across dashboards, charts, and tables ensures users can instantly evaluate information and make data-driven decisions.",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Dashboard results",
+      "bullets": [
+        {
+          "parts": [
+            "When a subject (e.g., equipment, aircraft, ship, variant etc.) is selected, it will be reflected as ‘Results showing for ",
+            { "text": "Aircraft A (Apr 2024 – Mar 2025)", "strong": true },
+            "’."
+          ]
+        },
+        {
+          "parts": [
+            "When 2 or more subjects are selected, it will be reflected as ‘Results showing for ",
+            { "text": "“X” aircrafts (Apr 2024 – Mar 2025)", "strong": true },
+            "’."
+          ]
+        },
+        {
+          "parts": [
+            "When all are select, it will be reflected as ‘Results showing for ",
+            { "text": "“All” aircrafts (Apr 2024 – Mar 2025)", "strong": true },
+            "’."
+          ]
+        }
+      ],
+      "examplesLayout": "three-column",
+      "exampleFrameVariant": "dashboard",
+      "examples": [
+        {
+          "label": "Single Selection",
+          "imageKey": "dashboardSingle",
+          "imageAlt": "Dashboard showing Results showing for a single selected ship"
+        },
+        {
+          "label": "Multiple Selection",
+          "imageKey": "dashboardMultiple",
+          "imageAlt": "Dashboard showing Results showing for three selected ships"
+        },
+        {
+          "label": "All Selection",
+          "imageKey": "dashboardAll",
+          "imageAlt": "Dashboard showing Results showing for All ships"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Chart results",
+      "bullets": [
+        "By default when there is no filter selected, no variable labels will be shown after the chart title.",
+        {
+          "parts": [
+            "When there is only one selection made via the global filters/charts, the variable labels will spell out the selection name in full e.g., ",
+            { "text": "(Power Divider).", "strong": true }
+          ]
+        },
+        {
+          "parts": [
+            "When there are 2 or more selections are made via the global filters/charts, the variable labels will be reflected as e.g., ",
+            { "text": "(X [subject/type] selected).", "strong": true }
+          ]
+        }
+      ],
+      "examplesLayout": "three-column",
+      "exampleFrameVariant": "tall",
+      "examples": [
+        {
+          "label": "No Selection",
+          "imageKey": "chartNoSelection",
+          "imageAlt": "Chart titled Top Defective Systems with no filter label"
+        },
+        {
+          "label": "Only 1 Selection",
+          "imageKey": "chartOneSelection",
+          "imageAlt": "Chart title including full selection name in parentheses"
+        },
+        {
+          "label": "2 or More Selections",
+          "imageKey": "chartMultipleSelections",
+          "imageAlt": "Chart title showing count of systems selected"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Table results",
+      "bullets": [
+        {
+          "parts": [
+            "When there is no data result, it will be reflected as ",
+            { "text": "Results (0)", "strong": true }
+          ]
+        },
+        {
+          "parts": [
+            "When there is one or more items in the data table, it will be reflected as ",
+            { "text": "Results (XX)", "strong": true }
+          ]
+        }
+      ],
+      "examplesLayout": "two-column",
+      "exampleFrameVariant": "tall",
+      "examples": [
+        {
+          "label": "No Data",
+          "imageKey": "tableNoData",
+          "imageAlt": "Table header Serialised Component Failure Records (0) with empty state"
+        },
+        {
+          "label": "More than one Results",
+          "imageKey": "tableMultipleResults",
+          "imageAlt": "Table header showing record count with populated rows"
+        }
+      ]
+    }
+  ]
+}

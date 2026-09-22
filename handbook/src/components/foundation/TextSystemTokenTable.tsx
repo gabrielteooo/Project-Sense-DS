@@ -67,36 +67,36 @@ function previewContent(row: TextSystemTableRow): string {
   return 'Ag';
 }
 
-/** Figma Text system — Preview, Value, Figma token */
+/** Figma Text system — Figma token, Value, Preview */
 export function TextSystemTokenTable({ rows }: Props) {
   return (
     <div className="base-colour-table-wrap">
       <table className="base-colour-table text-system-table">
         <colgroup>
-          <col className="text-system-table__col--preview" />
-          <col className="text-system-table__col--value" />
           <col className="text-system-table__col--token" />
+          <col className="text-system-table__col--value" />
+          <col className="text-system-table__col--preview" />
         </colgroup>
         <thead>
           <tr>
-            <th scope="col">Preview</th>
-            <th scope="col">Value</th>
             <th scope="col">Figma token</th>
+            <th scope="col">Value</th>
+            <th scope="col">Preview</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row) => (
             <tr key={row.figmaToken}>
               <td>
-                <p className="text-system-table__preview" style={previewStyle(row)}>
-                  {previewContent(row)}
-                </p>
+                <Tag>{row.figmaToken}</Tag>
               </td>
               <td>
                 <code>{row.value}</code>
               </td>
               <td>
-                <Tag>{row.figmaToken}</Tag>
+                <p className="text-system-table__preview" style={previewStyle(row)}>
+                  {previewContent(row)}
+                </p>
               </td>
             </tr>
           ))}

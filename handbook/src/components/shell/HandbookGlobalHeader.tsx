@@ -4,6 +4,9 @@ import { HANDBOOK_TABS } from '../../config/navigation';
 import { HANDBOOK_SHELL } from '../../figma/metrics';
 
 function tabIsActive(matchPath: string, pathname: string) {
+  if (matchPath === '/get-started') {
+    return pathname.startsWith('/get-started');
+  }
   if (matchPath === '/foundation') {
     return pathname.startsWith('/foundation');
   }
@@ -47,7 +50,7 @@ export function HandbookGlobalHeader() {
           paddingBlock: HANDBOOK_SHELL.globalHeaderTitlePaddingBlockPx,
         }}
       >
-        FMS Design System
+        FMS Design System Handbook
       </span>
       <nav
         className="handbook-global-header__tabs"

@@ -1,0 +1,119 @@
+{
+  "pageTitle": "Content formatting",
+  "pageDescription": "To maintain visual hierarchy and consistency across the product, follow these capitalization and punctuation rules:",
+  "sections": [
+    {
+      "title": "Sentence Case Guidelines",
+      "list": [
+        {
+          "text": "Use sentence case wherever possible for body text, instructions and descriptions e.g., only capitalise the first letter in the first word.",
+          "letteredItems": [
+            "More legible, especially when scanning long text as title case slows down comprehension",
+            "More human and approachable experience",
+            "Speeds up design/development processes as there is less confusion on which style to follow"
+          ]
+        },
+        {
+          "text": "Use sentence case for these elements:",
+          "children": [
+            "Modal headers",
+            "Alert banners or messages e.g., Your changes have been saved",
+            "Long text",
+            "Captions and helper text",
+            "Buttons e.g., Request new access, Save changes (to capitalise proper noun, e.g. Qlik and services specific nouns)",
+            "Dropdown menu items (to capitalise proper noun, e.g. Fuel System or services specific nouns)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Title Case Guidelines",
+      "list": [
+        {
+          "text": "Capitalise all major words (nouns, pronouns, verbs, adjectives, adverbs)"
+        },
+        {
+          "text": "Exceptions",
+          "children": [
+            "Short conjunctions e.g., and, as, but, for, if, nor, or, so, yet.",
+            "Articles e.g., a, an, the.",
+            "Short prepositions e.g., as, at, by, for, in, of, off, on, per, to, up, via."
+          ]
+        },
+        {
+          "text": "Use title-case for these elements:",
+          "children": [
+            "Tab labels",
+            "Chart axis labels",
+            "Headers",
+            "Table column headers",
+            "Input field labels",
+            "Status tags",
+            "Proper nouns, regardless of their placement in a sentence or title",
+            "User names e.g., John Tan",
+            "Country names e.g., United States of America",
+            "Product-related names e.g., Platform/System (LMV, Bionx, Hydraulic System), Component (Antenna Digital Communication System)",
+            "Months abbreviations e.g., Jan, Feb"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lower Case Guidelines",
+      "list": [
+        {
+          "text": "Unit abbreviations e.g., hrs, mths, days"
+        },
+        {
+          "text": "Latin abbreviations",
+          "children": [
+            {
+              "parts": [
+                { "text": "\" vs. \"" },
+                { "text": "(inclusive of period)", "italic": true }
+              ]
+            },
+            {
+              "parts": [
+                { "text": "\" i.e., \"" },
+                { "text": "(inclusive of period and comma)", "italic": true }
+              ]
+            },
+            {
+              "parts": [
+                { "text": "\" e.g., \"" },
+                { "text": "(inclusive of period and comma)", "italic": true }
+              ]
+            },
+            {
+              "parts": [
+                { "text": "\", etc. \"" },
+                { "text": "(inclusive of period and comma)", "italic": true }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Upper Case Guidelines",
+      "list": [
+        {
+          "text": "Use all-case capitalisation for specific business acronyms or abbreviations e.g., SGT, WY, MTBF, NHPP, TSI, NSN, MPN etc."
+        }
+      ]
+    },
+    {
+      "title": "Punctation",
+      "list": [
+        {
+          "text": "To help users scan text more efficiently, unnecessary periods can be omitted."
+        },
+        {
+          "text": "Omit punctuation when the following elements appear alone:",
+          "children": ["Labels", "Titles", "Tooltip text", "Long text in table cells"]
+        }
+      ]
+    }
+  ]
+}

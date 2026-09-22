@@ -1,0 +1,59 @@
+{
+  "pageTitle": "Get started",
+  "pageDescription": "The FMS Design System Handbook is the shared reference for designing, building, and reviewing FMS products. It brings foundations, patterns, and component guidance into one place so designers, developers, and business analysts work from the same expectations.",
+  "introParagraphs": [
+    "Use this site when you need to understand how FMS should look, read, and behave — from colour and typography through to component states, content formatting, and known limitations.",
+    "Designers discuss and agree standards in Figma; this handbook is the published record of those decisions. When you are writing user stories, creating specs, or implementing UI, start here before inventing new patterns."
+  ],
+  "audiences": {
+    "title": "Who this is for",
+    "items": [
+      {
+        "title": "Designers",
+        "body": "Find foundations (colour, spacing, typography, icons), UX and formatting conventions, and component anatomy aligned with Figma so mockups match what teams can build."
+      },
+      {
+        "title": "Developers",
+        "body": "Find design tokens, implementation notes (including icons), expected component behaviour, and documented constraints so code stays consistent with the system."
+      },
+      {
+        "title": "Business analysts",
+        "body": "Find how UI should behave in common scenarios, how content should be structured and formatted, and what is in or out of scope — useful for requirements, workshops, and acceptance criteria."
+      }
+    ]
+  },
+  "whatYouWillFind": {
+    "title": "What you will find",
+    "items": [
+      {
+        "title": "Foundations",
+        "body": "Core building blocks — colour, spacing, typography, and icons — including tokens and usage rules that apply across every screen."
+      },
+      {
+        "title": "Guidelines and formatting",
+        "body": "Writing, content, numbers, dates, results, persistence, and error handling — shared rules for copy and behaviour in the product."
+      },
+      {
+        "title": "Components",
+        "body": "Documentation for each component: purpose, variants, states, and how it should be used in context (added after Get started)."
+      },
+      {
+        "title": "Templates",
+        "body": "Common page and layout patterns as they are documented (added after Get started)."
+      },
+      {
+        "title": "Enhancement backlog",
+        "body": "Agreed Figma changes queued for handbook updates before they appear in the main guidelines."
+      }
+    ]
+  },
+  "howToUse": {
+    "title": "How to use this handbook",
+    "items": [
+      "Start under Foundations when choosing colours, type, spacing, or icons.",
+      "Use the Get started pages for writing, formatting, and behavioural guidelines before specifying UI in designs or backlog items.",
+      "Check Enhancement backlog for decisions that are agreed in Figma but not yet published here.",
+      "Treat this site as the handover-friendly source of truth for what the design system team has agreed and documented."
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "pageTitle": "Date time formatting",
+  "pageDescription": "Clear and consistent date and time formats reduce ambiguity across different regions and make time-sensitive data easy to scan.",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Date Format",
+      "bullets": [
+        "For chart axis labels, use Mmm ’YY format (e.g., Feb ’24).",
+        "For all other dates, use DD Mmm YYYY format (e.g., 21 Mar 2024). To be discussed with users during design sprints and any deviation will have to be recorded in the respective service’s user story document.",
+        "Use leading zeros for single-digit days (e.g., 01 Jan 2024).",
+        "For month range pickers and input fields, write placeholder text as MM/YYYY but allow for multiple input formats (e.g., MM/YYYY, MM YYYY, MM YY, Mmm YYYY, Mmm YY). Once users click away or press the keyboard keys ‘Enter’/’Tab’, the fields will automatically be displayed as DD Mmm YYYY.",
+        "Use abbreviations for months (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec).",
+        "Use abbreviations for days (Sun, Mon, Tue, Wed, Thu, Fri, Sat)."
+      ],
+      "examplesLayout": "two-column",
+      "examples": [
+        {
+          "label": "Displayed date format in data tables",
+          "imageKey": "dataTableDates",
+          "imageAlt": "Data table column showing MO Start Date as 26 May 2024"
+        },
+        {
+          "label": "Placeholder text in month range picker",
+          "imageKey": "monthRangePicker",
+          "imageAlt": "Month range field with MM/YYYY placeholder and calendar control"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Date Intervals",
+      "bullets": [
+        "Use an en dash “–” (not dash/minus sign “-”) between 2 date intervals"
+      ],
+      "examplesLayout": "single",
+      "examples": [
+        {
+          "imageKey": "dateIntervals",
+          "imageAlt": "Date range 30 May 2024 – 01 Jul 2024 with reported defect timestamp"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Time Format",
+      "bullets": [
+        "Time will be displayed in hours and minutes (HH:mm) only, in 24-hour format, based on SGT time zone"
+      ],
+      "examplesLayout": "single",
+      "examples": [
+        {
+          "imageKey": "timeFormat",
+          "imageAlt": "Footer showing data last retrieved on 01 Oct 2024, 09:15"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Time Intervals",
+      "bullets": [
+        "Use an en dash “–” (not dash/minus sign “-”) between 2 time intervals"
+      ],
+      "examplesLayout": "single",
+      "examples": [
+        {
+          "imageKey": "timeIntervals",
+          "imageAlt": "Time range options such as 00:00 – 01:00 and 01:00 – 02:00"
+        }
+      ]
+    }
+  ]
+}

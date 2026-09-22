@@ -1,0 +1,84 @@
+{
+  "pageTitle": "Icons in FMS: developer guide",
+  "pageDescription": "FMS uses Font Awesome 6 Pro for UI icons (Solid, Regular, and Light). The design system handbook documents principles and usage at Foundations → Icons → Overview (/foundation/icons/overview).",
+  "guidelinesTable": {
+    "columns": ["Do", "Don't"],
+    "rows": [
+      [
+        "Font Awesome 6 Pro via the shared Font Awesome Kit npm package",
+        "Emojis, random SVGs, or other icon libraries unless design specifies otherwise"
+      ],
+      [
+        "Match Figma: style (solid / regular / light) and icon name",
+        "Guess icon names or swap styles without checking design"
+      ],
+      [
+        "Monochrome icons using text/icon colour tokens",
+        "Multicolour icons (breaks contrast rules)"
+      ]
+    ]
+  },
+  "install": {
+    "title": "Install the kit in your app",
+    "subsectionTitle": "Add to your project",
+    "steps": [
+      {
+        "type": "numbered",
+        "number": 1,
+        "body": "Authenticate to Font Awesome’s npm registry (kit packages are hosted on npm.fontawesome.com).",
+        "followUp": "Your team should share a .npmrc pattern like:",
+        "code": "@awesome.me:registry=https://npm.fontawesome.com/\n@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=YOUR_TOKEN"
+      },
+      {
+        "type": "numbered",
+        "number": 2,
+        "body": "Install the same kit version the handbook uses (or the version your platform team pins):",
+        "code": "npm install @awesome.me/kit-cb852485b6"
+      },
+      {
+        "type": "text",
+        "body": "Load the kit stylesheet once at app entry",
+        "code": "import '@awesome.me/kit-cb852485b6/icons/css/all.min.css';"
+      }
+    ]
+  },
+  "basicMarkup": {
+    "title": "Basic markup",
+    "intro": "Font Awesome 6 uses two class names: style prefix + icon name (kebab-case).",
+    "styleTable": {
+      "columns": ["Style", "Prefix", "Example"],
+      "rows": [
+        ["Solid", "fa-solid", "fa-solid fa-envelope"],
+        ["Regular", "fa-regular", "fa-regular fa-envelope"],
+        ["Light", "fa-light", "fa-light fa-envelope"]
+      ]
+    },
+    "examplesTitle": "React / HTML Example",
+    "examples": [
+      "<i className=\"fa-solid fa-magnifying-glass\" aria-hidden />",
+      "<i class=\"fa-regular fa-chevron-down\" aria-hidden></i>"
+    ],
+    "iconSearchNote": {
+      "beforeLink": "Icon names: use ",
+      "linkLabel": "Font Awesome’s icon search",
+      "linkHref": "https://fontawesome.com/icons",
+      "afterLink": " and copy the class name from the kit (e.g. magnifying-glass, not legacy search unless Figma uses it)."
+    }
+  },
+  "sizeAndColour": {
+    "title": "Size and colour",
+    "size": {
+      "label": "Size",
+      "body": "For larger contexts (showcase, marketing), size explicitly only when Figma specifies it — don’t invent sizes.",
+      "code": ".my-icon {\n  font-size: var(--fms-typography-font-size-icon, 14px);\n}"
+    },
+    "colour": {
+      "label": "Colour",
+      "body": [
+        "Icons should read like typography for contrast, but slightly lighter.",
+        "Inherit colour from the parent when the icon sits in a button or menu row so hover/active states stay consistent."
+      ],
+      "code": ".icon {\n  color: var(--fms-colors-neutral-icon-color-icon, rgba(0, 0, 0, 0.55));\n}"
+    }
+  }
+}

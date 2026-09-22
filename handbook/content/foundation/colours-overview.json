@@ -1,0 +1,31 @@
+{
+  "pageDescription": "FMS colours bring clarity and accessibility to the interface by visually defining how elements work. These consistent patterns make every interaction simpler and more predictable.",
+  "principles": [
+    {
+      "title": "Hierarchical",
+      "body": "Use colour to show interaction, relationships, and prominence."
+    },
+    {
+      "title": "Legible",
+      "body": "Use colour combinations that meet legibility standards."
+    },
+    {
+      "title": "Harmonious",
+      "body": "Use colour consistently so the interface feels unified."
+    }
+  ],
+  "guidelines": [
+    {
+      "title": "Contrast",
+      "body": "Ensure high contrast between text, icons, and interactive controls to support users with low vision, color blindness, or other visual impairments."
+    },
+    {
+      "title": "Skip Colour Steps",
+      "body": "Skip at least one step on the color scale when pairing foreground and background elements to establish clear separation between surfaces, text, and controls."
+    },
+    {
+      "title": "Maintain Consistency",
+      "body": "Apply colours predictably by assigning one colour to one role across the entire interface. Consistent usage builds recognition and strengthens UI patterns."
+    }
+  ]
+}

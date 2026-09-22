@@ -7,7 +7,9 @@ type Props = {
 
 /** Figma Page header 1:10480 */
 export function HandbookPageHeader({ title, description }: Props) {
-  const paragraphs = Array.isArray(description) ? description : [description];
+  const paragraphs = (Array.isArray(description) ? description : [description]).filter(
+    (paragraph) => paragraph.trim().length > 0,
+  );
 
   return (
     <header
@@ -19,13 +21,15 @@ export function HandbookPageHeader({ title, description }: Props) {
       }}
     >
       <h1 className="handbook-page-header__title">{title}</h1>
-      <div className="handbook-page-header__description">
-        {paragraphs.map((paragraph, index) => (
-          <p key={index} className="handbook-page-header__description-p">
-            {paragraph}
-          </p>
-        ))}
-      </div>
+      {paragraphs.length > 0 ? (
+        <div className="handbook-page-header__description">
+          {paragraphs.map((paragraph, index) => (
+            <p key={index} className="handbook-page-header__description-p">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      ) : null}
     </header>
   );
 }

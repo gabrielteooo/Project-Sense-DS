@@ -6,6 +6,7 @@ type Props = {
   href?: string;
   indentLevel?: number;
   end?: boolean;
+  sectionTitle?: boolean;
 };
 
 export function HandbookMenuItem({
@@ -13,6 +14,7 @@ export function HandbookMenuItem({
   href,
   indentLevel = 0,
   end,
+  sectionTitle = false,
 }: Props) {
   const style = handbookMenuItemPadding(indentLevel);
 
@@ -31,6 +33,7 @@ export function HandbookMenuItem({
       className={({ isActive }) =>
         [
           'handbook-menu-item',
+          sectionTitle ? 'handbook-menu-item--section-title' : '',
           isActive ? 'handbook-menu-item--active' : '',
         ]
           .filter(Boolean)

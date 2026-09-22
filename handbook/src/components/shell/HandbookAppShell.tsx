@@ -1,11 +1,17 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import { HANDBOOK_FOUNDATIONS_NAV } from '../../config/navigation';
+import {
+  HANDBOOK_FOUNDATIONS_NAV,
+  HANDBOOK_GET_STARTED_NAV,
+} from '../../config/navigation';
 import { HANDBOOK_SHELL } from '../../figma/metrics';
 import { HandbookGlobalHeader } from './HandbookGlobalHeader';
 import { HandbookMenu } from './HandbookMenu';
 
 /** Figma App shell 24027:126863 */
 function sidebarNavForPath(pathname: string) {
+  if (pathname.startsWith('/get-started')) {
+    return HANDBOOK_GET_STARTED_NAV;
+  }
   if (pathname.startsWith('/foundation')) {
     return HANDBOOK_FOUNDATIONS_NAV;
   }
@@ -20,7 +26,10 @@ export function HandbookAppShell() {
     <div className="handbook-app-shell">
       <HandbookGlobalHeader />
       <div className="handbook-app-shell__body">
-        <HandbookMenu items={sidebarItems} />
+        <HandbookMenu
+          items={sidebarItems}
+          variant={pathname.startsWith('/get-started') ? 'get-started' : 'default'}
+        />
         <div className="handbook-app-shell__main">
           <div
             className="handbook-app-shell__content"

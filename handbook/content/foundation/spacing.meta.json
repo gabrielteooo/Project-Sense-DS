@@ -1,0 +1,84 @@
+{
+  "overviewDescription": "Spacing helps create consistent rhythm, hierarchy, and alignment across layouts and components.",
+  "marginDescription": "Margin tokens that map directly to the SGDS spacer scale for consistent element offset.",
+  "paddingDescription": "Padding tokens for internal component spacing and page-level layout regions.",
+  "marginSectionTitle": "Margin tokens",
+  "paddingSectionTitle": "Padding tokens",
+  "sizeScaleTitle": "Size scale",
+  "principles": [
+    {
+      "title": "Alignment",
+      "body": "Use consistent spacing to align elements and support the layout structure."
+    },
+    {
+      "title": "Flexibility",
+      "body": "Let spacing adapt across screen sizes while keeping layouts balanced."
+    },
+    {
+      "title": "Uniformity",
+      "body": "Use the spacing scale consistently so layouts stay predictable."
+    }
+  ],
+  "sizeScaleKeys": [
+    "sizeXXS",
+    "sizeXS",
+    "sizeSM",
+    "size",
+    "sizeMD",
+    "sizeLG",
+    "sizeXL",
+    "size2L",
+    "size3XL",
+    "size4XL"
+  ],
+  "marginScaleKeys": [
+    "marginXXS",
+    "marginXS",
+    "marginSM",
+    "margin",
+    "marginMD",
+    "marginLG",
+    "marginXL",
+    "margin2XL",
+    "margin3XL",
+    "margin4XL"
+  ],
+  "paddingScaleKeys": [
+    "paddingXXS",
+    "paddingXS",
+    "paddingSM",
+    "padding",
+    "paddingMD",
+    "paddingLG",
+    "paddingXL",
+    "padding2XL",
+    "padding3XL",
+    "padding4XL"
+  ],
+  "marginDefaultBadge": "Base",
+  "paddingDefaultBadge": "Base",
+  "sizeAliasByMarginKey": {
+    "marginXXS": "sizeXXS",
+    "marginXS": "sizeXS",
+    "marginSM": "sizeSM",
+    "margin": "size",
+    "marginMD": "sizeMD",
+    "marginLG": "sizeLG",
+    "marginXL": "sizeXL",
+    "margin2XL": "size2L",
+    "margin3XL": "size3XL",
+    "margin4XL": "size4XL"
+  },
+  "sizeAliasByPaddingKey": {
+    "paddingXXS": "sizeXXS",
+    "paddingXS": "sizeXS",
+    "paddingSM": "sizeSM",
+    "padding": "size",
+    "paddingMD": "sizeMD",
+    "paddingLG": "sizeLG",
+    "paddingXL": "sizeXL",
+    "padding2XL": "size2L",
+    "padding3XL": "size3XL",
+    "padding4XL": "size4XL"
+  }
+}

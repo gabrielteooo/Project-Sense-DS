@@ -52,7 +52,7 @@ function NavBranch({
           type="button"
           className={[
             'handbook-menu-item handbook-menu-item--branch',
-            item.id === 'colours' || item.id === 'typography'
+            indentLevel === 0
               ? 'handbook-menu-item--section-title'
               : '',
           ]
@@ -94,16 +94,36 @@ function NavBranch({
       href={item.href}
       indentLevel={indentLevel}
       end
+      sectionTitle={item.emphasis === 'section' && indentLevel === 0}
     />
   );
 }
 
-export function HandbookMenu({ items }: Props) {
+type MenuProps = Props & {
+  variant?: 'default' | 'get-started';
+};
+
+export function HandbookMenu({ items, variant = 'default' }: MenuProps) {
   const { toggle, isOpen } = useOpenSections();
+
+  const branches = items.map((item) => (
+    <NavBranch
+      key={item.id}
+      item={item}
+      indentLevel={0}
+      toggle={toggle}
+      isOpen={isOpen}
+    />
+  ));
 
   return (
     <nav
-      className="handbook-menu"
+      className={[
+        'handbook-menu',
+        variant === 'get-started' ? 'handbook-menu--get-started' : '',
+      ]
+        .filter(Boolean)
+        .join(' ')}
       aria-label="Design system"
       style={{
         width: HANDBOOK_SHELL.sidebarWidthPx,
@@ -112,15 +132,7 @@ export function HandbookMenu({ items }: Props) {
         ['--handbook-menu-section-gap' as string]: `${HANDBOOK_SHELL.menuSectionGapPx}px`,
       }}
     >
-      {items.map((item) => (
-        <NavBranch
-          key={item.id}
-          item={item}
-          indentLevel={0}
-          toggle={toggle}
-          isOpen={isOpen}
-        />
-      ))}
+      {branches}
     </nav>
   );
 }

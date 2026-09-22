@@ -1,0 +1,120 @@
+{
+  "pageTitle": "Content Writing Guidelines",
+  "pageDescription": "Craft clear, consistent, and user-friendly content in all written communication across the product. Here are some key guidelines:",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Audience-Centric Writing",
+      "blocks": [
+        {
+          "type": "labeledBullets",
+          "items": [
+            {
+              "label": "Know your audience:",
+              "text": "Write with the audience in mind. Tailor the content to meet the needs, expectations, and understanding of the target users. Avoid overly technical language; keep it visual and intuitive."
+            },
+            {
+              "label": "Inclusive language:",
+              "text": "Use inclusive language that avoids bias, stereotypes, and discriminatory phrases."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Right Tone and Voice",
+      "blocks": [
+        {
+          "type": "subheadingBullets",
+          "label": "Friendly yet professional:",
+          "items": [
+            "Keep the tone approachable, but maintain authority.",
+            "Write in a way that is encouraging and supportive."
+          ]
+        },
+        {
+          "type": "subheadingBullets",
+          "label": "Empowering:",
+          "items": [
+            "Use language that instills confidence in users.",
+            "Provide helpful tips and highlight common pitfalls."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Core Writing Principles",
+      "blocks": [
+        {
+          "type": "labeledParagraph",
+          "label": "Clarity:",
+          "text": "Use clear and simple language that's easy to understand. Avoid jargon, technical terms, or complex words when simpler alternatives are available."
+        },
+        {
+          "type": "labeledParagraphWithBullets",
+          "label": "Consistency:",
+          "intro": "Establish a style guide for terminology, tone and formatting.",
+          "items": [
+            "Use consistent terminology throughout the product. If you refer to something as a \"profile\" in one place, don't call it an \"account\" elsewhere.",
+            "Maintain a consistent tone and voice across all platforms. Ensure that all content reflects the same friendly yet professional tone, whether it's in a button label or an announcement.",
+            {
+              "text": "Standardise punctuation, capitalisation, and formatting rules. Refer ",
+              "link": { "label": "here", "href": "/get-started/content-formatting" },
+              "textAfter": " for content formatting guidelines."
+            }
+          ]
+        },
+        {
+          "type": "labeledParagraph",
+          "label": "Active Voice:",
+          "text": "Prefer active voice over passive voice to make content more direct and engaging (e.g., \"Complete the form\" instead of \"The form should be completed\")."
+        },
+        {
+          "type": "subheadingBullets",
+          "label": "Error Messages:",
+          "items": [
+            "Clear and helpful: Error messages should clearly explain what went wrong and how the user can fix it. Avoid technical jargon and be specific about the problem.",
+            "Positive tone: Maintain a helpful, non-blaming tone. For example, \"Please enter a valid email address\" instead of \"Invalid email address.\""
+          ]
+        },
+        {
+          "type": "subheadingBullets",
+          "label": "Microcopy:",
+          "items": [
+            "Button labels: Use concise and descriptive text for buttons. Users should understand what will happen when they click a button.",
+            "Form labels and instructions: Ensure form labels are clear and concise. Provide guidance where necessary (e.g., placeholder text, tooltips)."
+          ]
+        },
+        {
+          "type": "subheadingBullets",
+          "label": "Content Hierarchy:",
+          "items": [
+            "Headings and subheadings: Use a clear hierarchy of headings and subheadings to organise content and make it easier to scan.",
+            "Bullet points and numbered lists: Use lists to break down complex information into easily digestible parts."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Incorporate Review and Feedback Process",
+      "blocks": [
+        {
+          "type": "subheadingBullets",
+          "label": "Collaborate:",
+          "items": ["Work closely with business users to ensure accuracy."]
+        },
+        {
+          "type": "subheadingBullets",
+          "label": "Test for Usability:",
+          "items": [
+            "Conduct usability testing with actual users of the application.",
+            "Revise content based on feedback and testing outcomes."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 |-----------|------|
 | Handbook frame | `1:10873` |
 | Colour Base Frame | `1:10452` |
+| Colours — Overview | `91:1820` |
 | Global header | `1:10878` |
 | Global header bar | `1:10453` |
 | Main content | `1:11212` |
@@ -14,6 +15,17 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Side menu bar (search + nav) | `1:12439` |
 | Foundations side menu (Typography) | `62:21857` |
 | Typography — Text system page | `62:21858` |
+| Spacing — Overview | `91:539` |
+| Spacing — Margin | `91:1117` |
+| Spacing — Padding | `91:1701` |
+| Icons — Overview | `92:8259` |
+| Icons — Usage (Header frame) | `97:1041` |
+| Icons — Developer guide | `97:1152` |
+| Get started — Content Writing Guidelines | `100:2180` |
+| Get started — Content formatting | `100:5465` |
+| Get started — Numbers formatting | `101:5532` |
+| Get started — Date time formatting | `101:5789` |
+| Get started — Results formatting | `100:5465` |
 | Page header | `1:10480` |
 | Menu item (`web-menu-item` + interaction) | `1:10814` |
 | Base colour table | `1:10488` |

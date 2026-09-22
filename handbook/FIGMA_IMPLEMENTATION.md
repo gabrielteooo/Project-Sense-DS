@@ -95,7 +95,7 @@ Do not start coding until this plan is clear.
 - Reproduce the Figma frame **as closely as possible** at the target viewport (handbook default: **1440px** width in `HANDBOOK_VIEWPORT`).
 - **Do not** redesign, simplify, or add UI that is not in Figma.
 - **Do not** use approximate spacing or arbitrary values when exact Figma values are available — put them in `src/figma/metrics.ts` and reference them from components/CSS.
-- **Do not** replace Figma icons or images with emojis, generic icons, or placeholders. Use FA only where Figma specifies FA; otherwise export assets to e.g. `handbook/public/` or `handbook/figma-exports/` and wire them in.
+- **Do not** replace Figma icons or images with emojis, generic icons, or placeholders. Use FA only where Figma specifies FA; otherwise export assets to `handbook/public/` and **import** them in page components (Vite `publicDir` is `tokens/`, so bare `/…` URLs under `handbook/public/` are not served unless imported or copied under `tokens/`).
 - **Preserve** project architecture: React components, router, `handbook.css` conventions, `--fms-*` tokens.
 - **Reuse** existing components and tokens when they match; extend rather than fork.
 - **Create** reusable components for repeated UI patterns (tables, menu rows, badges, etc.).

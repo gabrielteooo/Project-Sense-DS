@@ -1,0 +1,43 @@
+{
+  "pageTitle": "Numbers formatting",
+  "pageDescription": "Numbers communicate critical data like metrics, prices, and status updates. Follow these rules to keep numeric data readable, consistent, and localized.",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Thousands Separator",
+      "bullets": [
+        "Use a thousands separator in numbers to differentiate the thousands from the hundreds to improve scannability."
+      ],
+      "examples": [
+        {
+          "label": "Format in metric cards",
+          "imageKey": "metricCard",
+          "imageAlt": "Metric card showing 2,450 / 4,000 hrs with comma thousands separator"
+        },
+        {
+          "label": "Format in data tables",
+          "imageKey": "dataTable",
+          "imageAlt": "Data table showing TSN and TSO values with comma thousands separators"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Truncated Abbreviated Values",
+      "bullets": [
+        "Use “K” for numbers in the thousands (e.g., 1,500 → 1.5K).",
+        "Use “M” for numbers in the millions (e.g., 2,000,000 → 2M).",
+        "Use “B” for numbers in the billions (e.g., 3,000,000,000 → 3B).",
+        "Include up to one decimal place for precision when necessary (e.g., 4,250 → 4.3K). To be discussed with users during design sprints and any deviation will have to be recorded in the respective service’s user story document.",
+        {
+          "beforeLink": "Auto-truncation for table cells with smaller width: Refer to ",
+          "link": {
+            "label": "Tables’ Numerical Cell",
+            "href": "https://www.figma.com/design/eQ5MZ0P3yMk6SMjGtfBbmS?node-id=7984-71615"
+          },
+          "afterLink": " for detailed formatting guidelines."
+        }
+      ]
+    }
+  ]
+}

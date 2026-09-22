@@ -1,0 +1,424 @@
+{
+  "overview": {
+    "pageDescription": "Spacing helps create consistent rhythm, hierarchy, and alignment across layouts and components.",
+    "principles": [
+      {
+        "title": "Alignment",
+        "body": "Use consistent spacing to align elements and support the layout structure."
+      },
+      {
+        "title": "Flexibility",
+        "body": "Let spacing adapt across screen sizes while keeping layouts balanced."
+      },
+      {
+        "title": "Uniformity",
+        "body": "Use the spacing scale consistently so layouts stay predictable."
+      }
+    ],
+    "sizeScale": {
+      "title": "Size scale",
+      "rows": [
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/sizeXXS",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 4,
+          "pxLabel": "4px",
+          "cssVar": "--fms-size-base-size-xxs",
+          "visualWidthPx": 4
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/sizeXS",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 8,
+          "pxLabel": "8px",
+          "cssVar": "--fms-size-base-size-xs",
+          "visualWidthPx": 8
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/sizeSM",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 12,
+          "pxLabel": "12px",
+          "cssVar": "--fms-size-base-size-sm",
+          "visualWidthPx": 12
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/size",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 16,
+          "pxLabel": "16px",
+          "cssVar": "--fms-size-base-size",
+          "visualWidthPx": 16
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/sizeMD",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 20,
+          "pxLabel": "20px",
+          "cssVar": "--fms-size-base-size-md",
+          "visualWidthPx": 20
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/sizeLG",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 24,
+          "pxLabel": "24px",
+          "cssVar": "--fms-size-base-size-lg",
+          "visualWidthPx": 24
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/sizeXL",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 32,
+          "pxLabel": "32px",
+          "cssVar": "--fms-size-base-size-xl",
+          "visualWidthPx": 32
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/size2L",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 40,
+          "pxLabel": "40px",
+          "cssVar": "--fms-size-base-size2l",
+          "visualWidthPx": 40
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/size3XL",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 48,
+          "pxLabel": "48px",
+          "cssVar": "--fms-size-base-size3xl",
+          "visualWidthPx": 48
+        },
+        {
+          "figmaTokens": [
+            {
+              "label": "Base/size4XL",
+              "variant": "default"
+            }
+          ],
+          "pxValue": 56,
+          "pxLabel": "56px",
+          "cssVar": "--fms-size-base-size4xl",
+          "visualWidthPx": 56
+        }
+      ]
+    }
+  },
+  "margin": {
+    "pageDescription": "Margin tokens that map directly to the SGDS spacer scale for consistent element offset.",
+    "sectionTitle": "Margin tokens",
+    "rows": [
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/marginXXS",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 4,
+        "pxLabel": "4px",
+        "aliasToken": "Base/sizeXXS",
+        "cssVar": "--fms-space-margin-margin-xxs",
+        "aliasCssVar": "--fms-size-base-size-xxs"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/marginXS",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 8,
+        "pxLabel": "8px",
+        "aliasToken": "Base/sizeXS",
+        "cssVar": "--fms-space-margin-margin-xs",
+        "aliasCssVar": "--fms-size-base-size-xs"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/marginSM",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 12,
+        "pxLabel": "12px",
+        "aliasToken": "Base/sizeSM",
+        "cssVar": "--fms-space-margin-margin-sm",
+        "aliasCssVar": "--fms-size-base-size-sm"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/margin",
+            "variant": "default"
+          },
+          {
+            "label": "Base",
+            "variant": "primary"
+          }
+        ],
+        "pxValue": 16,
+        "pxLabel": "16px",
+        "aliasToken": "Base/size",
+        "cssVar": "--fms-space-margin-margin",
+        "aliasCssVar": "--fms-size-base-size"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/marginMD",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 20,
+        "pxLabel": "20px",
+        "aliasToken": "Base/sizeMD",
+        "cssVar": "--fms-space-margin-margin-md",
+        "aliasCssVar": "--fms-size-base-size-md"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/marginLG",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 24,
+        "pxLabel": "24px",
+        "aliasToken": "Base/sizeLG",
+        "cssVar": "--fms-space-margin-margin-lg",
+        "aliasCssVar": "--fms-size-base-size-lg"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/marginXL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 32,
+        "pxLabel": "32px",
+        "aliasToken": "Base/sizeXL",
+        "cssVar": "--fms-space-margin-margin-xl",
+        "aliasCssVar": "--fms-size-base-size-xl"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/margin2XL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 40,
+        "pxLabel": "40px",
+        "aliasToken": "Base/size2L",
+        "cssVar": "--fms-space-margin-margin2xl",
+        "aliasCssVar": "--fms-size-base-size2l"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/margin3XL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 48,
+        "pxLabel": "48px",
+        "aliasToken": "Base/size3XL",
+        "cssVar": "--fms-space-margin-margin3xl",
+        "aliasCssVar": "--fms-size-base-size3xl"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/margin4XL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 56,
+        "pxLabel": "56px",
+        "aliasToken": "Base/size4XL",
+        "cssVar": "--fms-space-margin-margin4xl",
+        "aliasCssVar": "--fms-size-base-size4xl"
+      }
+    ]
+  },
+  "padding": {
+    "pageDescription": "Padding tokens for internal component spacing and page-level layout regions.",
+    "sectionTitle": "Padding tokens",
+    "rows": [
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/paddingXXS",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 4,
+        "pxLabel": "4px",
+        "aliasToken": "Base/sizeXXS",
+        "cssVar": "--fms-space-padding-padding-xxs",
+        "aliasCssVar": "--fms-size-base-size-xxs"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/paddingXS",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 8,
+        "pxLabel": "8px",
+        "aliasToken": "Base/sizeXS",
+        "cssVar": "--fms-space-padding-padding-xs",
+        "aliasCssVar": "--fms-size-base-size-xs"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/paddingSM",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 12,
+        "pxLabel": "12px",
+        "aliasToken": "Base/sizeSM",
+        "cssVar": "--fms-space-padding-padding-sm",
+        "aliasCssVar": "--fms-size-base-size-sm"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/padding",
+            "variant": "default"
+          },
+          {
+            "label": "Base",
+            "variant": "primary"
+          }
+        ],
+        "pxValue": 16,
+        "pxLabel": "16px",
+        "aliasToken": "Base/size",
+        "cssVar": "--fms-space-padding-padding",
+        "aliasCssVar": "--fms-size-base-size"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/paddingMD",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 20,
+        "pxLabel": "20px",
+        "aliasToken": "Base/sizeMD",
+        "cssVar": "--fms-space-padding-padding-md",
+        "aliasCssVar": "--fms-size-base-size-md"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/paddingLG",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 24,
+        "pxLabel": "24px",
+        "aliasToken": "Base/sizeLG",
+        "cssVar": "--fms-space-padding-padding-lg",
+        "aliasCssVar": "--fms-size-base-size-lg"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/paddingXL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 32,
+        "pxLabel": "32px",
+        "aliasToken": "Base/sizeXL",
+        "cssVar": "--fms-space-padding-padding-xl",
+        "aliasCssVar": "--fms-size-base-size-xl"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/padding2XL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 40,
+        "pxLabel": "40px",
+        "aliasToken": "Base/size2L",
+        "cssVar": "--fms-space-padding-padding2xl",
+        "aliasCssVar": "--fms-size-base-size2l"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/padding3XL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 48,
+        "pxLabel": "48px",
+        "aliasToken": "Base/size3XL",
+        "cssVar": "--fms-space-padding-padding3xl",
+        "aliasCssVar": "--fms-size-base-size3xl"
+      },
+      {
+        "figmaTokens": [
+          {
+            "label": "Space/padding4XL",
+            "variant": "default"
+          }
+        ],
+        "pxValue": 56,
+        "pxLabel": "56px",
+        "aliasToken": "Base/size4XL",
+        "cssVar": "--fms-space-padding-padding4xl",
+        "aliasCssVar": "--fms-size-base-size4xl"
+      }
+    ]
+  }
+}
