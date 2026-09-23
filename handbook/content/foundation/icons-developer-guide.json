@@ -1,6 +1,6 @@
 {
   "pageTitle": "Icons in FMS: developer guide",
-  "pageDescription": "Implementation reference for Font Awesome 6 Pro in code. Designers: use the Designer guide for Figma workflow. Principles and examples: Overview.",
+  "pageDescription": "FMS uses Font Awesome 6 Pro for UI icons (Solid, Regular, and Light). The design system handbook documents principles and usage at Foundations → Icons → Overview (/foundation/icons/overview).",
   "guidelinesTable": {
     "columns": ["Do", "Don't"],
     "rows": [
@@ -39,6 +39,31 @@
         "type": "text",
         "body": "Load the kit stylesheet once at app entry",
         "code": "import '@awesome.me/kit-cb852485b6/icons/css/all.min.css';"
+      }
+    ]
+  },
+  "findingTheIcon": {
+    "title": "Finding the icon",
+    "steps": [
+      {
+        "number": 1,
+        "label": "Step 1:",
+        "lead": "Visit Font Awesome web page and ",
+        "emphasis": "search for the Icon",
+        "trail": " that you want to use. ",
+        "link": {
+          "label": "https://fontawesome.com/",
+          "href": "https://fontawesome.com/"
+        },
+        "imageKey": "step1",
+        "imageAlt": "Font Awesome website with icon search results"
+      },
+      {
+        "number": 2,
+        "label": "Step 2:",
+        "body": "Select the icon you want, and copy the html or react code",
+        "imageKey": "step2",
+        "imageAlt": "Font Awesome icon detail with HTML and React code to copy"
       }
     ]
   },

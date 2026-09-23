@@ -12,6 +12,8 @@ import { TypographyTextSystemPage } from './pages/TypographyTextSystemPage';
 import { SpacingMarginPage } from './pages/SpacingMarginPage';
 import { SpacingOverviewPage } from './pages/SpacingOverviewPage';
 import { SpacingPaddingPage } from './pages/SpacingPaddingPage';
+import { ElevationOverviewPage } from './pages/ElevationOverviewPage';
+import { ElevationShadowPage } from './pages/ElevationShadowPage';
 import { IconsOverviewPage } from './pages/IconsOverviewPage';
 import { IconsDesignerGuidePage } from './pages/IconsDesignerGuidePage';
 import { IconsDeveloperGuidePage } from './pages/IconsDeveloperGuidePage';
@@ -72,6 +74,15 @@ export default function App() {
         <Route path="foundation/spacing/overview" element={<SpacingOverviewPage />} />
         <Route path="foundation/spacing/margin" element={<SpacingMarginPage />} />
         <Route path="foundation/spacing/padding" element={<SpacingPaddingPage />} />
+        <Route
+          path="foundation/elevation"
+          element={<Navigate to="/foundation/elevation/overview" replace />}
+        />
+        <Route
+          path="foundation/elevation/overview"
+          element={<ElevationOverviewPage />}
+        />
+        <Route path="foundation/elevation/shadow" element={<ElevationShadowPage />} />
         <Route path="foundation/icons/overview" element={<IconsOverviewPage />} />
         <Route
           path="foundation/icons/designer-guide"

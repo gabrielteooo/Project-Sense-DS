@@ -10,6 +10,7 @@ body,
 
 body {
   overflow: hidden;
+  background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
 }
 
 #root {
@@ -19,14 +20,29 @@ body {
 
 .handbook-app-shell {
   --handbook-global-header-height: 77px;
+  --handbook-layout-max-width: 1440px;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: var(--fms-colors-neutral-bg-color-bg-layout, #f5f5f5);
+  background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
   font-family: var(--fms-typography-font-inter, Inter), system-ui, sans-serif;
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
+.handbook-app-shell__frame {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--handbook-layout-max-width);
+  margin-inline: auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--fms-colors-neutral-bg-color-bg-layout, #f5f5f5);
 }
 
 .handbook-app-shell input,
@@ -37,13 +53,10 @@ body {
 }
 
 .handbook-app-shell__body {
-  position: fixed;
-  top: var(--handbook-global-header-height);
-  right: 0;
-  bottom: 0;
-  left: 0;
   display: flex;
+  flex: 1;
   align-items: stretch;
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -68,23 +81,36 @@ body {
   max-width: none;
 }
 
-/* ── Global header Figma 1:10878 / bar 1:10453 ──────────────────── */
+/* ── Global header Figma 112:1274 ───────────────────────────────── */
 
 .handbook-global-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
   z-index: 100;
   display: flex;
   flex-shrink: 0;
+  justify-content: center;
   align-items: stretch;
   box-sizing: border-box;
   width: 100%;
-  min-height: 0;
+  min-height: var(--handbook-global-header-height, 77px);
   padding-block: 0;
   background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
   border-bottom: 1px solid var(--fms-colors-neutral-border-color-border, #d9d9d9);
+  box-shadow:
+    0 0 2px rgba(0, 0, 0, 0.04),
+    0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.handbook-global-header__inner {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: stretch;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--handbook-layout-max-width);
+  min-width: 0;
+  min-height: inherit;
 }
 
 .handbook-global-header__title {
@@ -115,13 +141,14 @@ body {
   align-self: stretch;
   box-sizing: border-box;
   width: auto;
-  padding: 0;
+  padding-block: var(--handbook-global-header-tab-padding-block, 12px);
+  padding-inline: 0;
   border: none;
   border-bottom: var(--handbook-global-header-tab-ink-bar, 2px) solid transparent;
   margin-bottom: -1px;
   background: transparent;
-  font-size: var(--fms-typography-font-size-base, 16px);
-  line-height: var(--fms-typography-line-height-base, 24px);
+  font-size: var(--fms-text-sm-normal-font-size, 14px);
+  line-height: var(--fms-text-sm-normal-line-height, 22px);
   font-weight: 400;
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   text-decoration: none;
@@ -822,33 +849,48 @@ body {
   margin-bottom: var(--fms-space-margin-margin-md, 16px);
 }
 
-.numbers-formatting__examples {
+/* Doc example cards — 2- and 3-column grids (Numbers, Results, Date/time, Icons usage) */
+.numbers-formatting__examples,
+.icons-overview-usage__grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--fms-space-margin-margin-lg, 24px);
   align-items: start;
   width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.numbers-formatting__examples .icons-overview-usage__figure {
+.numbers-formatting__examples .icons-overview-usage__figure,
+.icons-overview-usage__grid .icons-overview-usage__figure {
   min-width: 0;
   width: 100%;
 }
 
-.numbers-formatting__frame {
+.numbers-formatting__frame,
+.icons-overview-usage__frame {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 264px;
+  padding: 8px;
   overflow: hidden;
   border-radius: 8px;
   background: #f9f9f9;
   border: 1px solid #d2d4d5;
 }
 
-.numbers-formatting__image {
+.numbers-formatting__frame {
+  height: 264px;
+}
+
+.numbers-formatting__image,
+.icons-overview-usage__image--usage {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -870,6 +912,116 @@ body {
 
 .numbers-formatting__frame--tall {
   height: 341px;
+}
+
+/* Elevation — Overview (Figma 112:2095) */
+.foundation-elevation-page {
+  width: 100%;
+}
+
+.elevation-overview-section {
+  max-width: 1040px;
+}
+
+.elevation-overview-section__title {
+  margin: 0 0 var(--fms-space-margin-margin-lg, 24px);
+  font-size: var(--fms-text-heading-3-font-size, 24px);
+  line-height: var(--fms-text-heading-3-line-height, 32px);
+  font-weight: var(--fms-text-heading-3-font-weight, 600);
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
+}
+
+.elevation-overview-section__body {
+  margin: 0 0 var(--fms-space-margin-margin-lg, 24px);
+  font-size: var(--fms-text-base-normal-font-size, 16px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
+  font-weight: var(--fms-text-base-normal-font-weight, 400);
+  color: var(--fms-colors-neutral-text-color-text-description, rgba(0, 0, 0, 0.55));
+}
+
+.elevation-shadow-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 80px 40px;
+  border-radius: 8px;
+  background: var(--fms-colors-neutral-bg-color-bg-base, #f5f5f5);
+  border: 1px solid var(--fms-colors-neutral-border-color-border, #d9d9d9);
+}
+
+.elevation-shadow-tile {
+  flex-shrink: 0;
+  width: 95px;
+  height: 95px;
+  border-radius: 8px;
+  background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
+  border: 1px solid var(--fms-colors-neutral-border-color-border, #d9d9d9);
+}
+
+.elevation-opacity-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 80px 40px;
+  border-radius: 8px;
+  background: var(--fms-colors-neutral-bg-color-bg-mask, rgba(0, 0, 0, 0.45));
+  border: 1px solid #d2d4d5;
+}
+
+.elevation-opacity-modal {
+  width: min(469px, 100%);
+  height: 95px;
+  border-radius: 8px;
+  background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
+  border: 1px solid var(--fms-colors-neutral-border-color-border, #d9d9d9);
+  box-shadow: var(--fms-effect-shadow-boxshadowsecondary);
+}
+
+.elevation-shadow-section {
+  max-width: 1040px;
+}
+
+.shadow-token-table-wrap {
+  max-width: 1200px;
+}
+
+.shadow-token-table__col--style {
+  width: 228px;
+}
+
+.shadow-token-table__col--value,
+.shadow-token-table__col--description {
+  width: auto;
+}
+
+.shadow-token-table td {
+  vertical-align: top;
+  font-size: var(--fms-text-sm-normal-font-size, 14px);
+  line-height: var(--fms-text-sm-normal-line-height, 22px);
+}
+
+.shadow-token-table__value {
+  margin: 0;
+}
+
+.shadow-token-table__value-line {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.elevation-shadow-footnote {
+  margin: 0;
+  max-width: 1040px;
+  font-size: var(--fms-text-base-normal-font-size, 16px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
+  color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
 /* Icons — Overview (Figma 92:8259) */
@@ -959,12 +1111,6 @@ body {
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
-.icons-overview-usage__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--fms-space-margin-margin-lg, 24px);
-}
-
 .icons-overview-usage__figure {
   margin: 0;
   display: flex;
@@ -986,10 +1132,6 @@ body {
 .icons-overview-usage__frame {
   position: relative;
   height: 245px;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #f9f9f9;
-  border: 1px solid #d2d4d5;
 }
 
 .icons-overview-usage__image {
@@ -998,11 +1140,6 @@ body {
 
 .icons-overview-usage__image--usage {
   position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  object-position: center;
 }
 
 /* Icons — Developer guide (Figma 97:1152) */
@@ -1119,6 +1256,10 @@ body {
 .icons-designer-guide__step-label {
   font-weight: 600;
   margin-right: 8px;
+}
+
+.icons-dev-guide__step-emphasis {
+  font-weight: 700;
 }
 
 .icons-designer-guide__frame {
@@ -1271,11 +1412,7 @@ body {
   border: var(--fms-size-line-width-line-width, 1px) solid
     var(--fms-colors-neutral-border-color-border, #d9d9d9);
   border-radius: var(--fms-border-radius-border-radius-sm, 4px);
-  background: color-mix(
-    in srgb,
-    var(--fms-colors-neutral-fill-color-fill-quaternary, #000) 2%,
-    transparent
-  );
+  background: var(--fms-tag-component-default-bg, rgba(0, 0, 0, 0.02));
   font-family: inherit;
   font-size: var(--fms-text-sm-normal-font-size, 14px);
   line-height: var(--fms-text-sm-normal-line-height, 22px);
@@ -1394,10 +1531,10 @@ body {
 }
 
 .base-colour-table th {
-  font-size: var(--fms-text-sm-normal-font-size, 14px);
-  line-height: var(--fms-text-sm-normal-line-height, 22px);
-  font-weight: var(--fms-text-sm-normal-font-weight, 400);
-  color: var(--fms-colors-neutral-text-color-text-secondary, rgba(0, 0, 0, 0.65));
+  font-size: var(--fms-text-sm-strong-font-size, 14px);
+  line-height: var(--fms-text-sm-strong-line-height, 22px);
+  font-weight: var(--fms-text-sm-strong-font-weight, 600);
+  color: var(--fms-table-global-color-text, rgba(0, 0, 0, 0.88));
 }
 
 .base-colour-table td {
@@ -1440,5 +1577,19 @@ body {
 
   .handbook-app-shell__content {
     padding-inline: var(--fms-space-padding-padding-content-horizontal-lg, 24px) !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .numbers-formatting__examples--three-column {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .numbers-formatting__examples:not(.numbers-formatting__examples--three-column),
+  .numbers-formatting__examples--single,
+  .icons-overview-usage__grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

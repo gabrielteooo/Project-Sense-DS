@@ -1,0 +1,30 @@
+{
+  "pageDescription": "Effectively use elevation to establish hierarchy, separate layers, and bring focus to interactive surfaces.",
+  "principles": [
+    {
+      "title": "Visual Hierarchy",
+      "body": "Guide user attention and highlight priority content through depth."
+    },
+    {
+      "title": "Subtle:",
+      "body": "Apply elevation to add dimensional feel without cluttering the UI."
+    },
+    {
+      "title": "Focus",
+      "body": "Use opacity backgrounds to focus layered surfaces, such as modals."
+    }
+  ],
+  "shadow": {
+    "title": "Shadow",
+    "body": "Provides spatial separation for transient overlay components (e.g., tooltips, dropdowns menu) and acts as an elevated hover response for interactive containers like tiles and cards.",
+    "levels": [
+      { "id": "default", "tokenVar": "--fms-effect-shadow-boxshadow" },
+      { "id": "secondary", "tokenVar": "--fms-effect-shadow-boxshadowsecondary" },
+      { "id": "tertiary", "tokenVar": "--fms-effect-shadow-boxshadowtertiary" }
+    ]
+  },
+  "opacities": {
+    "title": "Opacities",
+    "body": "An opacity background can bring focus by increasing the visual contrast of a layered surface like modals and sheets."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "pageDescription": "Use shadows to show that a surface sits above another surface, or that a control is active. Do not add a shadow solely to make a component more prominent.",
+  "sectionTitle": "Shadow Tokens",
+  "footnote": "Note: Components may have their own shadow tokens. Refer to each component’s token and state guidelines",
+  "rows": [
+    {
+      "styleToken": "boxShadow",
+      "valueLines": [
+        "0 6px 16px 0 rgba(0, 0, 0, 0.08),",
+        "0 3px 6px -4px rgba(0, 0, 0, 0.12),",
+        "0 9px 28px 8px rgba(0, 0, 0, 0.05)"
+      ],
+      "description": "Subtle separation for raised cards or small surfaces that need more definition than a border alone."
+    },
+    {
+      "styleToken": "boxShadowSecondary",
+      "valueLines": [
+        "0 6px 16px 0 rgba(0, 0, 0, 0.08),",
+        "0 3px 6px -4px rgba(0, 0, 0, 0.12),",
+        "0 9px 28px 8px rgba(0, 0, 0, 0.05)"
+      ],
+      "description": "The most intense element shadow, for example on general components like Floatbutton, Dropdown, Cascader Menu, etc."
+    },
+    {
+      "styleToken": "boxShadowTertiary",
+      "valueLines": [
+        "0 1px 2px 0 rgba(0, 0, 0, 0.03),",
+        "0 1px 6px -1px rgba(0, 0, 0, 0.02),",
+        "0 2px 4px 0 rgba(0, 0, 0, 0.02)"
+      ],
+      "description": "The smoothest element shadow, for example on components like Action Panels, Login and Signup Forms."
+    }
+  ]
+}

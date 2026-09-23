@@ -1,6 +1,8 @@
-# FMS Design System
+# FMS DS Handbook
 
-Design tokens and the **FMS Design System Handbook** (React/Vite), aligned to Figma file `6kT7I28zU5LC7cedwE87Ce`.
+Design tokens and the **FMS Design System Handbook** site (React/Vite), aligned to Figma file `6kT7I28zU5LC7cedwE87Ce`.
+
+Local clone folder name: **`FMS DS Handbook`**.
 
 ## Repository layout
 

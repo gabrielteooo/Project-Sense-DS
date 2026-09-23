@@ -7,7 +7,7 @@ export const FIGMA_FILE_KEY = '6kT7I28zU5LC7cedwE87Ce';
 export const FIGMA_NODES = {
   colourBaseFrame: '1:10452',
   coloursOverviewPage: '91:1820',
-  globalHeader: '1:10878',
+  globalHeader: '112:1274',
   globalHeaderBar: '1:10453',
   handbookContent: '1:11212',
   globalHeaderTabs: '1:12912',
@@ -19,6 +19,8 @@ export const FIGMA_NODES = {
   spacingOverviewPage: '91:539',
   spacingMarginPage: '91:1117',
   spacingPaddingPage: '91:1701',
+  elevationOverviewPage: '112:2095',
+  elevationShadowPage: '113:3026',
   iconsOverviewPage: '92:8259',
   iconsOverviewUsageHeaderFrame: '97:1041',
   iconsDesignerGuidePage: '97:1152',
@@ -42,10 +44,15 @@ export const HANDBOOK_VIEWPORT = {
 } as const;
 
 export const HANDBOOK_SHELL = {
+  /** Max handbook layout width — centered band; viewport wider shows white gutters */
+  layoutMaxWidthPx: HANDBOOK_VIEWPORT.widthPx,
   sidebarWidthPx: 280,
-  globalHeaderPaddingLeftPx: 32,
-  globalHeaderPaddingRightPx: 40,
-  globalHeaderTitlePaddingBlockPx: 24,
+  globalHeaderHeightPx: 77,
+  globalHeaderPaddingInlinePx: 32,
+  globalHeaderInnerPaddingInlinePx: 24,
+  globalHeaderTitlePaddingBlockPx: 16,
+  /** Tabs.Global.paddingSM — vertical inset per tab */
+  globalHeaderTabPaddingBlockPx: 12,
   /** Tabs.Component.horizontalItemGutter */
   globalHeaderTabGapPx: 32,
   /** Tabs lineWidthBold / ink bar */
@@ -53,10 +60,12 @@ export const HANDBOOK_SHELL = {
   menuSearchHeightPx: 40,
   menuSearchIconButtonPx: 32,
   menuSearchMarginBottomPx: 16,
-  /** Figma content 1:11212 — 40px inset in 1160px main column */
-  contentPaddingInlinePx: 40,
-  contentPaddingBlockPx: 40,
-  menuPaddingTopPx: 16,
+  /** Figma main content inset (1:11212) */
+  contentPaddingLeftPx: 80,
+  contentPaddingRightPx: 40,
+  contentPaddingTopPx: 64,
+  contentPaddingBottomPx: 40,
+  menuPaddingTopPx: 24,
   /** Figma side menu 1:12439 — horizontal gutter */
   menuPaddingInlinePx: 24,
   menuItemHeightPx: 40,

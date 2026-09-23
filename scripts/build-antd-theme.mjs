@@ -59,7 +59,7 @@ const theme = {
     boxShadowTertiary: shadows.boxshadowtertiary?.boxShadow,
   },
   meta: {
-    source: 'Project Sense foundation tokens (light)',
+    source: 'FMS DS Handbook foundation tokens (light)',
     iconFontFamily: 'Font Awesome 6 Free',
     iconFontFamilyFigma: pick(['Typography', 'Font', 'Icons']),
     fontSizeIcon: pick(['Typography', 'Font Size', 'Icon', '$value']) ?? 14,

@@ -178,6 +178,22 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
     ],
   },
   {
+    id: 'elevation',
+    label: 'Elevation',
+    children: [
+      {
+        id: 'elevation-overview',
+        label: 'Overview',
+        href: '/foundation/elevation/overview',
+      },
+      {
+        id: 'elevation-shadow',
+        label: 'Shadow',
+        href: '/foundation/elevation/shadow',
+      },
+    ],
+  },
+  {
     id: 'icons',
     label: 'Icons',
     children: [
@@ -204,6 +220,7 @@ export const HANDBOOK_NAV_DEFAULT_OPEN = [
   'colours',
   'spacing',
   'typography',
+  'elevation',
   'icons',
   'content',
 ] as const;
