@@ -136,6 +136,54 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
     ],
   },
   {
+    id: 'elevation',
+    label: 'Elevation',
+    children: [
+      {
+        id: 'elevation-overview',
+        label: 'Overview',
+        href: '/foundation/elevation/overview',
+      },
+      {
+        id: 'elevation-shadow',
+        label: 'Shadow',
+        href: '/foundation/elevation/shadow',
+      },
+    ],
+  },
+  {
+    id: 'icons',
+    label: 'Icons',
+    children: [
+      {
+        id: 'icons-overview',
+        label: 'Overview',
+        href: '/foundation/icons/overview',
+      },
+      {
+        id: 'icons-designer-guide',
+        label: 'Designer guide',
+        href: '/foundation/icons/designer-guide',
+      },
+      {
+        id: 'icons-developer-guide',
+        label: 'Developer guide',
+        href: '/foundation/icons/developer-guide',
+      },
+    ],
+  },
+  {
+    id: 'layout',
+    label: 'Layout',
+    children: [
+      {
+        id: 'layout-responsive-grid',
+        label: 'Responsive grid',
+        href: '/foundation/layout/responsive-grid',
+      },
+    ],
+  },
+  {
     id: 'spacing',
     label: 'Spacing',
     children: [
@@ -177,50 +225,14 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
       },
     ],
   },
-  {
-    id: 'elevation',
-    label: 'Elevation',
-    children: [
-      {
-        id: 'elevation-overview',
-        label: 'Overview',
-        href: '/foundation/elevation/overview',
-      },
-      {
-        id: 'elevation-shadow',
-        label: 'Shadow',
-        href: '/foundation/elevation/shadow',
-      },
-    ],
-  },
-  {
-    id: 'icons',
-    label: 'Icons',
-    children: [
-      {
-        id: 'icons-overview',
-        label: 'Overview',
-        href: '/foundation/icons/overview',
-      },
-      {
-        id: 'icons-designer-guide',
-        label: 'Designer guide',
-        href: '/foundation/icons/designer-guide',
-      },
-      {
-        id: 'icons-developer-guide',
-        label: 'Developer guide',
-        href: '/foundation/icons/developer-guide',
-      },
-    ],
-  },
 ];
 
 export const HANDBOOK_NAV_DEFAULT_OPEN = [
   'colours',
-  'spacing',
-  'typography',
   'elevation',
   'icons',
+  'layout',
+  'spacing',
+  'typography',
   'content',
 ] as const;

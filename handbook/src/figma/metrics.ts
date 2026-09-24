@@ -21,6 +21,7 @@ export const FIGMA_NODES = {
   spacingPaddingPage: '91:1701',
   elevationOverviewPage: '112:2095',
   elevationShadowPage: '113:3026',
+  layoutResponsiveGridPage: '117:655',
   iconsOverviewPage: '92:8259',
   iconsOverviewUsageHeaderFrame: '97:1041',
   iconsDesignerGuidePage: '97:1152',
@@ -39,7 +40,7 @@ export const FIGMA_NODES = {
 } as const;
 
 export const HANDBOOK_VIEWPORT = {
-  widthPx: 1440,
+  widthPx: 1560,
   minHeightPx: 1280,
 } as const;
 

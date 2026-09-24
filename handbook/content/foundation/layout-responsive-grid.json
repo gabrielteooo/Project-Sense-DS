@@ -1,0 +1,23 @@
+{
+  "pageDescription": "A responsive grid allows a layout to change dynamically based on the size of the screen. This also guarantees consistent layouts across all products.",
+  "breakpoints": [
+    {
+      "id": "desktop",
+      "title": "Desktop (1440px and above)",
+      "description": "Use for large screens like example desktop or wide screen monitor.",
+      "table": {
+        "columns": ["Columns", "Gutter", "Margin", "Container width", "Sidebar"],
+        "rows": [
+          [
+            "12 column fixed",
+            "16px",
+            "40px",
+            "Auto",
+            "280px (expand)"
+          ]
+        ]
+      },
+      "diagramAlt": "Desktop grid diagram showing 280px sidebar, 40px margins, 16px gutters, and 12 columns"
+    }
+  ]
+}

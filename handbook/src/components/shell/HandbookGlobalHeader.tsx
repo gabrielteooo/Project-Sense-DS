@@ -13,7 +13,7 @@ function tabIsActive(matchPath: string, pathname: string) {
   return pathname === matchPath || pathname.startsWith(`${matchPath}/`);
 }
 
-/** Figma Global Header 112:1274 — full-width bar; content max 1440 centered */
+/** Figma Global Header 112:1274 — full-width bar; content max width centered in shell band */
 export function HandbookGlobalHeader() {
   const { pathname } = useLocation();
   const headerRef = useRef<HTMLElement>(null);

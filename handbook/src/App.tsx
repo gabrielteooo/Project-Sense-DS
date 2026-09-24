@@ -14,6 +14,7 @@ import { SpacingOverviewPage } from './pages/SpacingOverviewPage';
 import { SpacingPaddingPage } from './pages/SpacingPaddingPage';
 import { ElevationOverviewPage } from './pages/ElevationOverviewPage';
 import { ElevationShadowPage } from './pages/ElevationShadowPage';
+import { LayoutResponsiveGridPage } from './pages/LayoutResponsiveGridPage';
 import { IconsOverviewPage } from './pages/IconsOverviewPage';
 import { IconsDesignerGuidePage } from './pages/IconsDesignerGuidePage';
 import { IconsDeveloperGuidePage } from './pages/IconsDeveloperGuidePage';
@@ -83,6 +84,14 @@ export default function App() {
           element={<ElevationOverviewPage />}
         />
         <Route path="foundation/elevation/shadow" element={<ElevationShadowPage />} />
+        <Route
+          path="foundation/layout"
+          element={<Navigate to="/foundation/layout/responsive-grid" replace />}
+        />
+        <Route
+          path="foundation/layout/responsive-grid"
+          element={<LayoutResponsiveGridPage />}
+        />
         <Route path="foundation/icons/overview" element={<IconsOverviewPage />} />
         <Route
           path="foundation/icons/designer-guide"
