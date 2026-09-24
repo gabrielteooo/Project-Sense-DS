@@ -28,7 +28,7 @@ export const HANDBOOK_TABS: HandbookTab[] = [
     id: 'foundations',
     label: 'Foundations',
     matchPath: '/foundation',
-    href: '/foundation/colours/overview',
+    href: '/foundation',
   },
   {
     id: 'components',
@@ -227,12 +227,25 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   },
 ];
 
-export const HANDBOOK_NAV_DEFAULT_OPEN = [
-  'colours',
-  'elevation',
-  'icons',
-  'layout',
-  'spacing',
-  'typography',
-  'content',
-] as const;
+function navHrefMatchesPath(pathname: string, href: string): boolean {
+  if (pathname === href) return true;
+  if (href === '/get-started' || href === '/foundation') {
+    return pathname === href;
+  }
+  return pathname.startsWith(`${href}/`);
+}
+
+function navTreeContainsPath(item: HandbookNavItem, pathname: string): boolean {
+  if (item.href && navHrefMatchesPath(pathname, item.href)) return true;
+  return item.children?.some((child) => navTreeContainsPath(child, pathname)) ?? false;
+}
+
+/** Branch section ids that should be expanded for the current route (e.g. `colours` on `/foundation/colours/base`). */
+export function navBranchIdsForPathname(
+  items: HandbookNavItem[],
+  pathname: string,
+): string[] {
+  return items
+    .filter((item) => item.children?.length && navTreeContainsPath(item, pathname))
+    .map((item) => item.id);
+}

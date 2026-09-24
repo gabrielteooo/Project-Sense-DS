@@ -15,6 +15,7 @@ import { SpacingPaddingPage } from './pages/SpacingPaddingPage';
 import { ElevationOverviewPage } from './pages/ElevationOverviewPage';
 import { ElevationShadowPage } from './pages/ElevationShadowPage';
 import { LayoutResponsiveGridPage } from './pages/LayoutResponsiveGridPage';
+import { FoundationsOverviewPage } from './pages/FoundationsOverviewPage';
 import { IconsOverviewPage } from './pages/IconsOverviewPage';
 import { IconsDesignerGuidePage } from './pages/IconsDesignerGuidePage';
 import { IconsDeveloperGuidePage } from './pages/IconsDeveloperGuidePage';
@@ -58,6 +59,7 @@ export default function App() {
           path="guidelines"
           element={<Navigate to="/get-started" replace />}
         />
+        <Route path="foundation" element={<FoundationsOverviewPage />} />
         <Route
           path="foundation/colours"
           element={<Navigate to="/foundation/colours/overview" replace />}

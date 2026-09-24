@@ -1,6 +1,7 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import type { HandbookNavItem } from '../../config/navigation';
-import { HANDBOOK_NAV_DEFAULT_OPEN } from '../../config/navigation';
+import { navBranchIdsForPathname } from '../../config/navigation';
 import { HANDBOOK_SHELL } from '../../figma/metrics';
 import { handbookMenuItemPadding } from '../../utils/menuItemPadding';
 import { HandbookMenuItem } from './HandbookMenuItem';
@@ -9,10 +10,14 @@ type Props = {
   items: HandbookNavItem[];
 };
 
-function useOpenSections() {
+function useOpenSections(items: HandbookNavItem[], pathname: string) {
   const [open, setOpen] = useState<Set<string>>(
-    () => new Set(HANDBOOK_NAV_DEFAULT_OPEN),
+    () => new Set(navBranchIdsForPathname(items, pathname)),
   );
+
+  useEffect(() => {
+    setOpen(new Set(navBranchIdsForPathname(items, pathname)));
+  }, [pathname, items]);
 
   const toggle = useCallback((id: string) => {
     setOpen((prev) => {
@@ -104,7 +109,8 @@ type MenuProps = Props & {
 };
 
 export function HandbookMenu({ items, variant = 'default' }: MenuProps) {
-  const { toggle, isOpen } = useOpenSections();
+  const { pathname } = useLocation();
+  const { toggle, isOpen } = useOpenSections(items, pathname);
 
   const branches = items.map((item) => (
     <NavBranch

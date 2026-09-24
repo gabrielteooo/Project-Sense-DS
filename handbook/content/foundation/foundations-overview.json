@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Foundations",
+  "pageDescription": "Foundations are the core building blocks of a design system, covering essentials like colour, typography, and spacing, to ensure consistency and scalability across products.",
+  "widgets": [
+    {
+      "id": "colours",
+      "label": "Colours",
+      "href": "/foundation/colours/overview",
+      "iconClass": "fa-solid fa-palette"
+    },
+    {
+      "id": "elevation",
+      "label": "Elevation",
+      "href": "/foundation/elevation/overview",
+      "iconClass": "fa-solid fa-clone"
+    },
+    {
+      "id": "icons",
+      "label": "Icons",
+      "href": "/foundation/icons/overview",
+      "iconClass": "fa-solid fa-icons"
+    },
+    {
+      "id": "layout",
+      "label": "Layout",
+      "href": "/foundation/layout/responsive-grid",
+      "iconClass": "fa-solid fa-table-cells-large"
+    },
+    {
+      "id": "spacing",
+      "label": "Spacing",
+      "href": "/foundation/spacing/overview",
+      "iconClass": "fa-solid fa-arrows-left-right-to-line"
+    },
+    {
+      "id": "typography",
+      "label": "Typography",
+      "href": "/foundation/typography/overview",
+      "iconClass": "fa-solid fa-font-case"
+    }
+  ]
+}

@@ -15,6 +15,7 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Side menu bar (search + nav) | `1:12439` |
 | Foundations side menu (Typography) | `62:21857` |
 | Typography — Text system page | `62:21858` |
+| Foundations — Overview (landing) | `136:12296` |
 | Spacing — Overview | `91:539` |
 | Spacing — Margin | `91:1117` |
 | Spacing — Padding | `91:1701` |

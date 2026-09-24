@@ -22,6 +22,7 @@ export const FIGMA_NODES = {
   elevationOverviewPage: '112:2095',
   elevationShadowPage: '113:3026',
   layoutResponsiveGridPage: '117:655',
+  foundationsOverviewPage: '136:12296',
   iconsOverviewPage: '92:8259',
   iconsOverviewUsageHeaderFrame: '97:1041',
   iconsDesignerGuidePage: '97:1152',
