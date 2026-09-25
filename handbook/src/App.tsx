@@ -26,6 +26,11 @@ import { DateTimeFormattingPage } from './pages/DateTimeFormattingPage';
 import { ResultsFormattingPage } from './pages/ResultsFormattingPage';
 import { NumbersFormattingPage } from './pages/NumbersFormattingPage';
 import { WritingGuidelinesPage } from './pages/WritingGuidelinesPage';
+import { StatePersistenceGlobalFiltersPage } from './pages/StatePersistenceGlobalFiltersPage';
+import { StatePersistenceChartsPage } from './pages/StatePersistenceChartsPage';
+import { StatePersistenceTablePage } from './pages/StatePersistenceTablePage';
+import { StatePersistenceComponentStatePage } from './pages/StatePersistenceComponentStatePage';
+import { StatePersistenceFormsPage } from './pages/StatePersistenceFormsPage';
 import { HandbookPlaceholderPage } from './pages/HandbookPlaceholderPage';
 
 export default function App() {
@@ -53,6 +58,38 @@ export default function App() {
         <Route
           path="get-started/results-formatting"
           element={<ResultsFormattingPage />}
+        />
+        <Route
+          path="get-started/data-persistence"
+          element={
+            <Navigate to="/get-started/state-persistence/global-filters" replace />
+          }
+        />
+        <Route
+          path="get-started/state-persistence/global-filters"
+          element={<StatePersistenceGlobalFiltersPage />}
+        />
+        <Route
+          path="get-started/state-persistence/charts"
+          element={<StatePersistenceChartsPage />}
+        />
+        <Route
+          path="get-started/state-persistence/table"
+          element={<StatePersistenceTablePage />}
+        />
+        <Route
+          path="get-started/state-persistence/component-state"
+          element={<StatePersistenceComponentStatePage />}
+        />
+        <Route
+          path="get-started/state-persistence/forms"
+          element={<StatePersistenceFormsPage />}
+        />
+        <Route
+          path="get-started/state-persistence"
+          element={
+            <Navigate to="/get-started/state-persistence/global-filters" replace />
+          }
         />
         <Route path="get-started/:slug" element={<GetStartedDocPage />} />
         <Route

@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Global filter",
+  "pageDescription": "Retaining filters states when navigating between dashboards.",
+  "section": {
+    "title": "Global filter persistence",
+    "confirmed": "Confirmed - 5 Aug 2026",
+    "table": {
+      "columns": [
+        "User Actions",
+        "FMS (Mashups)",
+        "FMS (Apps)",
+        "Service Exception"
+      ],
+      "rows": [
+        ["Refresh page", "Reset", "Retain", "—"],
+        [
+          "Browser Back/Forward",
+          "Restore previously selected page filters",
+          "Restore previously selected page filters",
+          "—"
+        ],
+        ["Parent to child page", "Carry filters to child", "Carry filters to child", "—"],
+        [
+          "Return to parent via FMS Back/breadcrumb",
+          "Restore parent's previously selected filter",
+          "Carry filters back to parent",
+          "—"
+        ],
+        [
+          "Navigate to pages within the same product via FMS menu",
+          "Reset",
+          "Reset",
+          "RSAF RAMS - retain filters"
+        ],
+        [
+          "Navigate to pages of another product via FMS menu",
+          "Reset",
+          "Reset",
+          "RSN (R4) - carry filters between RAM and DA"
+        ],
+        ["Switch tabs within page", "Carry filters across tabs", "Reset", "—"],
+        [
+          "Duplicate browser tab",
+          "Reset",
+          "Reset",
+          "RSAF RAMS (R4) - copy filters; tabs then act independently"
+        ],
+        ["Login after logout/ timeout", "Reset", "Reset", "—"]
+      ]
+    }
+  }
+}

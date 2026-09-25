@@ -1,0 +1,52 @@
+{
+  "pageTitle": "Table",
+  "pageDescription": "Retaining table sort/filters, pagination, column configurations when navigating between dashboards.",
+  "section": {
+    "title": "Table filter persistence",
+    "confirmed": "Confirmed - 31 Mar 2026",
+    "table": {
+      "columns": [
+        "User Actions",
+        "Table interaction",
+        "Column preferences",
+        "Exception"
+      ],
+      "columnTooltips": {
+        "Table interaction": "Sort/filters, pagination, and item per page",
+        "Column preferences": "Show/hide columns, re-ordering columns, adjusting column width"
+      },
+      "rows": [
+        [
+          "Refresh page",
+          "Reset",
+          "Reset",
+          "RSAF column action:\nretain filters"
+        ],
+        [
+          "Page navigations (FMS back, breadcrumb trails, left menu bar, browser back/forward)",
+          "Reset",
+          "Reset",
+          "RSAF column action:\nretain filters"
+        ],
+        [
+          "Switch tabs within page",
+          "Retain separately for each tab",
+          "Retain separately for each tab",
+          "—"
+        ],
+        [
+          "Duplicate browser tab",
+          "Reset",
+          "Reset",
+          "RSAF column action:\nretain filters"
+        ],
+        [
+          "Login after logout/ timeout",
+          "Reset",
+          "Reset",
+          "RSAF column action:\nretain filters"
+        ]
+      ]
+    }
+  }
+}

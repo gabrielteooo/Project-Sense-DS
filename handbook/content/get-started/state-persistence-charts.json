@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Charts",
+  "pageDescription": "Retaining chart drill downs when navigating between dashboards.",
+  "section": {
+    "title": "Chart filter persistence",
+    "confirmed": "Confirmed - 31 Mar 2026",
+    "introParagraphs": [
+      "If there are charts not implemented using Qlik, to state expected behaviour in PRD.",
+      "Note: as of R4, only RSN has charts implemented not using Qlik"
+    ],
+    "table": {
+      "columns": ["User Actions", "FMS (Mashups)", "Service Exception"],
+      "rows": [
+        ["Refresh page", "Reset", "—"],
+        [
+          "Browser Back/Forward",
+          "Restore previously selected page filters",
+          "—"
+        ],
+        ["Parent to child page", "Carry filters to child", "—"],
+        [
+          "Return to parent via FMS Back/breadcrumb",
+          "Restore parent's previously selected filter",
+          "—"
+        ],
+        [
+          "Navigate to pages within the same product via FMS menu",
+          "Reset",
+          "—"
+        ],
+        [
+          "Navigate to pages of another product via FMS menu",
+          "Reset",
+          "—"
+        ],
+        ["Switch tabs within page", "Carry filters across tabs", "—"],
+        ["Duplicate browser tab", "Reset", "—"],
+        ["Login after logout/ timeout", "Reset", "—"]
+      ]
+    }
+  }
+}

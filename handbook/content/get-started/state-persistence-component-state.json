@@ -1,0 +1,55 @@
+{
+  "pageTitle": "Component state",
+  "pageDescription": "Retaining UI states for other design components.",
+  "section": {
+    "title": "Component state persistence",
+    "confirmed": "Confirmed - 31 Mar 2026",
+    "footnote": "* RSAF exception: Retain state",
+    "table": {
+      "columns": [
+        "User Actions",
+        "Accordion\n(Expand/Collapse)",
+        "Page tab\n(Active/Inactive)",
+        "Alert Banner\n(After dismiss)",
+        "Broadcast Banner\n(After dismiss)"
+      ],
+      "rows": [
+        [
+          "Refresh page",
+          "Reset*",
+          "Reset - first tab",
+          "Show again",
+          "Show again"
+        ],
+        [
+          "Navigate within the same product",
+          "Reset*",
+          "Reset - first tab*",
+          "Show again",
+          "Stay dismissed"
+        ],
+        [
+          "Navigate to a different product",
+          "Reset",
+          "Reset - first tab",
+          "Show again",
+          "Stay dismissed"
+        ],
+        [
+          "Duplicate browser tab",
+          "Reset",
+          "Reset - first tab",
+          "Show again",
+          "Show again"
+        ],
+        [
+          "Login after logout/ timeout",
+          "Reset",
+          "Reset - first tab",
+          "Show again",
+          "Show again"
+        ]
+      ]
+    }
+  }
+}

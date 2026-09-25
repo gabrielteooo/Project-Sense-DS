@@ -1,0 +1,18 @@
+{
+  "pageTitle": "Forms",
+  "pageDescription": "Retaining of form inputs in full page forms, drawers, modals",
+  "sectionTitle": "Forms state persistence",
+  "confirmed": "Confirmed - 31 Mar 2026",
+  "defaultBehaviour": {
+    "title": "Default behaviour",
+    "items": [
+      "When filling form fields and attempting to leave page (i.e. browser back), a \"Discard changes\" modal will be displayed to either continue editing or discard their changes.",
+      "Previously entered data is not recoverable once discarded.",
+      "Save as draft/Autosave (based on user data change and accepted) feature would only be designed based on requirement"
+    ]
+  },
+  "example": {
+    "alt": "Discard changes confirmation modal with Continue editing and Discard changes actions",
+    "imageFile": "forms-discard-modal.png"
+  }
+}

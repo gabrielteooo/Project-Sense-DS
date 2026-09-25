@@ -84,10 +84,35 @@ export const HANDBOOK_GET_STARTED_NAV: HandbookNavItem[] = [
     ],
   },
   {
-    id: 'data-persistence',
-    label: 'Data persistence',
-    href: '/get-started/data-persistence',
-    emphasis: 'section',
+    id: 'state-persistence',
+    label: 'State persistence',
+    children: [
+      {
+        id: 'state-persistence-global-filters',
+        label: 'Global filters',
+        href: '/get-started/state-persistence/global-filters',
+      },
+      {
+        id: 'state-persistence-charts',
+        label: 'Charts',
+        href: '/get-started/state-persistence/charts',
+      },
+      {
+        id: 'state-persistence-table',
+        label: 'Table',
+        href: '/get-started/state-persistence/table',
+      },
+      {
+        id: 'state-persistence-component-state',
+        label: 'Component state',
+        href: '/get-started/state-persistence/component-state',
+      },
+      {
+        id: 'state-persistence-forms',
+        label: 'Forms',
+        href: '/get-started/state-persistence/forms',
+      },
+    ],
   },
   {
     id: 'error-handling',

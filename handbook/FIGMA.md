@@ -28,6 +28,13 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Get started — Numbers formatting | `101:5532` |
 | Get started — Date time formatting | `101:5789` |
 | Get started — Results formatting | `100:5465` |
+| Get started — State persistence / Global filter | `135:10497` |
+| Get started — State persistence / Charts | `142:14705` |
+| Get started — State persistence / Table | `142:15069` |
+| Get started — State persistence / Table interaction tooltip | `142:15837` |
+| Get started — State persistence / Column preferences tooltip | `142:15876` |
+| Get started — State persistence / Component state | `142:15219` |
+| Get started — State persistence / Forms | `145:16286` |
 | Page header | `1:10480` |
 | Menu item (`web-menu-item` + interaction) | `1:10814` |
 | Base colour table | `1:10488` |
