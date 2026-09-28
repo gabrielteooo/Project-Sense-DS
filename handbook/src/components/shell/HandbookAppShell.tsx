@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import {
+  HANDBOOK_COMPONENTS_NAV,
   HANDBOOK_FOUNDATIONS_NAV,
   HANDBOOK_GET_STARTED_NAV,
 } from '../../config/navigation';
@@ -15,6 +16,9 @@ function sidebarNavForPath(pathname: string) {
   if (pathname.startsWith('/foundation')) {
     return HANDBOOK_FOUNDATIONS_NAV;
   }
+  if (pathname.startsWith('/components')) {
+    return HANDBOOK_COMPONENTS_NAV;
+  }
   return [];
 }
 
@@ -27,15 +31,26 @@ export function HandbookAppShell() {
       className="handbook-app-shell"
       style={{
         ['--handbook-layout-max-width' as string]: `${HANDBOOK_VIEWPORT.widthPx}px`,
+        ['--handbook-sidebar-width' as string]: `${HANDBOOK_SHELL.sidebarWidthPx}px`,
       }}
     >
       <HandbookGlobalHeader />
       <div className="handbook-app-shell__frame">
         <div className="handbook-app-shell__body">
-          <HandbookMenu
-            items={sidebarItems}
-            variant={pathname.startsWith('/get-started') ? 'get-started' : 'default'}
-          />
+          {sidebarItems.length > 0 ? (
+            <aside className="handbook-app-shell__sidebar" aria-label="Section navigation">
+              <HandbookMenu
+                items={sidebarItems}
+                variant={
+                  pathname.startsWith('/get-started')
+                    ? 'get-started'
+                    : pathname.startsWith('/components')
+                      ? 'components'
+                      : 'default'
+                }
+              />
+            </aside>
+          ) : null}
           <div className="handbook-app-shell__main">
             <div
               className="handbook-app-shell__content"

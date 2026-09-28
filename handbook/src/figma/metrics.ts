@@ -14,6 +14,11 @@ export const FIGMA_NODES = {
   globalHeaderTab: '1:12914',
   handbookFrame: '1:10873',
   sideMenuBar: '1:12439',
+  sideMenu: '151:2442',
+  hbSubmenuTitle: '1:10815',
+  hbMenuItem: '150:2225',
+  menuOpenActive: '151:2437',
+  componentsOverviewPage: '152:2536',
   foundationsSideMenuTypography: '62:21857',
   typographyTextSystemPage: '62:21858',
   spacingOverviewPage: '91:539',
@@ -57,8 +62,7 @@ export const HANDBOOK_SHELL = {
   layoutMaxWidthPx: HANDBOOK_VIEWPORT.widthPx,
   sidebarWidthPx: 280,
   globalHeaderHeightPx: 77,
-  globalHeaderPaddingInlinePx: 32,
-  globalHeaderInnerPaddingInlinePx: 24,
+  globalHeaderPaddingInlinePx: 40,
   globalHeaderTitlePaddingBlockPx: 16,
   /** Tabs.Global.paddingSM — vertical inset per tab */
   globalHeaderTabPaddingBlockPx: 12,
@@ -75,15 +79,12 @@ export const HANDBOOK_SHELL = {
   contentPaddingTopPx: 64,
   contentPaddingBottomPx: 40,
   menuPaddingTopPx: 24,
-  /** Figma side menu 1:12439 — horizontal gutter */
-  menuPaddingInlinePx: 24,
-  menuItemHeightPx: 40,
-  /** Figma web-menu-item 1:10814 — padding inside each row */
-  menuItemPaddingInlinePx: 16,
-  menuItemGapPx: 4,
-  /** Figma side menu 62:21857 — gap between foundation sections (e.g. below Colours) */
+  /** hb-submenu-title / hb-menu-item row height (151:2442) */
+  menuItemHeightPx: 48,
+  /** Gap between side-menu sections (151:2442) */
   menuSectionGapPx: 8,
-  menuSubIndentPx: 28,
+  /** Gap between items inside handbook-menu__list (151:2437) */
+  menuListItemGapPx: 4,
   /** Figma page header 1:10480 — title to description */
   pageHeaderGapPx: 16,
   pageHeaderPaddingBottomPx: 32,

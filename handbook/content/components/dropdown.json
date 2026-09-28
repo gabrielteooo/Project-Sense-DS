@@ -1,0 +1,92 @@
+{
+  "slug": "dropdown",
+  "pageTitle": "Dropdown",
+  "pageDescription": "Dropdowns reveal a list of actions or options anchored to a trigger. Content will be refined from Figma frames you share.",
+  "figmaNodeId": "",
+  "design": {
+    "anatomy": {
+      "title": "Anatomy",
+      "description": "A dropdown pairs a trigger control with a floating menu panel.",
+      "parts": [
+        {
+          "label": "Trigger",
+          "description": "Button, icon button, or split control that opens the menu."
+        },
+        {
+          "label": "Menu panel",
+          "description": "Elevated surface containing menu items, dividers, and optional groups."
+        },
+        {
+          "label": "Menu item",
+          "description": "Single selectable or actionable row with label and optional icon."
+        }
+      ]
+    },
+    "specification": {
+      "title": "Specification guidelines",
+      "description": "Menu panel padding and item height will be measured here once the Figma frame is linked.",
+      "demoVariant": "secondary",
+      "demoLabel": "Actions",
+      "measurements": [
+        { "label": "8px item gap", "edge": "top" },
+        { "label": "Menu min-width 160px", "edge": "right" }
+      ]
+    },
+    "types": {
+      "title": "Dropdown types",
+      "description": "Interactive previews for trigger styles (placeholder until Figma implementation).",
+      "variants": [
+        { "id": "secondary", "label": "Default trigger" },
+        { "id": "tertiary", "label": "Text trigger" },
+        { "id": "icon-only", "label": "Icon trigger" }
+      ]
+    }
+  },
+  "usage": {
+    "guidelines": {
+      "title": "Guideline",
+      "description": "Use dropdowns to conserve space when there are multiple related actions or options.",
+      "dosDonts": {
+        "columns": ["Do", "Don't"],
+        "rows": [
+          [
+            "Group related actions in one menu with clear labels.",
+            "Nest more than one submenu level without a clear path back."
+          ],
+          [
+            "Keep destructive actions visually distinct inside the menu.",
+            "Hide critical primary actions only inside a dropdown."
+          ]
+        ]
+      }
+    },
+    "usage": {
+      "title": "Usage",
+      "items": [
+        {
+          "heading": "Action menu",
+          "body": "Use when several secondary actions apply to one object, such as row actions in a table."
+        },
+        {
+          "heading": "Selection menu",
+          "body": "Use when the user picks one option from a short list and the trigger shows the current value."
+        }
+      ]
+    }
+  },
+  "updates": {
+    "changelog": {
+      "title": "Updates",
+      "columns": ["Date", "Version", "Description"],
+      "rows": [["28 Sep 2025", "0.1.0", "Handbook shell and placeholder design canvas."]]
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "columns": ["Planned item", "Status", "Target"],
+      "rows": [
+        ["Figma-accurate menu panel and item specs", "In progress", "Sep 2025"],
+        ["Keyboard and focus guidelines", "Planned", "Q4 2025"]
+      ]
+    }
+  }
+}

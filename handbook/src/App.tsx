@@ -32,6 +32,8 @@ import { StatePersistenceTablePage } from './pages/StatePersistenceTablePage';
 import { StatePersistenceComponentStatePage } from './pages/StatePersistenceComponentStatePage';
 import { StatePersistenceFormsPage } from './pages/StatePersistenceFormsPage';
 import { HandbookPlaceholderPage } from './pages/HandbookPlaceholderPage';
+import { ComponentsOverviewPage } from './pages/ComponentsOverviewPage';
+import { ComponentDocPage } from './pages/ComponentDocPage';
 
 export default function App() {
   return (
@@ -152,10 +154,8 @@ export default function App() {
           path="foundation/typography/text-system"
           element={<TypographyTextSystemPage />}
         />
-        <Route
-          path="components"
-          element={<HandbookPlaceholderPage title="Components" />}
-        />
+        <Route path="components" element={<ComponentsOverviewPage />} />
+        <Route path="components/:slug" element={<ComponentDocPage />} />
         <Route
           path="templates"
           element={<HandbookPlaceholderPage title="Templates" />}

@@ -1,0 +1,91 @@
+{
+  "slug": "radio",
+  "pageTitle": "Radio",
+  "pageDescription": "Radio buttons let users choose exactly one option from a set. Design specs will align to FMS radio tokens.",
+  "figmaNodeId": "",
+  "design": {
+    "anatomy": {
+      "title": "Anatomy",
+      "description": "Each radio option includes a control, label, and optional helper text.",
+      "parts": [
+        {
+          "label": "Control",
+          "description": "Circular indicator showing unselected, hover, focus, and selected states."
+        },
+        {
+          "label": "Label",
+          "description": "Describes the option; clicking the label selects the control."
+        },
+        {
+          "label": "Group label (optional)",
+          "description": "Heading for the set of related radio options."
+        }
+      ]
+    },
+    "specification": {
+      "title": "Specification guidelines",
+      "description": "Control size and label spacing will be updated from Figma measurements.",
+      "demoVariant": "secondary",
+      "demoLabel": "Option",
+      "measurements": [
+        { "label": "16px control (md)", "edge": "left" },
+        { "label": "8px label gap", "edge": "right" }
+      ]
+    },
+    "types": {
+      "title": "Radio types",
+      "description": "Preview placeholder controls until the radio canvas is built from Figma.",
+      "variants": [
+        { "id": "secondary", "label": "Default" },
+        { "id": "tertiary", "label": "Grouped list" }
+      ]
+    }
+  },
+  "usage": {
+    "guidelines": {
+      "title": "Guideline",
+      "description": "Use radios when all options must be visible and only one selection is allowed.",
+      "dosDonts": {
+        "columns": ["Do", "Don't"],
+        "rows": [
+          [
+            "Use radios for 2–7 mutually exclusive options.",
+            "Use radios when multiple selections are allowed (use checkboxes)."
+          ],
+          [
+            "Pre-select a sensible default when one option is recommended.",
+            "Force users to select without a clear default when all options are equal."
+          ]
+        ]
+      }
+    },
+    "usage": {
+      "title": "Usage",
+      "items": [
+        {
+          "heading": "Single choice",
+          "body": "Present radios vertically for forms and filters where the user must pick one value."
+        },
+        {
+          "heading": "Segmented patterns",
+          "body": "For compact layouts, consider button-style radio groups once documented in Figma."
+        }
+      ]
+    }
+  },
+  "updates": {
+    "changelog": {
+      "title": "Updates",
+      "columns": ["Date", "Version", "Description"],
+      "rows": [["28 Sep 2025", "0.1.0", "Handbook template and usage copy."]]
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "columns": ["Planned item", "Status", "Target"],
+      "rows": [
+        ["Interactive radio group on design tab", "In progress", "Sep 2025"],
+        ["Solid button-style radio variant", "Planned", "Q4 2025"]
+      ]
+    }
+  }
+}

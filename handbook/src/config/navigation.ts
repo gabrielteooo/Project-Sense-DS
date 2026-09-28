@@ -3,9 +3,15 @@ export type HandbookNavItem = {
   label: string;
   href?: string;
   children?: HandbookNavItem[];
-  /** Top-level link styled like foundation section titles (semibold). */
+  /** Font Awesome class for hb-submenu-title icon (Figma 151:2442). */
+  iconClass?: string;
+  /** Horizontal rule between nav groups (Figma 152:2987). */
+  divider?: boolean;
+  /** @deprecated Section links use root hb-menu-item; kept for IA only */
   emphasis?: 'section';
 };
+
+import { COMPONENT_CATALOG, componentHref } from './componentsRegistry';
 
 export type HandbookTab = {
   id: string;
@@ -127,6 +133,7 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'colours',
     label: 'Colours',
+    iconClass: 'fa-solid fa-palette',
     children: [
       {
         id: 'colours-overview',
@@ -163,6 +170,7 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'elevation',
     label: 'Elevation',
+    iconClass: 'fa-solid fa-clone',
     children: [
       {
         id: 'elevation-overview',
@@ -179,6 +187,7 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'icons',
     label: 'Icons',
+    iconClass: 'fa-solid fa-icons',
     children: [
       {
         id: 'icons-overview',
@@ -200,6 +209,7 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'layout',
     label: 'Layout',
+    iconClass: 'fa-solid fa-table-cells-large',
     children: [
       {
         id: 'layout-responsive-grid',
@@ -211,6 +221,7 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'spacing',
     label: 'Spacing',
+    iconClass: 'fa-solid fa-arrows-left-right-to-line',
     children: [
       {
         id: 'spacing-overview',
@@ -232,6 +243,7 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   {
     id: 'typography',
     label: 'Typography',
+    iconClass: 'fa-solid fa-font-case',
     children: [
       {
         id: 'typography-overview',
@@ -252,6 +264,27 @@ export const HANDBOOK_FOUNDATIONS_NAV: HandbookNavItem[] = [
   },
 ];
 
+/** Components tab — overview + changelog, divider, then doc pages (Figma 152:2932). */
+export const HANDBOOK_COMPONENTS_NAV: HandbookNavItem[] = [
+  {
+    id: 'components-overview',
+    label: 'Component Overview',
+    href: '/components',
+  },
+  {
+    id: 'components-changelog',
+    label: 'Change Log',
+  },
+  { id: 'components-nav-divider', label: '', divider: true },
+  ...COMPONENT_CATALOG.filter((entry) => entry.documented)
+    .sort((a, b) => a.label.localeCompare(b.label))
+    .map((entry) => ({
+      id: `component-${entry.slug}`,
+      label: entry.label,
+      href: componentHref(entry.slug, 'design'),
+    })),
+];
+
 function navHrefMatchesPath(pathname: string, href: string): boolean {
   if (pathname === href) return true;
   if (href === '/get-started' || href === '/foundation') {
@@ -261,7 +294,10 @@ function navHrefMatchesPath(pathname: string, href: string): boolean {
 }
 
 function navTreeContainsPath(item: HandbookNavItem, pathname: string): boolean {
-  if (item.href && navHrefMatchesPath(pathname, item.href)) return true;
+  if (item.href) {
+    const hrefPath = item.href.split('#')[0];
+    if (navHrefMatchesPath(pathname, hrefPath)) return true;
+  }
   return item.children?.some((child) => navTreeContainsPath(child, pathname)) ?? false;
 }
 

@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import type { HandbookNavItem } from '../../config/navigation';
 import { navBranchIdsForPathname } from '../../config/navigation';
 import { HANDBOOK_SHELL } from '../../figma/metrics';
-import { handbookMenuItemPadding } from '../../utils/menuItemPadding';
 import { HandbookMenuItem } from './HandbookMenuItem';
+import { HandbookSubmenuTitle } from './HandbookSubmenuTitle';
 
 type Props = {
   items: HandbookNavItem[];
@@ -31,64 +31,58 @@ function useOpenSections(items: HandbookNavItem[], pathname: string) {
   return { open, toggle, isOpen: (id: string) => open.has(id) };
 }
 
-function childIndentLevel(parentId: string, parentIndent: number): number {
-  if (parentId === 'colours') return parentIndent + 1;
-  return parentIndent + 1;
-}
-
 function NavBranch({
   item,
-  indentLevel,
+  depth,
+  menuVariant,
   toggle,
   isOpen,
 }: {
   item: HandbookNavItem;
-  indentLevel: number;
+  depth: 'root' | 'nested';
+  menuVariant: MenuProps['variant'];
   toggle: (id: string) => void;
   isOpen: (id: string) => boolean;
 }) {
+  const leafDepth =
+    menuVariant === 'components' ? 'nested' : depth;
   const hasChildren = Boolean(item.children?.length);
 
   if (hasChildren) {
     const expanded = isOpen(item.id);
     return (
-      <div className="handbook-menu__branch">
-        <button
-          type="button"
-          className={[
-            'handbook-menu-item handbook-menu-item--branch',
-            indentLevel === 0
-              ? 'handbook-menu-item--section-title'
-              : '',
-          ]
-            .filter(Boolean)
-            .join(' ')}
-          aria-expanded={expanded}
-          style={handbookMenuItemPadding(indentLevel)}
-          onClick={() => toggle(item.id)}
-        >
-          <span>{item.label}</span>
-          <i
-            className={`fa-regular fa-chevron-${expanded ? 'up' : 'down'} handbook-menu__chevron`}
-            aria-hidden
-          />
-        </button>
+      <div className="handbook-menu__section">
         {expanded ? (
-          <div
-            className="handbook-menu__children"
-            style={{ gap: HANDBOOK_SHELL.menuItemGapPx }}
-          >
-            {item.children!.map((child) => (
-              <NavBranch
-                key={child.id}
-                item={child}
-                indentLevel={childIndentLevel(item.id, indentLevel)}
-                toggle={toggle}
-                isOpen={isOpen}
-              />
-            ))}
+          <div className="handbook-menu__open">
+            <HandbookSubmenuTitle
+              label={item.label}
+              iconClass={item.iconClass}
+              expanded={expanded}
+              active
+              onToggle={() => toggle(item.id)}
+            />
+            <div className="handbook-menu__list">
+              {item.children!.map((child) => (
+                <NavBranch
+                  key={child.id}
+                  item={child}
+                  depth="nested"
+                  menuVariant={menuVariant}
+                  toggle={toggle}
+                  isOpen={isOpen}
+                />
+              ))}
+            </div>
           </div>
-        ) : null}
+        ) : (
+          <HandbookSubmenuTitle
+            label={item.label}
+            iconClass={item.iconClass}
+            expanded={false}
+            active={false}
+            onToggle={() => toggle(item.id)}
+          />
+        )}
       </div>
     );
   }
@@ -97,36 +91,43 @@ function NavBranch({
     <HandbookMenuItem
       label={item.label}
       href={item.href}
-      indentLevel={indentLevel}
-      end
-      sectionTitle={item.emphasis === 'section' && indentLevel === 0}
+      iconClass={item.iconClass}
+      depth={leafDepth}
     />
   );
 }
 
 type MenuProps = Props & {
-  variant?: 'default' | 'get-started';
+  variant?: 'default' | 'get-started' | 'components';
 };
 
+/** Figma Side-menu 151:2442 — hb-submenu-title + hb-menu-item */
 export function HandbookMenu({ items, variant = 'default' }: MenuProps) {
   const { pathname } = useLocation();
   const { toggle, isOpen } = useOpenSections(items, pathname);
 
-  const branches = items.map((item) => (
-    <NavBranch
-      key={item.id}
-      item={item}
-      indentLevel={0}
-      toggle={toggle}
-      isOpen={isOpen}
-    />
-  ));
+  const branches = items.map((item) => {
+    if (item.divider) {
+      return <hr key={item.id} className="handbook-menu__divider" />;
+    }
+    return (
+      <NavBranch
+        key={item.id}
+        item={item}
+        depth="root"
+        menuVariant={variant}
+        toggle={toggle}
+        isOpen={isOpen}
+      />
+    );
+  });
 
   return (
     <nav
       className={[
         'handbook-menu',
         variant === 'get-started' ? 'handbook-menu--get-started' : '',
+        variant === 'components' ? 'handbook-menu--components' : '',
       ]
         .filter(Boolean)
         .join(' ')}
@@ -134,7 +135,6 @@ export function HandbookMenu({ items, variant = 'default' }: MenuProps) {
       style={{
         width: HANDBOOK_SHELL.sidebarWidthPx,
         paddingTop: HANDBOOK_SHELL.menuPaddingTopPx,
-        paddingInline: HANDBOOK_SHELL.menuPaddingInlinePx,
         ['--handbook-menu-section-gap' as string]: `${HANDBOOK_SHELL.menuSectionGapPx}px`,
       }}
     >

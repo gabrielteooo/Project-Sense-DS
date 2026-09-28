@@ -1,0 +1,113 @@
+{
+  "slug": "button",
+  "pageTitle": "Button",
+  "pageDescription": "Buttons trigger actions and navigate users through tasks. Use the design tab to inspect anatomy, spacing, and interactive states.",
+  "figmaNodeId": "",
+  "design": {
+    "anatomy": {
+      "title": "Anatomy",
+      "description": "A standard button is built from a container, optional leading icon, label text, and optional trailing icon.",
+      "parts": [
+        {
+          "label": "Container",
+          "description": "Defines hit area, background, border, and corner radius."
+        },
+        {
+          "label": "Label",
+          "description": "Action text using base text style (Inter, 16px / 24px line height on medium size)."
+        },
+        {
+          "label": "Icon (optional)",
+          "description": "Font Awesome glyph aligned to the label; icon-only buttons omit the label."
+        }
+      ]
+    },
+    "specification": {
+      "title": "Specification guidelines",
+      "description": "Inspect default padding and control height on the primary button. Values update when you change size in Button types below.",
+      "demoVariant": "primary",
+      "demoLabel": "Button",
+      "measurements": [
+        { "label": "16px inline padding", "edge": "left" },
+        { "label": "32px height (md)", "edge": "right" }
+      ]
+    },
+    "types": {
+      "title": "Button types",
+      "description": "Configure size, then hover or press each variant to preview interaction states.",
+      "variants": [
+        { "id": "primary", "label": "Primary" },
+        { "id": "secondary", "label": "Secondary" },
+        { "id": "tertiary", "label": "Tertiary" },
+        { "id": "link", "label": "Button link" },
+        { "id": "icon-only", "label": "Button (icon only)" }
+      ]
+    }
+  },
+  "usage": {
+    "guidelines": {
+      "title": "Guideline",
+      "description": "Buttons should clearly communicate the outcome of an action and use hierarchy to show importance.",
+      "dosDonts": {
+        "columns": ["Do", "Don't"],
+        "rows": [
+          [
+            "Use a primary button for the single leading action on a view.",
+            "Place two primary buttons side by side for competing actions."
+          ],
+          [
+            "Use sentence case for labels (e.g. Save changes).",
+            "Use vague labels such as OK or Submit without context."
+          ],
+          [
+            "Disable a button when the action is unavailable; keep it visible when possible.",
+            "Hide the primary action entirely when validation fails without explanation."
+          ]
+        ]
+      }
+    },
+    "usage": {
+      "title": "Usage",
+      "items": [
+        {
+          "heading": "Primary",
+          "body": "Primary buttons are for the leading action on a page, panel, or modal. There should be at most one primary button per action area."
+        },
+        {
+          "heading": "Secondary",
+          "body": "Secondary buttons support alternate actions that are still important, such as Cancel alongside Save."
+        },
+        {
+          "heading": "Tertiary",
+          "body": "Tertiary buttons are for low-emphasis actions in dense toolbars or repeated lists."
+        },
+        {
+          "heading": "Button link",
+          "body": "Use link buttons for inline, text-first actions where a filled or outlined button would overpower the layout."
+        }
+      ]
+    },
+    "examples": {
+      "title": "Examples",
+      "intro": "Common placements in FMS products (reference screens will be added from Figma).",
+      "items": []
+    }
+  },
+  "updates": {
+    "changelog": {
+      "title": "Updates",
+      "columns": ["Date", "Version", "Description"],
+      "rows": [
+        ["28 Sep 2025", "0.1.0", "Initial handbook template and token-based previews."]
+      ]
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "columns": ["Planned item", "Status", "Target"],
+      "rows": [
+        ["Anatomy diagram from Figma", "In progress", "Q4 2025"],
+        ["Danger and loading variants", "Planned", "Q1 2026"]
+      ]
+    }
+  }
+}

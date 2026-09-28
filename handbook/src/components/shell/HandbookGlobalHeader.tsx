@@ -10,6 +10,9 @@ function tabIsActive(matchPath: string, pathname: string) {
   if (matchPath === '/foundation') {
     return pathname.startsWith('/foundation');
   }
+  if (matchPath === '/components') {
+    return pathname.startsWith('/components');
+  }
   return pathname === matchPath || pathname.startsWith(`${matchPath}/`);
 }
 
@@ -46,12 +49,7 @@ export function HandbookGlobalHeader() {
         ['--handbook-global-header-tab-padding-block' as string]: `${HANDBOOK_SHELL.globalHeaderTabPaddingBlockPx}px`,
       }}
     >
-      <div
-        className="handbook-global-header__inner"
-        style={{
-          paddingInline: HANDBOOK_SHELL.globalHeaderInnerPaddingInlinePx,
-        }}
-      >
+      <div className="handbook-global-header__inner">
         <span
           className="handbook-global-header__title"
           style={{

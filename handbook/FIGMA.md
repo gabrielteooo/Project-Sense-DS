@@ -13,6 +13,10 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Header tabs | `1:12912` |
 | Header tab | `1:12914` |
 | Side menu bar (search + nav) | `1:12439` |
+| Side menu | `151:2442` |
+| hb-submenu-title (parent) | `1:10815` |
+| hb-menu-item (child) | `150:2225` |
+| menu-open (active child) | `151:2437` |
 | Foundations side menu (Typography) | `62:21857` |
 | Typography — Text system page | `62:21858` |
 | Foundations — Overview (landing) | `136:12296` |
@@ -42,6 +46,11 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Tag — value with colour swatch | `58:15689` |
 | Contrast | `1:10808` |
 | Preview | `1:10805` |
+| Components — overview landing | `152:2536` |
+| Components — doc template (Design / Usage / Updates) | *(TBD)* |
+| Components — Button | *(TBD)* |
+| Components — Dropdown | *(TBD)* |
+| Components — Radio | *(TBD)* |
 
 Layout metrics live in `src/figma/metrics.ts`.
 
