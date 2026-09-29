@@ -1,12 +1,14 @@
 {
   "slug": "button",
   "pageTitle": "Button",
-  "pageDescription": "Buttons trigger actions and navigate users through tasks. Use the design tab to inspect anatomy, spacing, and interactive states.",
-  "figmaNodeId": "",
+  "pageDescription": "To trigger an operation",
+  "figmaNodeId": "115:606",
   "design": {
     "anatomy": {
       "title": "Anatomy",
-      "description": "A standard button is built from a container, optional leading icon, label text, and optional trailing icon.",
+      "figmaNodeId": "153:7515",
+      "imageKey": "anatomy",
+      "imageAlt": "Button anatomy diagram showing container, label, and icon callouts",
       "parts": [
         {
           "label": "Container",
@@ -17,79 +19,213 @@
           "description": "Action text using base text style (Inter, 16px / 24px line height on medium size)."
         },
         {
-          "label": "Icon (optional)",
+          "label": "Icon",
           "description": "Font Awesome glyph aligned to the label; icon-only buttons omit the label."
         }
       ]
     },
-    "specification": {
+    "specificationGuidelines": {
       "title": "Specification guidelines",
-      "description": "Inspect default padding and control height on the primary button. Values update when you change size in Button types below.",
-      "demoVariant": "primary",
-      "demoLabel": "Button",
-      "measurements": [
-        { "label": "16px inline padding", "edge": "left" },
-        { "label": "32px height (md)", "edge": "right" }
-      ]
+      "defaultSize": "base",
+      "sizeOptions": [
+        { "id": "base", "label": "Base" },
+        { "id": "small", "label": "Small" },
+        { "id": "x-small", "label": "X-Small" }
+      ],
+      "tables": {
+        "base": {
+          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "rows": [
+            ["Primary", "55px", "40px", "16px", "8px", "8px"],
+            ["Secondary", "55px", "40px", "16px", "8px", "8px"],
+            ["Icon-only", "40px", "40px", "-", "-", "8px"],
+            ["Tertiary", "46px", "40px", "8px", "8px", "-"]
+          ]
+        },
+        "small": {
+          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "rows": [
+            ["Primary", "55px", "32px", "12px", "8px", "8px"],
+            ["Secondary", "55px", "32px", "12px", "8px", "8px"],
+            ["Icon-only", "32px", "32px", "-", "-", "8px"],
+            ["Tertiary", "46px", "32px", "8px", "8px", "-"]
+          ]
+        },
+        "x-small": {
+          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "rows": [
+            ["Primary", "55px", "24px", "8px", "4px", "6px"],
+            ["Secondary", "55px", "24px", "8px", "4px", "6px"],
+            ["Icon-only", "24px", "24px", "-", "-", "6px"],
+            ["Tertiary", "46px", "24px", "4px", "4px", "-"]
+          ]
+        }
+      }
     },
-    "types": {
-      "title": "Button types",
-      "description": "Configure size, then hover or press each variant to preview interaction states.",
-      "variants": [
-        { "id": "primary", "label": "Primary" },
-        { "id": "secondary", "label": "Secondary" },
-        { "id": "tertiary", "label": "Tertiary" },
-        { "id": "link", "label": "Button link" },
-        { "id": "icon-only", "label": "Button (icon only)" }
-      ]
+    "structure": {
+      "title": "Structure",
+      "figmaNodeId": "161:39626",
+      "imageAlt": "Button structure diagram with padding, gap, and width annotations for Base size"
+    },
+    "spacingsBetweenButtons": {
+      "title": "Spacings between buttons"
+    },
+    "buttonTypes": {
+      "title": "Button Types",
+      "variants": {
+        "title": "Variants",
+        "description": "Button variants communicate hierarchy and help users identify the primary action on a screen.",
+        "items": [
+          { "variant": "primary", "label": "Primary action" },
+          { "variant": "secondary", "label": "Secondary action" },
+          { "variant": "tertiary", "label": "Tertiary action" },
+          { "variant": "link", "label": "Link action" }
+        ]
+      },
+      "states": {
+        "title": "States",
+        "figmaNodeId": "153:9515",
+        "figmaRadioGroupNodeId": "153:9520",
+        "options": [
+          { "id": "default", "label": "Default" },
+          { "id": "disabled", "label": "Disabled" },
+          { "id": "loading", "label": "Loading" },
+          { "id": "active", "label": "Active" }
+        ]
+      }
     }
   },
   "usage": {
+    "figmaNodeId": "154:38298",
     "guidelines": {
       "title": "Guideline",
-      "description": "Buttons should clearly communicate the outcome of an action and use hierarchy to show importance.",
+      "bullets": [
+        "Buttons should be clear and predictable - users should be able to anticipate what will happen when the button is selected.",
+        "Use active verbs or phrases that encourage action, such as Continue, Save, Submit.",
+        "Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling."
+      ],
       "dosDonts": {
         "columns": ["Do", "Don't"],
-        "rows": [
-          [
-            "Use a primary button for the single leading action on a view.",
-            "Place two primary buttons side by side for competing actions."
-          ],
-          [
-            "Use sentence case for labels (e.g. Save changes).",
-            "Use vague labels such as OK or Submit without context."
-          ],
-          [
-            "Disable a button when the action is unavailable; keep it visible when possible.",
-            "Hide the primary action entirely when validation fails without explanation."
-          ]
-        ]
+        "rows": []
       }
     },
-    "usage": {
-      "title": "Usage",
+    "buttonUsage": {
+      "title": "Button Usage",
       "items": [
         {
-          "heading": "Primary",
-          "body": "Primary buttons are for the leading action on a page, panel, or modal. There should be at most one primary button per action area."
+          "term": "Primary",
+          "body": "Primary button is intended to be used for leading actions, and should be use sparingly."
         },
         {
-          "heading": "Secondary",
-          "body": "Secondary buttons support alternate actions that are still important, such as Cancel alongside Save."
+          "term": "Secondary",
+          "body": "Secondary button is an alternative to the primary action, and are given less visual emphasis."
         },
         {
-          "heading": "Tertiary",
-          "body": "Tertiary buttons are for low-emphasis actions in dense toolbars or repeated lists."
+          "term": "Tertiary",
+          "body": "Tertiary button is used as lower priority optional actions."
         },
         {
-          "heading": "Button link",
-          "body": "Use link buttons for inline, text-first actions where a filled or outlined button would overpower the layout."
+          "term": "With Helper Icon",
+          "body": "Buttons with helper icon provide additional context or guidance, where helpful."
+        },
+        {
+          "term": "Link",
+          "body": "Text link is used for navigation or secondary actions within the interface."
+        },
+        {
+          "term": "Icon button",
+          "body": "Text button and icon buttons are used for miscellaneous actions, and are given the least visual emphasis."
         }
       ]
     },
+    "usage": {
+      "title": "Usage",
+      "items": []
+    },
+    "variantShowcases": [
+      {
+        "id": "primary",
+        "title": "Primary Button",
+        "description": "Used as default CTA (Call-to-Action) buttons used in FMS. There are various labels and names for the CTA buttons. The examples on the left are some of the common names used.",
+        "sizeOptions": [
+          { "id": "base", "label": "Base" },
+          { "id": "small", "label": "Small" },
+          { "id": "x-small", "label": "X-Small" }
+        ],
+        "contextBySize": {
+          "base": "Base (size) are for primary actions on edit drawers, modals, forms and edit page headers.",
+          "small": "Small (size) are for primary actions on edit drawers, modals, forms and edit page headers.",
+          "x-small": "X-Small (size) are for primary actions on edit drawers, modals, forms and edit page headers."
+        },
+        "buttons": [
+          { "label": "Next", "variant": "primary" },
+          { "label": "Save", "variant": "primary" },
+          { "label": "Save and next", "variant": "primary" },
+          { "label": "Close", "variant": "primary" },
+          { "label": "Delete", "variant": "primary", "danger": true }
+        ]
+      },
+      {
+        "id": "secondary",
+        "title": "Secondary Button",
+        "description": "Used for supporting actions that are important to the user but are not the primary action in a given context. They are used as an alternative and to give the primary action more emphasis. They are also associated with negative actions such as Cancel and Delete.",
+        "sizeOptions": [
+          { "id": "base", "label": "Base" },
+          { "id": "small", "label": "Small" },
+          { "id": "x-small", "label": "X-Small" }
+        ],
+        "contextBySize": {
+          "base": "Base (size) are for secondary actions on edit drawers, accordions, modals and edit page headers and global filters.",
+          "small": "Small (size) are for secondary actions on edit drawers, accordions, modals and edit page headers and global filters.",
+          "x-small": "X-Small (size) are for secondary actions on edit drawers, accordions, modals and edit page headers and global filters."
+        },
+        "rows": [
+          [
+            { "label": "Cancel", "variant": "secondary" },
+            { "label": "More filters", "variant": "secondary" },
+            { "label": "Back to page", "variant": "secondary" },
+            { "label": "Save and add another", "variant": "secondary" }
+          ],
+          [
+            {
+              "label": "Edit",
+              "variant": "secondary",
+              "leadingIconClass": "fa-regular fa-pen"
+            },
+            { "label": "Edit threshold", "variant": "secondary" },
+            { "label": "Reject", "variant": "secondary", "danger": true },
+            { "label": "Delete", "variant": "secondary", "danger": true },
+            { "label": "Mark all as read", "variant": "secondary", "danger": true }
+          ]
+        ]
+      },
+      {
+        "id": "tertiary",
+        "title": "Tertiary Button",
+        "description": "Tertiary buttons are used as a lower priority and/or optional action and they given less visual emphasis than primary and secondary buttons.",
+        "sizeOptions": [
+          { "id": "base", "label": "Base" },
+          { "id": "x-small", "label": "X-Small" }
+        ],
+        "contextBySize": {
+          "base": "Base (size) are used for optional actions in a data table and edit drawers.",
+          "x-small": "X-Small (size) are used for optional actions in a data table and edit drawers."
+        },
+        "wrap": true,
+        "buttons": [
+          { "label": "Reset", "variant": "tertiary" },
+          { "label": "Cancel", "variant": "tertiary" },
+          { "label": "Edit", "variant": "tertiary" },
+          { "label": "Delete", "variant": "tertiary" },
+          { "label": "Expand", "variant": "tertiary" },
+          { "label": "Collapse", "variant": "tertiary" },
+          { "label": "View more", "variant": "tertiary" },
+          { "label": "View details", "variant": "tertiary" }
+        ]
+      }
+    ],
     "examples": {
       "title": "Examples",
-      "intro": "Common placements in FMS products (reference screens will be added from Figma).",
       "items": []
     }
   },
@@ -97,16 +233,14 @@
     "changelog": {
       "title": "Updates",
       "columns": ["Date", "Version", "Description"],
-      "rows": [
-        ["28 Sep 2025", "0.1.0", "Initial handbook template and token-based previews."]
-      ]
+      "rows": [["29 Sep 2025", "0.2.0", "Design tab aligned to Figma 115:606."]]
     },
     "roadmap": {
       "title": "Roadmap",
       "columns": ["Planned item", "Status", "Target"],
       "rows": [
-        ["Anatomy diagram from Figma", "In progress", "Q4 2025"],
-        ["Danger and loading variants", "Planned", "Q1 2026"]
+        ["Spacings between buttons diagram", "Planned", "Q4 2025"],
+        ["Small / X-Small structure diagrams", "Planned", "Q4 2025"]
       ]
     }
   }

@@ -19,6 +19,16 @@ export const FIGMA_NODES = {
   hbMenuItem: '150:2225',
   menuOpenActive: '151:2437',
   componentsOverviewPage: '152:2536',
+  buttonDesignPage: '115:606',
+  buttonAnatomyFigure: '153:7515',
+  buttonStructureBase: '161:39626',
+  /** Text buttons — min width Base 55 / Small 44 / X-Small 36 */
+  buttonComponentMatrixText: '154:13254',
+  /** Icon-only — min width Base 40 / Small 32 */
+  buttonComponentMatrixIconOnly: '154:13400',
+  buttonDesignStates: '153:9515',
+  buttonDesignStatesRadioGroup: '153:9520',
+  buttonUsagePage: '154:38298',
   foundationsSideMenuTypography: '62:21857',
   typographyTextSystemPage: '62:21858',
   spacingOverviewPage: '91:539',

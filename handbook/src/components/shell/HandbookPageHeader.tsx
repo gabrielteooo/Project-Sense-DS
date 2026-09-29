@@ -5,10 +5,17 @@ type Props = {
   description: string | string[];
   /** Landing pages — no divider; tighter spacing before full-bleed content band */
   variant?: 'default' | 'landing';
+  /** Component doc (e.g. Button) — tabs sit directly under title block */
+  noBottomSpacing?: boolean;
 };
 
 /** Figma Page header 1:10480 */
-export function HandbookPageHeader({ title, description, variant = 'default' }: Props) {
+export function HandbookPageHeader({
+  title,
+  description,
+  variant = 'default',
+  noBottomSpacing = false,
+}: Props) {
   const isLanding = variant === 'landing';
   const paragraphs = (Array.isArray(description) ? description : [description]).filter(
     (paragraph) => paragraph.trim().length > 0,
@@ -24,8 +31,9 @@ export function HandbookPageHeader({ title, description, variant = 'default' }: 
         .join(' ')}
       style={{
         gap: HANDBOOK_SHELL.pageHeaderGapPx,
-        paddingBottom: HANDBOOK_SHELL.pageHeaderPaddingBottomPx,
-        marginBottom: isLanding ? 0 : HANDBOOK_SHELL.pageHeaderMarginBottomPx,
+        paddingBottom: noBottomSpacing ? 0 : HANDBOOK_SHELL.pageHeaderPaddingBottomPx,
+        marginBottom:
+          isLanding || noBottomSpacing ? 0 : HANDBOOK_SHELL.pageHeaderMarginBottomPx,
       }}
     >
       <h1 className="handbook-page-header__title">{title}</h1>

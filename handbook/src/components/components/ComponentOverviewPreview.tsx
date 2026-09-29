@@ -11,14 +11,14 @@ export function ComponentOverviewPreview({ slug }: Props) {
     case 'button':
       return (
         <div className="component-overview-preview component-overview-preview--button">
-          <FmsDocButton variant="primary" size="lg" label="Button" />
-          <FmsDocButton variant="secondary" size="lg" label="Button" />
+          <FmsDocButton variant="primary" size="base" label="Button" />
+          <FmsDocButton variant="secondary" size="base" label="Button" />
         </div>
       );
     case 'dropdown':
       return (
         <div className="component-overview-preview component-overview-preview--dropdown">
-          <FmsDocButton variant="secondary" size="md" label="Actions" />
+          <FmsDocButton variant="secondary" size="base" label="Actions" />
         </div>
       );
     case 'radio':

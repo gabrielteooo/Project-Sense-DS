@@ -11,7 +11,7 @@ type Props = {
 
 export function ComponentDesignTab({ doc }: Props) {
   const { anatomy, specification, types } = doc.design;
-  const [size, setSize] = useState<FmsDocButtonSize>('md');
+  const [size, setSize] = useState<FmsDocButtonSize>('base');
   const isButtonDoc = doc.slug === 'button';
 
   return (
@@ -69,9 +69,9 @@ export function ComponentDesignTab({ doc }: Props) {
                 value={size}
                 onChange={(event) => setSize(event.target.value as FmsDocButtonSize)}
               >
+                <option value="xs">X-Small</option>
                 <option value="sm">Small</option>
-                <option value="md">Medium</option>
-                <option value="lg">Large</option>
+                <option value="base">Base</option>
               </select>
             </label>
           ) : null}
@@ -87,7 +87,7 @@ export function ComponentDesignTab({ doc }: Props) {
                 {isButtonDoc ? (
                   <FmsDocButton variant={variant.id} size={size} label="Button" />
                 ) : (
-                  <FmsDocButton variant={variant.id} size="md" label={variant.label} />
+                  <FmsDocButton variant={variant.id} size="base" label={variant.label} />
                 )}
               </DocSpecCanvas>
             </div>

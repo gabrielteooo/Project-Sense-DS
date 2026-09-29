@@ -48,7 +48,13 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Preview | `1:10805` |
 | Components — overview landing | `152:2536` |
 | Components — doc template (Design / Usage / Updates) | *(TBD)* |
-| Components — Button | *(TBD)* |
+| Components — Button (Design tab) | `115:606` |
+| Components — Button anatomy figure | `153:7515` |
+| Components — Button structure (Base) | `161:39626` |
+| Components — Button matrix (text + label; sizes / variants / states) | `154:13254` |
+| Components — Button matrix (icon-only; sizes / variants / states) | `154:13400` |
+| Components — Button Design — States | `153:9515` |
+| Components — Button Usage tab | `154:38298` |
 | Components — Dropdown | *(TBD)* |
 | Components — Radio | *(TBD)* |
 

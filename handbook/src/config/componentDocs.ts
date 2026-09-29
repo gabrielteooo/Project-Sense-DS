@@ -4,7 +4,7 @@ import radioDoc from '../../content/components/radio.json';
 import type { ComponentDocContent } from '../types/componentDoc';
 
 const DOCS: Record<string, ComponentDocContent> = {
-  button: buttonDoc as ComponentDocContent,
+  button: buttonDoc as unknown as ComponentDocContent,
   dropdown: dropdownDoc as ComponentDocContent,
   radio: radioDoc as ComponentDocContent,
 };
