@@ -1,0 +1,77 @@
+# Pages CMS pilot — Button component page only.
+# merge: true merges editor output into the existing JSON so schemaVersion, slug,
+# figmaNodeId, design-tab blocks, and other unlisted keys are kept (see Pages CMS settings docs).
+
+settings:
+  content:
+    merge: true
+
+components:
+  usageGuidelines:
+    type: object
+    label: Writing guidelines
+    description: Heading and bullet list shown at the top of the Usage tab.
+    fields:
+      - name: title
+        label: Guideline heading
+        type: string
+        description: Usually “Guideline”. This is the small section title above the bullets.
+      - name: bullets
+        label: Guideline bullet points
+        type: text
+        list: true
+        description: One tip per line. Keep each bullet short and actionable for designers and writers.
+
+content:
+  - name: handbook-components
+    label: Handbook components
+    type: group
+    items:
+      - name: button-page
+        label: Button
+        type: file
+        path: handbook/content/components/button.json
+        format: json
+        fields:
+          - name: pageTitle
+            label: Page title
+            type: string
+            description: Main title on the Button page (also used in the browser tab).
+          - name: pageDescription
+            label: Page subtitle
+            type: string
+            description: One short line under the title that explains when to use a button.
+          - name: tabs
+            type: object
+            label: Usage guidelines
+            description: >-
+              Edits the “Guideline” bullet list on the Usage tab. In the file this lives under
+              tabs.usage.blocks (block id btn-guide), not a separate usage.guidelines object.
+              Other page content is preserved when you save thanks to merge mode.
+            fields:
+              - name: usage
+                type: object
+                label: Usage tab
+                fields:
+                  - name: blocks
+                    label: Page sections
+                    type: object
+                    list:
+                      collapsible:
+                        collapsed: true
+                        summary: "{id}"
+                    description: >-
+                      Expand the row **btn-guide** to edit guideline heading and bullets only.
+                      Leave other rows collapsed; they control showcases, terms, and dividers.
+                    fields:
+                      - name: id
+                        type: string
+                        hidden: true
+                        readonly: true
+                      - name: type
+                        type: string
+                        hidden: true
+                        readonly: true
+                      - name: props
+                        component: usageGuidelines
+                        label: Guideline copy
