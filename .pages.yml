@@ -76,7 +76,6 @@ content:
                   - name: blocks
                     label: Blocks
                     type: block
-                    list: true
                     blockKey: type
                     description: Add or reorder blocks. Each block needs a stable Block ID.
                     list:
