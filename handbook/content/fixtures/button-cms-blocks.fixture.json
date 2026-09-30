@@ -1,0 +1,45 @@
+{
+  "description": "Representative Pages CMS block output (blockKey: type). Used by validate-doc-blocks.",
+  "blocks": [
+    {
+      "type": "richText",
+      "id": "fixture-rich-text",
+      "title": "Writing for buttons",
+      "body": "Use **active verbs** and keep labels short.\n\n- Be predictable\n- Use sentence case"
+    },
+    {
+      "type": "callout",
+      "id": "fixture-callout",
+      "variant": "information",
+      "title": "Tip",
+      "body": "Primary buttons should appear once per view where possible."
+    },
+    {
+      "type": "doDont",
+      "id": "fixture-do-dont",
+      "title": "Labelling",
+      "pairs": [
+        {
+          "do": "Save changes",
+          "dont": "Click here to save all of your changes now"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "id": "fixture-table",
+      "title": "Size reference",
+      "columns": ["Size", "Height"],
+      "rows": [
+        ["Base", "40px"],
+        ["Small", "32px"]
+      ]
+    },
+    {
+      "type": "interactiveExample",
+      "id": "fixture-demo",
+      "title": "Registered demo",
+      "demoId": "button-primary-showcase"
+    }
+  ]
+}

@@ -1,26 +1,40 @@
-# Pages CMS pilot — Button component page only.
-# merge: true merges editor output into the existing JSON so schemaVersion, slug,
-# figmaNodeId, design-tab blocks, and other unlisted keys are kept (see Pages CMS settings docs).
+# Pages CMS — Button component pilot with reusable documentation blocks.
+# settings.content.merge preserves design/usage showcases and other JSON not listed here.
 
 settings:
   content:
     merge: true
 
+media:
+  - name: docs_images
+    label: Documentation images
+    input: handbook/public/images/docs
+    output: /images/docs/
+    categories: [image]
+    extensions: [png, jpg, jpeg, webp, gif]
+    rename: safe
+
 components:
-  usageGuidelines:
+  docBlockId:
+    type: string
+    label: Block ID
+    description: >-
+      Stable lowercase ID (letters, numbers, hyphens). Used in the handbook and for CMS list summaries —
+      do not change after publishing.
+
+  usageGuidelinesLegacy:
     type: object
-    label: Writing guidelines
-    description: Heading and bullet list shown at the top of the Usage tab.
+    label: Guideline bullets (legacy section)
     fields:
       - name: title
-        label: Guideline heading
+        label: Section heading
         type: string
-        description: Usually “Guideline”. This is the small section title above the bullets.
+        description: Usually “Guideline”.
       - name: bullets
-        label: Guideline bullet points
+        label: Bullet points
         type: text
         list: true
-        description: One tip per line. Keep each bullet short and actionable for designers and writers.
+        description: Short writing tips shown above the CMS pilot section.
 
 content:
   - name: handbook-components
@@ -36,42 +50,166 @@ content:
           - name: pageTitle
             label: Page title
             type: string
-            description: Main title on the Button page (also used in the browser tab).
+            description: Main title on the Button page (browser tab and hero).
           - name: pageDescription
             label: Page subtitle
             type: string
-            description: One short line under the title that explains when to use a button.
-          - name: tabs
+            description: One short line explaining when to use a button.
+          - name: usage
             type: object
-            label: Usage guidelines
+            label: Usage tab (partial)
             description: >-
-              Edits the “Guideline” bullet list on the Usage tab. In the file this lives under
-              tabs.usage.blocks (block id btn-guide), not a separate usage.guidelines object.
-              Other page content is preserved when you save thanks to merge mode.
+              Edits the guideline bullets and the CMS pilot block stack. Interactive showcases, design
+              tab, and updates tab stay in the file automatically (merge mode).
             fields:
-              - name: usage
+              - name: guidelines
+                component: usageGuidelinesLegacy
+                label: Guideline bullets
+              - name: cmsPilot
                 type: object
-                label: Usage tab
+                label: CMS documentation blocks (pilot)
                 fields:
+                  - name: sectionTitle
+                    label: Section heading
+                    type: string
+                    description: Title above the block list on the Usage tab.
                   - name: blocks
-                    label: Page sections
-                    type: object
+                    label: Blocks
+                    type: block
+                    list: true
+                    blockKey: type
+                    description: Add or reorder blocks. Each block needs a stable Block ID.
                     list:
                       collapsible:
                         collapsed: true
                         summary: "{id}"
-                    description: >-
-                      Expand the row **btn-guide** to edit guideline heading and bullets only.
-                      Leave other rows collapsed; they control showcases, terms, and dividers.
-                    fields:
-                      - name: id
-                        type: string
-                        hidden: true
-                        readonly: true
-                      - name: type
-                        type: string
-                        hidden: true
-                        readonly: true
-                      - name: props
-                        component: usageGuidelines
-                        label: Guideline copy
+                    blocks:
+                      - name: richText
+                        label: Rich text
+                        fields:
+                          - name: id
+                            component: docBlockId
+                          - name: title
+                            label: Optional heading
+                            type: string
+                          - name: body
+                            label: Body
+                            type: rich-text
+                            description: Formatted text (stored as Markdown).
+                            options:
+                              format: markdown
+                              media: docs_images
+                              switcher: true
+                      - name: image
+                        label: Image
+                        fields:
+                          - name: id
+                            component: docBlockId
+                          - name: title
+                            label: Optional heading
+                            type: string
+                          - name: src
+                            label: Image file
+                            type: image
+                            required: true
+                            options:
+                              media: docs_images
+                          - name: alt
+                            label: Alternative text
+                            type: string
+                            required: true
+                            description: Required for accessibility — describe what the image shows.
+                          - name: caption
+                            label: Caption (optional)
+                            type: text
+                      - name: table
+                        label: Table
+                        fields:
+                          - name: id
+                            component: docBlockId
+                          - name: title
+                            label: Optional heading
+                            type: string
+                          - name: columns
+                            label: Column headings
+                            type: string
+                            list: true
+                            description: Define headings first; each row must have the same number of cells.
+                          - name: rows
+                            label: Rows
+                            type: object
+                            list: true
+                            fields:
+                              - name: cells
+                                label: Row cells
+                                type: string
+                                list: true
+                      - name: doDont
+                        label: Do / Don't comparison
+                        fields:
+                          - name: id
+                            component: docBlockId
+                          - name: title
+                            label: Optional heading
+                            type: string
+                          - name: pairs
+                            label: Do and don't pairs
+                            type: object
+                            list:
+                              min: 1
+                              collapsible:
+                                collapsed: true
+                                summary: "Pair {index}"
+                            fields:
+                              - name: do
+                                label: Do
+                                type: text
+                              - name: dont
+                                label: Don't
+                                type: text
+                      - name: callout
+                        label: Callout
+                        fields:
+                          - name: id
+                            component: docBlockId
+                          - name: variant
+                            label: Callout type
+                            type: select
+                            options:
+                              values:
+                                - name: information
+                                  label: Information
+                                - name: warning
+                                  label: Warning
+                          - name: title
+                            label: Callout title (optional)
+                            type: string
+                          - name: body
+                            label: Message
+                            type: rich-text
+                            options:
+                              format: markdown
+                              media: false
+                              switcher: true
+                      - name: interactiveExample
+                        label: Interactive example
+                        description: >-
+                          Embeds a registered handbook demo. You cannot paste code — choose from the list.
+                        fields:
+                          - name: id
+                            component: docBlockId
+                          - name: title
+                            label: Optional heading
+                            type: string
+                          - name: demoId
+                            label: Demo to show
+                            type: select
+                            required: true
+                            options:
+                              values:
+                                - name: button-primary-showcase
+                                  label: Primary button examples
+                                - name: button-secondary-showcase
+                                  label: Secondary button examples
+                                - name: button-tertiary-showcase
+                                  label: Tertiary button examples

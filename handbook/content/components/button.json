@@ -249,6 +249,56 @@
         ]
       }
     },
+    "cmsPilot": {
+      "sectionTitle": "Authoring pilot (CMS blocks)",
+      "blocks": [
+        {
+          "type": "richText",
+          "id": "btn-cms-intro",
+          "title": "Overview",
+          "body": "This section is edited through **Pages CMS** using reusable blocks. Rich text is stored as **Markdown** (Pages CMS default for `rich-text` fields).\n\n- Predictable labels\n- Sentence case for actions"
+        },
+        {
+          "type": "callout",
+          "id": "btn-cms-callout-info",
+          "variant": "information",
+          "title": "Information",
+          "body": "Use one primary button per screen region. Secondary actions support the main task without competing for attention."
+        },
+        {
+          "type": "doDont",
+          "id": "btn-cms-do-dont",
+          "title": "Labelling do's and don'ts",
+          "pairs": [
+            {
+              "do": "Save",
+              "dont": "Click here to save"
+            },
+            {
+              "do": "Continue",
+              "dont": "Proceed to the next step in the workflow"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "id": "btn-cms-size-table",
+          "title": "When to use each size",
+          "columns": ["Size", "Typical use"],
+          "rows": [
+            ["Base", "Page headers, modals, primary forms"],
+            ["Small", "Drawers and compact toolbars"],
+            ["X-Small", "Dense tables and inline actions"]
+          ]
+        },
+        {
+          "type": "interactiveExample",
+          "id": "btn-cms-demo-primary",
+          "title": "Primary button examples (registered demo)",
+          "demoId": "button-primary-showcase"
+        }
+      ]
+    },
     "buttonUsage": {
       "title": "Button Usage",
       "items": [
