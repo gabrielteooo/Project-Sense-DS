@@ -42,8 +42,19 @@
       }
     },
     "usage": {
-      "guidelineRichText": "- Buttons should be clear and predictable - users should be able to anticipate what will happen when the button is selected.\n- Use active verbs or phrases that encourage action, such as Continue, Save, Submit.\n- Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling.",
-      "usageRichText": "- **Primary:** Primary button is intended to be used for leading actions, and should be use sparingly.\n- **Secondary:** Secondary button is an alternative to the primary action, and are given less visual emphasis.\n- **Tertiary:** Tertiary button is used as lower priority optional actions.\n- **With Helper Icon:** Buttons with helper icon provide additional context or guidance, where helpful.\n- **Link:** Text link is used for navigation or secondary actions within the interface.\n- **Icon button:** Text button and icon buttons are used for miscellaneous actions, and are given the least visual emphasis."
+      "guidelineRichText": "- Buttons should be clear and predictable - users should be able to anticipate what will happen when the button is selected.\n- Use active verbs or phrases that encourage action, such as Continue, Save, Submit.\n- Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling.\n\n",
+      "usageRichText": "- **Primary:** Primary button is intended to be used for leading actions, and should be use sparingly.\n- **Secondary:** Secondary button is an alternative to the primary action, and are given less visual emphasis.\n- **Tertiary:** Tertiary button is used as lower priority optional actions.\n- **With Helper Icon:** Buttons with helper icon provide additional context or guidance, where helpful.\n- **Link:** Text link is used for navigation or secondary actions within the interface.\n- **Icon button:** Text button and icon buttons are used for miscellaneous actions, and are given the least visual emphasis.\n\n",
+      "sections": [
+        {
+          "id": "primary-btn",
+          "title": "Primary Button",
+          "description": "Used as default CTA (Call-to-Action) buttons used in FMS. There are various labels and names for the CTA buttons. The examples on the left are some of the common names used.",
+          "image": {
+            "src": "/images/docs/btn-primary.png",
+            "alt": "primary button usage"
+          }
+        }
+      ]
     },
     "updates": {
       "changelog": {
