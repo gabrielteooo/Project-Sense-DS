@@ -2,7 +2,35 @@
   "slug": "button",
   "pageTitle": "Button",
   "pageDescription": "To trigger an operation such as actions in forms, dialogs and more",
+  "pageFormatVersion": 2,
   "figmaNodeId": "115:606",
+  "tabs": {
+    "design": {
+      "anatomyImage": {
+        "src": "",
+        "alt": "Button anatomy diagram showing container, label, and icon callouts"
+      },
+      "specificationGuidelinesImage": {
+        "src": "",
+        "alt": "Button specification guidelines diagram"
+      },
+      "sections": []
+    },
+    "usage": {
+      "guidelineRichText": "- Buttons should be clear and predictable - users should be able to anticipate what will happen when the button is selected.\n- Use active verbs or phrases that encourage action, such as Continue, Save, Submit.\n- Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling.",
+      "usageRichText": "- **Primary:** Primary button is intended to be used for leading actions, and should be use sparingly.\n- **Secondary:** Secondary button is an alternative to the primary action, and are given less visual emphasis.\n- **Tertiary:** Tertiary button is used as lower priority optional actions.\n- **With Helper Icon:** Buttons with helper icon provide additional context or guidance, where helpful.\n- **Link:** Text link is used for navigation or secondary actions within the interface.\n- **Icon button:** Text button and icon buttons are used for miscellaneous actions, and are given the least visual emphasis.",
+      "sections": []
+    },
+    "updates": {
+      "changelog": {
+        "columns": ["Date", "Version", "Description"],
+        "rows": [
+          ["29 Sep 2025", "0.2.0", "Design tab aligned to Figma 115:606."]
+        ]
+      },
+      "roadmapRichText": "- Spacings between buttons diagram — Planned (Q4 2025)\n- Small / X-Small structure diagrams — Planned (Q4 2025)"
+    }
+  },
   "design": {
     "anatomy": {
       "title": "Anatomy",

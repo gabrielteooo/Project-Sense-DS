@@ -1,0 +1,34 @@
+{
+  "pageFormatVersion": 2,
+  "slug": "component-slug",
+  "pageTitle": "Component name",
+  "pageDescription": "One line about when to use this component",
+  "figmaNodeId": "",
+  "tabs": {
+    "design": {
+      "anatomyImage": {
+        "src": "",
+        "alt": "Describe the anatomy diagram for screen readers",
+        "caption": ""
+      },
+      "specificationGuidelinesImage": {
+        "src": "",
+        "alt": "Describe the specification guidelines diagram",
+        "caption": ""
+      },
+      "sections": []
+    },
+    "usage": {
+      "guidelineRichText": "Writing guidelines for this component (Markdown).",
+      "usageRichText": "When and how to use this component (Markdown).",
+      "sections": []
+    },
+    "updates": {
+      "changelog": {
+        "columns": ["Date", "Version", "Description"],
+        "rows": []
+      },
+      "roadmapRichText": "Planned documentation or design updates (Markdown)."
+    }
+  }
+}

@@ -1,5 +1,5 @@
-# Pages CMS — Button component pilot with reusable documentation blocks.
-# settings.content.merge preserves design/usage showcases and other JSON not listed here.
+# Full component page CMS (pageFormatVersion 2). Multiple file entries edit the same JSON; merge preserves other keys.
+# Handbook fixed headings: Design (Anatomy, Specification guidelines), Usage (Guideline, Usage), Updates (Updates, Roadmap).
 
 settings:
   content:
@@ -15,200 +15,226 @@ media:
     rename: safe
 
 components:
-  docBlockId:
+  sectionId:
     type: string
-    label: Block ID
-    description: >-
-      Stable lowercase ID (letters, numbers, hyphens). Used in the handbook and for CMS list summaries —
-      do not change after publishing.
+    label: Section ID
+    description: Stable lowercase ID (letters, numbers, hyphens). Do not rename after publishing.
 
-  usageGuidelinesLegacy:
+  componentPageImage:
     type: object
-    label: Guideline bullets (legacy section)
+    label: Diagram image
     fields:
-      - name: title
-        label: Section heading
+      - name: src
+        label: Image file
+        type: image
+        options:
+          media: docs_images
+      - name: alt
+        label: Alternative text
         type: string
-        description: Usually “Guideline”.
-      - name: bullets
-        label: Bullet points
+        required: true
+      - name: caption
+        label: Caption (optional)
         type: text
-        list: true
-        description: Short writing tips shown above the CMS pilot section.
+
+  componentPageFigureSection:
+    type: object
+    label: Figure section
+    fields:
+      - name: id
+        component: sectionId
+      - name: title
+        label: Section title
+        type: string
+        required: true
+      - name: description
+        label: Description (optional)
+        type: text
+      - name: image
+        component: componentPageImage
+        label: Diagram
+
+  buttonDesignTab:
+    type: object
+    label: Design tab content
+    fields:
+      - name: anatomyImage
+        label: Anatomy — diagram
+        description: The handbook always shows the heading **Anatomy** above this image.
+        component: componentPageImage
+      - name: specificationGuidelinesImage
+        label: Specification guidelines — diagram
+        description: The handbook always shows the heading **Specification guidelines** above this image.
+        component: componentPageImage
+      - name: sections
+        label: Additional figure sections
+        component: componentPageFigureSection
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+
+  buttonUsageTab:
+    type: object
+    label: Usage tab content
+    fields:
+      - name: guidelineRichText
+        label: Guideline — body
+        description: The handbook always shows the heading **Guideline** above this text (Markdown).
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+          switcher: true
+      - name: usageRichText
+        label: Usage — body
+        description: The handbook always shows the heading **Usage**, then a divider, then any sections below.
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+          switcher: true
+      - name: sections
+        label: Additional figure sections (after divider)
+        component: componentPageFigureSection
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+
+  buttonUpdatesTab:
+    type: object
+    label: Updates tab content
+    fields:
+      - name: changelog
+        type: object
+        label: Changelog table
+        description: The handbook always shows the heading **Updates** above this table.
+        fields:
+          - name: columns
+            label: Column headings
+            type: string
+            list: true
+          - name: rows
+            label: Rows
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "Row {index}"
+            fields:
+              - name: cells
+                label: Row cells
+                type: string
+                list: true
+      - name: roadmapRichText
+        label: Roadmap — body
+        description: The handbook always shows the heading **Roadmap** above this text (Markdown).
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+          switcher: true
+
+  tabsDesignWrapper:
+    type: object
+    fields:
+      - name: design
+        component: buttonDesignTab
+
+  tabsUsageWrapper:
+    type: object
+    fields:
+      - name: usage
+        component: buttonUsageTab
+
+  tabsUpdatesWrapper:
+    type: object
+    fields:
+      - name: updates
+        component: buttonUpdatesTab
 
 content:
   - name: handbook-components
     label: Handbook components
     type: group
     items:
-      - name: button-page
-        label: Button
+      - name: component-page-template
+        label: Page template (reference)
         type: file
-        path: handbook/content/components/button.json
+        path: handbook/content/components/_template.component.page.json
         format: json
         fields:
           - name: pageTitle
-            label: Page title
             type: string
-            description: Main title on the Button page (browser tab and hero).
+            readonly: true
           - name: pageDescription
-            label: Page subtitle
-            type: string
-            description: One short line explaining when to use a button.
-          - name: usage
-            type: object
-            label: Usage tab (partial)
-            description: >-
-              Edits the guideline bullets and the CMS pilot block stack. Interactive showcases, design
-              tab, and updates tab stay in the file automatically (merge mode).
+            type: text
+            readonly: true
+
+      - name: button-page
+        label: Button page
+        type: group
+        items:
+          - name: button-header
+            label: Header
+            type: file
+            path: handbook/content/components/button.json
+            format: json
             fields:
-              - name: guidelines
-                component: usageGuidelinesLegacy
-                label: Guideline bullets
-              - name: cmsPilot
-                type: object
-                label: CMS documentation blocks (pilot)
-                fields:
-                  - name: sectionTitle
-                    label: Section heading
-                    type: string
-                    description: Title above the block list on the Usage tab.
-                  - name: blocks
-                    label: Blocks
-                    type: block
-                    blockKey: type
-                    description: Add or reorder blocks. Each block needs a stable Block ID.
-                    list:
-                      collapsible:
-                        collapsed: true
-                        summary: "{id}"
-                    blocks:
-                      - name: richText
-                        label: Rich text
-                        fields:
-                          - name: id
-                            component: docBlockId
-                          - name: title
-                            label: Optional heading
-                            type: string
-                          - name: body
-                            label: Body
-                            type: rich-text
-                            description: Formatted text (stored as Markdown).
-                            options:
-                              format: markdown
-                              media: docs_images
-                              switcher: true
-                      - name: image
-                        label: Image
-                        fields:
-                          - name: id
-                            component: docBlockId
-                          - name: title
-                            label: Optional heading
-                            type: string
-                          - name: src
-                            label: Image file
-                            type: image
-                            required: true
-                            options:
-                              media: docs_images
-                          - name: alt
-                            label: Alternative text
-                            type: string
-                            required: true
-                            description: Required for accessibility — describe what the image shows.
-                          - name: caption
-                            label: Caption (optional)
-                            type: text
-                      - name: table
-                        label: Table
-                        fields:
-                          - name: id
-                            component: docBlockId
-                          - name: title
-                            label: Optional heading
-                            type: string
-                          - name: columns
-                            label: Column headings
-                            type: string
-                            list: true
-                            description: Define headings first; each row must have the same number of cells.
-                          - name: rows
-                            label: Rows
-                            type: object
-                            list: true
-                            fields:
-                              - name: cells
-                                label: Row cells
-                                type: string
-                                list: true
-                      - name: doDont
-                        label: Do / Don't comparison
-                        fields:
-                          - name: id
-                            component: docBlockId
-                          - name: title
-                            label: Optional heading
-                            type: string
-                          - name: pairs
-                            label: Do and don't pairs
-                            type: object
-                            list:
-                              min: 1
-                              collapsible:
-                                collapsed: true
-                                summary: "Pair {index}"
-                            fields:
-                              - name: do
-                                label: Do
-                                type: text
-                              - name: dont
-                                label: Don't
-                                type: text
-                      - name: callout
-                        label: Callout
-                        fields:
-                          - name: id
-                            component: docBlockId
-                          - name: variant
-                            label: Callout type
-                            type: select
-                            options:
-                              values:
-                                - name: information
-                                  label: Information
-                                - name: warning
-                                  label: Warning
-                          - name: title
-                            label: Callout title (optional)
-                            type: string
-                          - name: body
-                            label: Message
-                            type: rich-text
-                            options:
-                              format: markdown
-                              media: false
-                              switcher: true
-                      - name: interactiveExample
-                        label: Interactive example
-                        description: >-
-                          Embeds a registered handbook demo. You cannot paste code — choose from the list.
-                        fields:
-                          - name: id
-                            component: docBlockId
-                          - name: title
-                            label: Optional heading
-                            type: string
-                          - name: demoId
-                            label: Demo to show
-                            type: select
-                            required: true
-                            options:
-                              values:
-                                - name: button-primary-showcase
-                                  label: Primary button examples
-                                - name: button-secondary-showcase
-                                  label: Secondary button examples
-                                - name: button-tertiary-showcase
-                                  label: Tertiary button examples
+              - name: pageTitle
+                label: Page title
+                type: string
+              - name: pageDescription
+                label: Page subtitle
+                type: string
+              - name: pageFormatVersion
+                type: number
+                hidden: true
+                readonly: true
+              - name: slug
+                type: string
+                hidden: true
+                readonly: true
+
+          - name: button-design
+            label: Design tab
+            type: file
+            path: handbook/content/components/button.json
+            format: json
+            fields:
+              - name: pageFormatVersion
+                type: number
+                hidden: true
+                readonly: true
+              - name: tabs
+                component: tabsDesignWrapper
+                label: Design tab
+
+          - name: button-usage
+            label: Usage tab
+            type: file
+            path: handbook/content/components/button.json
+            format: json
+            fields:
+              - name: pageFormatVersion
+                type: number
+                hidden: true
+                readonly: true
+              - name: tabs
+                component: tabsUsageWrapper
+                label: Usage tab
+
+          - name: button-updates
+            label: Updates tab
+            type: file
+            path: handbook/content/components/button.json
+            format: json
+            fields:
+              - name: pageFormatVersion
+                type: number
+                hidden: true
+                readonly: true
+              - name: tabs
+                component: tabsUpdatesWrapper
+                label: Updates tab
