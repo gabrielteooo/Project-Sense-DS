@@ -1,7 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { validateComponentPageTabs } from '../src/components/component-page-template/validateComponentPageTemplate';
+import {
+  normalizeComponentPageTabs,
+  validateComponentPageTabs,
+} from '../src/components/component-page-template/validateComponentPageTemplate';
+import type { ComponentPageTabs } from '../src/types/componentPageTemplate';
 import { validateDocBlockList } from '../src/doc-blocks/validateDocBlocks';
 
 const handbookRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -43,10 +47,19 @@ const fixture = loadJson('content/fixtures/button-cms-blocks.fixture.json') as {
   blocks: unknown;
 };
 
-if (button.pageFormatVersion === 2) {
-  assertTemplate(button.tabs, 'button.json tabs');
+function assertTemplateNormalized(tabs: unknown, label: string): void {
+  if (!tabs || typeof tabs !== 'object') {
+    assertTemplate(tabs, label);
+    return;
+  }
+  const normalized = normalizeComponentPageTabs(tabs as ComponentPageTabs);
+  assertTemplate(normalized, label);
 }
-assertTemplate(template.tabs, '_template.component.page.json tabs');
+
+if (button.pageFormatVersion === 2) {
+  assertTemplateNormalized(button.tabs, 'button.json tabs');
+}
+assertTemplateNormalized(template.tabs, '_template.component.page.json tabs');
 
 if (button.usage?.cmsPilot?.blocks) {
   assertValid(button.usage.cmsPilot.blocks, 'button.json usage.cmsPilot.blocks');

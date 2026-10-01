@@ -22,6 +22,9 @@ function validateFigureSections(
   path: string,
   sections: unknown,
 ): void {
+  if (sections === undefined || sections === null) {
+    return;
+  }
   if (!Array.isArray(sections)) {
     issues.push({ path, message: 'sections must be an array.' });
     return;
@@ -99,15 +102,37 @@ export function validateComponentPageTabs(tabs: unknown): TemplateValidationIssu
   return issues;
 }
 
-export function normalizeChangelogRows(tabs: ComponentPageTabs): ComponentPageTabs {
+function normalizeSections(sections: unknown): ComponentPageTabs['design']['sections'] {
+  if (!Array.isArray(sections)) return [];
+  return sections as ComponentPageTabs['design']['sections'];
+}
+
+/** Coerce partial Pages CMS merges (missing empty lists) into a complete template shape. */
+export function normalizeComponentPageTabs(tabs: ComponentPageTabs): ComponentPageTabs {
   return {
-    ...tabs,
+    design: {
+      ...tabs.design,
+      sections: normalizeSections(tabs.design?.sections),
+    },
+    usage: {
+      ...tabs.usage,
+      sections: normalizeSections(tabs.usage?.sections),
+    },
     updates: {
       ...tabs.updates,
       changelog: {
         ...tabs.updates.changelog,
-        rows: normalizeRows(tabs.updates.changelog.rows),
+        rows: normalizeRows(tabs.updates.changelog?.rows),
+        columns: Array.isArray(tabs.updates.changelog?.columns)
+          ? tabs.updates.changelog.columns
+          : ['Date', 'Version', 'Description'],
       },
+      roadmapRichText:
+        typeof tabs.updates?.roadmapRichText === 'string' ? tabs.updates.roadmapRichText : '',
     },
   };
+}
+
+export function normalizeChangelogRows(tabs: ComponentPageTabs): ComponentPageTabs {
+  return normalizeComponentPageTabs(tabs);
 }
