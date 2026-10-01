@@ -7,7 +7,7 @@
   "tabs": {
     "design": {
       "anatomyImage": {
-        "src": "/images/docs/btn-anatomy-2.png",
+        "src": "/images/docs/btn-anatomy-3.png",
         "alt": "Button anatomy diagram showing container, label, and icon callouts"
       },
       "anatomyRichText": "1. **Container** — Defines hit area, background, border, and corner radius.\n2. **Label** — Action text using base text style (Inter, 16px / 24px line height on medium size).\n3. **Icon** — Font Awesome glyph aligned to the label; icon-only buttons omit the label\n\n",
@@ -16,7 +16,7 @@
           "id": "btn-structure",
           "title": "Structure",
           "image": {
-            "src": "/images/docs/btn-structure-2.png",
+            "src": "/images/docs/btn-structure-3.png",
             "alt": "button padding and measurements "
           }
         }
@@ -33,38 +33,10 @@
             "Border Radius"
           ],
           "rows": [
-            [
-              "Primary",
-              "55px",
-              "40px",
-              "16px",
-              "8px",
-              "8px"
-            ],
-            [
-              "Secondary",
-              "55px",
-              "40px",
-              "16px",
-              "8px",
-              "8px"
-            ],
-            [
-              "Icon-only",
-              "40px",
-              "40px",
-              "-",
-              "-",
-              "8px"
-            ],
-            [
-              "Tertiary",
-              "46px",
-              "40px",
-              "8px",
-              "8px",
-              "-"
-            ]
+            {},
+            {},
+            {},
+            {}
           ]
         }
       }
