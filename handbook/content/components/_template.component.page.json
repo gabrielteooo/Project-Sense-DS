@@ -8,15 +8,17 @@
     "design": {
       "anatomyImage": {
         "src": "",
-        "alt": "Describe the anatomy diagram for screen readers",
-        "caption": ""
+        "alt": "Describe the anatomy diagram for screen readers"
       },
-      "specificationGuidelinesImage": {
-        "src": "",
-        "alt": "Describe the specification guidelines diagram",
-        "caption": ""
-      },
-      "sections": []
+      "anatomyRichText": "Optional Markdown under the anatomy diagram (e.g. numbered parts).",
+      "sections": [],
+      "specificationGuidelines": {
+        "description": "",
+        "table": {
+          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "rows": []
+        }
+      }
     },
     "usage": {
       "guidelineRichText": "Writing guidelines for this component (Markdown).",

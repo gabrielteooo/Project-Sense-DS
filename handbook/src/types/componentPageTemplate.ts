@@ -13,10 +13,23 @@ export type ComponentPageFigureSection = {
   image: ComponentPageImage;
 };
 
+export type ComponentPageTable = {
+  columns: string[];
+  rows: string[][];
+};
+
+export type ComponentPageSpecificationGuidelines = {
+  description?: string;
+  table: ComponentPageTable;
+};
+
 export type ComponentPageDesignTab = {
   anatomyImage: ComponentPageImage;
-  specificationGuidelinesImage: ComponentPageImage;
+  /** Markdown shown below the anatomy diagram. */
+  anatomyRichText: string;
   sections: ComponentPageFigureSection[];
+  /** Rendered last on the Design tab (fixed heading). */
+  specificationGuidelines: ComponentPageSpecificationGuidelines;
 };
 
 export type ComponentPageUsageTab = {

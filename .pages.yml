@@ -54,6 +54,39 @@ components:
         component: componentPageImage
         label: Diagram
 
+  componentPageSpecTable:
+    type: object
+    label: Specification table
+    fields:
+      - name: columns
+        label: Column headings
+        type: string
+        list: true
+      - name: rows
+        label: Rows
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "Row {index}"
+        fields:
+          - name: cells
+            label: Row cells
+            type: string
+            list: true
+
+  componentPageSpecificationGuidelines:
+    type: object
+    label: Specification guidelines block
+    fields:
+      - name: description
+        label: Description (optional)
+        type: text
+        description: Short intro above the table. The **Specification guidelines** heading is fixed in the handbook and appears last on the Design tab.
+      - name: table
+        component: componentPageSpecTable
+        label: Specification table
+
   buttonDesignTab:
     type: object
     label: Design tab content
@@ -62,17 +95,25 @@ components:
         label: Anatomy — diagram
         description: The handbook always shows the heading **Anatomy** above this image.
         component: componentPageImage
-      - name: specificationGuidelinesImage
-        label: Specification guidelines — diagram
-        description: The handbook always shows the heading **Specification guidelines** above this image.
-        component: componentPageImage
+      - name: anatomyRichText
+        label: Anatomy — text below diagram
+        description: Markdown shown under the anatomy image (parts list, notes).
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+          switcher: true
       - name: sections
-        label: Additional figure sections
+        label: Figure sections (before specification guidelines)
+        description: Optional titled diagrams between Anatomy and Specification guidelines.
         component: componentPageFigureSection
         list:
           collapsible:
             collapsed: true
             summary: "{title}"
+      - name: specificationGuidelines
+        component: componentPageSpecificationGuidelines
+        label: Specification guidelines (last section)
 
   buttonUsageTab:
     type: object

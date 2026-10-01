@@ -70,8 +70,34 @@ export function validateComponentPageTabs(tabs: unknown): TemplateValidationIssu
   const t = tabs as ComponentPageTabs & Record<string, unknown>;
 
   pushImageIssues(issues, 'tabs.design.anatomyImage', t.design?.anatomyImage);
-  pushImageIssues(issues, 'tabs.design.specificationGuidelinesImage', t.design?.specificationGuidelinesImage);
+  if (typeof t.design?.anatomyRichText !== 'string') {
+    issues.push({
+      path: 'tabs.design.anatomyRichText',
+      message: 'Anatomy rich text must be a string (Markdown).',
+    });
+  }
   validateFigureSections(issues, 'tabs.design.sections', t.design?.sections);
+
+  const spec = t.design?.specificationGuidelines as
+    | { description?: unknown; table?: { columns?: unknown; rows?: unknown } }
+    | undefined;
+  const specColumns = spec?.table?.columns;
+  const specRows = normalizeRows(spec?.table?.rows);
+  if (!Array.isArray(specColumns) || specColumns.length === 0) {
+    issues.push({
+      path: 'tabs.design.specificationGuidelines.table.columns',
+      message: 'Specification guidelines table needs column headings.',
+    });
+  } else {
+    specRows.forEach((row, rowIndex) => {
+      if (row.length !== specColumns.length) {
+        issues.push({
+          path: `tabs.design.specificationGuidelines.table.rows[${rowIndex}]`,
+          message: `Row has ${row.length} cells but ${specColumns.length} columns are defined.`,
+        });
+      }
+    });
+  }
 
   if (typeof t.usage?.guidelineRichText !== 'string') {
     issues.push({ path: 'tabs.usage.guidelineRichText', message: 'Guideline rich text is required.' });
@@ -108,11 +134,34 @@ function normalizeSections(sections: unknown): ComponentPageTabs['design']['sect
 }
 
 /** Coerce partial Pages CMS merges (missing empty lists) into a complete template shape. */
+const DEFAULT_SPEC_COLUMNS = [
+  'Type',
+  'Min Width',
+  'Height',
+  'Padding',
+  'Gap',
+  'Border Radius',
+];
+
 export function normalizeComponentPageTabs(tabs: ComponentPageTabs): ComponentPageTabs {
+  const design = tabs.design as ComponentPageTabs['design'] & {
+    specificationGuidelinesImage?: unknown;
+  };
+  const spec = design?.specificationGuidelines;
+  const specTable = spec?.table;
+
   return {
     design: {
-      ...tabs.design,
-      sections: normalizeSections(tabs.design?.sections),
+      ...design,
+      anatomyRichText: typeof design?.anatomyRichText === 'string' ? design.anatomyRichText : '',
+      sections: normalizeSections(design?.sections),
+      specificationGuidelines: {
+        description: typeof spec?.description === 'string' ? spec.description : '',
+        table: {
+          columns: Array.isArray(specTable?.columns) ? specTable.columns : DEFAULT_SPEC_COLUMNS,
+          rows: normalizeRows(specTable?.rows),
+        },
+      },
     },
     usage: {
       ...tabs.usage,

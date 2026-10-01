@@ -8,13 +8,9 @@
     "design": {
       "anatomyImage": {
         "src": "/images/docs/btn-anatomy-1.png",
-        "alt": "Button anatomy diagram showing container, label, and icon callouts",
-        "caption": "1. Container - Defines hit area, background, border, and corner radius.\n2. Label - Action text using base text style (Inter, 16px / 24px line height on medium size).\n3. Icon - Font Awesome glyph aligned to the label; icon-only buttons omit the label."
+        "alt": "Button anatomy diagram showing container, label, and icon callouts"
       },
-      "specificationGuidelinesImage": {
-        "src": "/images/docs/btn-specs-1.png",
-        "alt": "Button specification guidelines diagram"
-      },
+      "anatomyRichText": "1. **Container** — Defines hit area, background, border, and corner radius.\n2. **Label** — Action text using base text style (Inter, 16px / 24px line height on medium size).\n3. **Icon** — Font Awesome glyph aligned to the label; icon-only buttons omit the label.",
       "sections": [
         {
           "id": "btn-structure",
@@ -24,7 +20,26 @@
             "alt": "button padding and measurements "
           }
         }
-      ]
+      ],
+      "specificationGuidelines": {
+        "description": "Base size dimensions. Use the design file for Small and X-Small variants.",
+        "table": {
+          "columns": [
+            "Type",
+            "Min Width",
+            "Height",
+            "Padding",
+            "Gap",
+            "Border Radius"
+          ],
+          "rows": [
+            ["Primary", "55px", "40px", "16px", "8px", "8px"],
+            ["Secondary", "55px", "40px", "16px", "8px", "8px"],
+            ["Icon-only", "40px", "40px", "-", "-", "8px"],
+            ["Tertiary", "46px", "40px", "8px", "8px", "-"]
+          ]
+        }
+      }
     },
     "usage": {
       "guidelineRichText": "- Buttons should be clear and predictable - users should be able to anticipate what will happen when the button is selected.\n- Use active verbs or phrases that encourage action, such as Continue, Save, Submit.\n- Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling.",
