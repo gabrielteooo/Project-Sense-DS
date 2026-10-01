@@ -250,52 +250,24 @@
       }
     },
     "cmsPilot": {
-      "sectionTitle": "Authoring pilot (CMS blocks)",
       "blocks": [
         {
           "type": "richText",
-          "id": "btn-cms-intro",
-          "title": "Overview",
-          "body": "This section is edited through **Pages CMS** using reusable blocks. Rich text is stored as **Markdown** (Pages CMS default for `rich-text` fields).\n\n- Predictable labels\n- Sentence case for actions"
+          "id": "btn-cms-usage",
+          "title": "Usage",
+          "body": "- **Primary:** Primary button is intended to be used for leading actions, and should be use sparingly.\n- **Secondary:** Secondary button is an alternative to the primary action, and are given less visual emphasis.\n- **Tertiary:** Tertiary button is used as lower priority optional actions.\n- **With Helper Icon:** Buttons with helper icon provide additional context or guidance, where helpful.\n- **Link:** Text link is used for navigation or secondary actions within the interface.\n- **Icon button:** Text button and icon buttons are used for miscellaneous actions, and are given the least visual emphasis.\n\n"
         },
         {
-          "type": "callout",
-          "id": "btn-cms-callout-info",
-          "variant": "information",
-          "title": "Information",
-          "body": "Use one primary button per screen region. Secondary actions support the main task without competing for attention."
+          "type": "richText",
+          "id": "btn-cms-primary-btn",
+          "title": "Primary Button",
+          "body": "Used as default CTA (Call-to-Action) buttons used in FMS. There are various labels and names for the CTA buttons. The examples on the left are some of the common names used."
         },
         {
-          "type": "doDont",
-          "id": "btn-cms-do-dont",
-          "title": "Labelling do's and don'ts",
-          "pairs": [
-            {
-              "do": "Save",
-              "dont": "Click here to save"
-            },
-            {
-              "do": "Continue",
-              "dont": "Proceed to the next step in the workflow"
-            }
-          ]
-        },
-        {
-          "type": "table",
-          "id": "btn-cms-size-table",
-          "title": "When to use each size",
-          "columns": ["Size", "Typical use"],
-          "rows": [
-            ["Base", "Page headers, modals, primary forms"],
-            ["Small", "Drawers and compact toolbars"],
-            ["X-Small", "Dense tables and inline actions"]
-          ]
-        },
-        {
-          "type": "interactiveExample",
-          "id": "btn-cms-demo-primary",
-          "title": "Primary button examples (registered demo)",
-          "demoId": "button-primary-showcase"
+          "type": "image",
+          "id": "btn-cms-primary-btn-image",
+          "src": "/images/docs/btn-primary-image.png",
+          "alt": "Primary button component design variants across base and small sizes."
         }
       ]
     },
