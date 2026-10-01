@@ -1,5 +1,5 @@
 # Full component page CMS (pageFormatVersion 2). Multiple file entries edit the same JSON; merge preserves other keys.
-# Handbook fixed headings: Design (Anatomy, Specification guidelines), Usage (Guideline, Usage), Updates (Updates, Roadmap).
+# Handbook fixed headings: Design (Anatomy + coded spec for Button), Usage (Guideline, Usage), Updates (Updates, Roadmap).
 
 settings:
   content:
@@ -54,39 +54,6 @@ components:
         component: componentPageImage
         label: Diagram
 
-  componentPageSpecTable:
-    type: object
-    label: Specification table
-    fields:
-      - name: columns
-        label: Column headings
-        type: string
-        list: true
-      - name: rows
-        label: Rows
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "Row {index}"
-        fields:
-          - name: cells
-            label: Row cells
-            type: string
-            list: true
-
-  componentPageSpecificationGuidelines:
-    type: object
-    label: Specification guidelines block
-    fields:
-      - name: description
-        label: Description (optional)
-        type: text
-        description: Short intro above the table. The **Specification guidelines** heading is fixed in the handbook and appears last on the Design tab.
-      - name: table
-        component: componentPageSpecTable
-        label: Specification table
-
   buttonDesignTab:
     type: object
     label: Design tab content
@@ -104,16 +71,13 @@ components:
           media: false
           switcher: true
       - name: sections
-        label: Figure sections (before specification guidelines)
-        description: Optional titled diagrams between Anatomy and Specification guidelines.
+        label: Figure sections
+        description: Optional titled diagrams after Anatomy. Specification guidelines on the Button page are maintained in code, not in the CMS.
         component: componentPageFigureSection
         list:
           collapsible:
             collapsed: true
             summary: "{title}"
-      - name: specificationGuidelines
-        component: componentPageSpecificationGuidelines
-        label: Specification guidelines (last section)
 
   buttonUsageTab:
     type: object
@@ -147,27 +111,14 @@ components:
     type: object
     label: Updates tab content
     fields:
-      - name: changelog
-        type: object
-        label: Changelog table
-        description: The handbook always shows the heading **Updates** above this table.
-        fields:
-          - name: columns
-            label: Column headings
-            type: string
-            list: true
-          - name: rows
-            label: Rows
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "Row {index}"
-            fields:
-              - name: cells
-                label: Row cells
-                type: string
-                list: true
+      - name: changelogRichText
+        label: Updates — body
+        description: The handbook always shows the heading **Updates** above this text (Markdown). Use a table for changelog entries if you like.
+        type: rich-text
+        options:
+          format: markdown
+          media: false
+          switcher: true
       - name: roadmapRichText
         label: Roadmap — body
         description: The handbook always shows the heading **Roadmap** above this text (Markdown).

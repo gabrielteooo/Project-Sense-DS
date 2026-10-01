@@ -20,26 +20,7 @@
             "alt": "button padding and measurements "
           }
         }
-      ],
-      "specificationGuidelines": {
-        "description": "Base size dimensions. Use the design file for Small and X-Small variants.",
-        "table": {
-          "columns": [
-            "Type",
-            "Min Width",
-            "Height",
-            "Padding",
-            "Gap",
-            "Border Radius"
-          ],
-          "rows": [
-            {},
-            {},
-            {},
-            {}
-          ]
-        }
-      }
+      ]
     },
     "usage": {
       "guidelineRichText": "- Buttons should be clear and predictable - users should be able to anticipate what will happen when the button is selected.\n- Use active verbs or phrases that encourage action, such as Continue, Save, Submit.\n- Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling.\n\n",
@@ -57,20 +38,7 @@
       ]
     },
     "updates": {
-      "changelog": {
-        "columns": [
-          "Date",
-          "Version",
-          "Description"
-        ],
-        "rows": [
-          [
-            "29 Sep 2025",
-            "0.2.0",
-            "Design tab aligned to Figma 115:606."
-          ]
-        ]
-      },
+      "changelogRichText": "| Date | Version | Description |\n| --- | --- | --- |\n| 29 Sep 2025 | 0.2.0 | Design tab aligned to Figma 115:606. |",
       "roadmapRichText": "- Spacings between buttons diagram — Planned (Q4 2025)\n- Small / X-Small structure diagrams — Planned (Q4 2025)"
     }
   },

@@ -11,14 +11,7 @@
         "alt": "Describe the anatomy diagram for screen readers"
       },
       "anatomyRichText": "Optional Markdown under the anatomy diagram (e.g. numbered parts).",
-      "sections": [],
-      "specificationGuidelines": {
-        "description": "",
-        "table": {
-          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
-          "rows": []
-        }
-      }
+      "sections": []
     },
     "usage": {
       "guidelineRichText": "Writing guidelines for this component (Markdown).",
@@ -26,10 +19,7 @@
       "sections": []
     },
     "updates": {
-      "changelog": {
-        "columns": ["Date", "Version", "Description"],
-        "rows": []
-      },
+      "changelogRichText": "Changelog entries (Markdown). You can use a table.",
       "roadmapRichText": "Planned documentation or design updates (Markdown)."
     }
   }

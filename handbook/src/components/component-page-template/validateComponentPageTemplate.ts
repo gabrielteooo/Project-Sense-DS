@@ -1,4 +1,4 @@
-import type { ComponentPageTabs } from '../../types/componentPageTemplate';
+import type { ComponentPageTabs, ComponentPageUpdatesTab } from '../../types/componentPageTemplate';
 
 export type TemplateValidationIssue = { path: string; message: string };
 
@@ -78,27 +78,6 @@ export function validateComponentPageTabs(tabs: unknown): TemplateValidationIssu
   }
   validateFigureSections(issues, 'tabs.design.sections', t.design?.sections);
 
-  const spec = t.design?.specificationGuidelines as
-    | { description?: unknown; table?: { columns?: unknown; rows?: unknown } }
-    | undefined;
-  const specColumns = spec?.table?.columns;
-  const specRows = normalizeRows(spec?.table?.rows);
-  if (!Array.isArray(specColumns) || specColumns.length === 0) {
-    issues.push({
-      path: 'tabs.design.specificationGuidelines.table.columns',
-      message: 'Specification guidelines table needs column headings.',
-    });
-  } else {
-    specRows.forEach((row, rowIndex) => {
-      if (row.length !== specColumns.length) {
-        issues.push({
-          path: `tabs.design.specificationGuidelines.table.rows[${rowIndex}]`,
-          message: `Row has ${row.length} cells but ${specColumns.length} columns are defined.`,
-        });
-      }
-    });
-  }
-
   if (typeof t.usage?.guidelineRichText !== 'string') {
     issues.push({ path: 'tabs.usage.guidelineRichText', message: 'Guideline rich text is required.' });
   }
@@ -107,18 +86,10 @@ export function validateComponentPageTabs(tabs: unknown): TemplateValidationIssu
   }
   validateFigureSections(issues, 'tabs.usage.sections', t.usage?.sections);
 
-  const columns = t.updates?.changelog?.columns;
-  const rows = normalizeRows(t.updates?.changelog?.rows);
-  if (!Array.isArray(columns) || columns.length === 0) {
-    issues.push({ path: 'tabs.updates.changelog.columns', message: 'Changelog columns are required.' });
-  } else if (Array.isArray(t.updates?.changelog?.rows)) {
-    rows.forEach((row, rowIndex) => {
-      if (row.length !== columns.length) {
-        issues.push({
-          path: `tabs.updates.changelog.rows[${rowIndex}]`,
-          message: `Row has ${row.length} cells but ${columns.length} columns are defined.`,
-        });
-      }
+  if (typeof t.updates?.changelogRichText !== 'string') {
+    issues.push({
+      path: 'tabs.updates.changelogRichText',
+      message: 'Updates rich text is required.',
     });
   }
   if (typeof t.updates?.roadmapRichText !== 'string') {
@@ -133,51 +104,46 @@ function normalizeSections(sections: unknown): ComponentPageTabs['design']['sect
   return sections as ComponentPageTabs['design']['sections'];
 }
 
-/** Coerce partial Pages CMS merges (missing empty lists) into a complete template shape. */
-const DEFAULT_SPEC_COLUMNS = [
-  'Type',
-  'Min Width',
-  'Height',
-  'Padding',
-  'Gap',
-  'Border Radius',
-];
+function legacyChangelogToMarkdown(updates: Record<string, unknown>): string {
+  const changelog = updates.changelog as
+    | { columns?: string[]; rows?: unknown }
+    | undefined;
+  if (!changelog) return '';
+  const columns = changelog.columns ?? ['Date', 'Version', 'Description'];
+  const rows = normalizeRows(changelog.rows);
+  if (rows.length === 0) return '';
+  const header = `| ${columns.join(' | ')} |`;
+  const sep = `| ${columns.map(() => '---').join(' | ')} |`;
+  const body = rows.map((row) => `| ${row.join(' | ')} |`).join('\n');
+  return `${header}\n${sep}\n${body}`;
+}
 
+/** Coerce partial Pages CMS merges (missing empty lists) into a complete template shape. */
 export function normalizeComponentPageTabs(tabs: ComponentPageTabs): ComponentPageTabs {
-  const design = tabs.design as ComponentPageTabs['design'] & {
-    specificationGuidelinesImage?: unknown;
+  const design = tabs.design;
+  const updatesRaw = tabs.updates as ComponentPageUpdatesTab & {
+    changelog?: { columns?: string[]; rows?: unknown };
   };
-  const spec = design?.specificationGuidelines;
-  const specTable = spec?.table;
+
+  let changelogRichText = updatesRaw.changelogRichText;
+  if (typeof changelogRichText !== 'string') {
+    changelogRichText = legacyChangelogToMarkdown(updatesRaw as Record<string, unknown>);
+  }
 
   return {
     design: {
       ...design,
       anatomyRichText: typeof design?.anatomyRichText === 'string' ? design.anatomyRichText : '',
       sections: normalizeSections(design?.sections),
-      specificationGuidelines: {
-        description: typeof spec?.description === 'string' ? spec.description : '',
-        table: {
-          columns: Array.isArray(specTable?.columns) ? specTable.columns : DEFAULT_SPEC_COLUMNS,
-          rows: normalizeRows(specTable?.rows),
-        },
-      },
     },
     usage: {
       ...tabs.usage,
       sections: normalizeSections(tabs.usage?.sections),
     },
     updates: {
-      ...tabs.updates,
-      changelog: {
-        ...tabs.updates.changelog,
-        rows: normalizeRows(tabs.updates.changelog?.rows),
-        columns: Array.isArray(tabs.updates.changelog?.columns)
-          ? tabs.updates.changelog.columns
-          : ['Date', 'Version', 'Description'],
-      },
+      changelogRichText,
       roadmapRichText:
-        typeof tabs.updates?.roadmapRichText === 'string' ? tabs.updates.roadmapRichText : '',
+        typeof updatesRaw.roadmapRichText === 'string' ? updatesRaw.roadmapRichText : '',
     },
   };
 }

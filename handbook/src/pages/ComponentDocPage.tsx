@@ -10,7 +10,8 @@ import { ComponentUsageTab } from '../components/components/ComponentUsageTab';
 import { ComponentPageTemplateDesignTab } from '../components/component-page-template/ComponentPageTemplateDesignTab';
 import { ComponentPageTemplateUsageTab } from '../components/component-page-template/ComponentPageTemplateUsageTab';
 import { ComponentPageTemplateUpdatesTab } from '../components/component-page-template/ComponentPageTemplateUpdatesTab';
-import { normalizeChangelogRows } from '../components/component-page-template/validateComponentPageTemplate';
+import { normalizeComponentPageTabs } from '../components/component-page-template/validateComponentPageTemplate';
+import { ButtonCodedSpecificationGuidelines } from '../components/components/ButtonCodedSpecificationGuidelines';
 import { HandbookPageHeader } from '../components/shell/HandbookPageHeader';
 import { useComponentDocTab } from '../hooks/useComponentDocTab';
 import { isComponentPageTemplateV2 } from '../types/componentPageTemplate';
@@ -20,7 +21,7 @@ export function ComponentDocPage() {
   const doc = slug ? getComponentDoc(slug) : undefined;
   const raw = slug ? getComponentDocRaw(slug) : undefined;
   const template = isComponentPageTemplateV2(raw) ? raw : undefined;
-  const tabs = template ? normalizeChangelogRows(template.tabs) : undefined;
+  const tabs = template ? normalizeComponentPageTabs(template.tabs) : undefined;
   const { activeTab, setActiveTab } = useComponentDocTab('design');
 
   if (!slug || !doc) {
@@ -45,7 +46,12 @@ export function ComponentDocPage() {
         className="component-doc-page__panel"
       >
         {template && tabs && activeTab === 'design' ? (
-          <ComponentPageTemplateDesignTab tab={tabs.design} />
+          <ComponentPageTemplateDesignTab
+            tab={tabs.design}
+            codedAfterSections={
+              slug === 'button' ? <ButtonCodedSpecificationGuidelines /> : undefined
+            }
+          />
         ) : null}
         {template && tabs && activeTab === 'usage' ? (
           <ComponentPageTemplateUsageTab tab={tabs.usage} />
