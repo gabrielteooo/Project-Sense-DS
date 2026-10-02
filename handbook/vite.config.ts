@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react';
 const repoRoot = path.resolve(__dirname, '..');
 const docsImagesDir = path.join(__dirname, 'public/images/docs');
 
-/** CMS uploads land in handbook/public/images/docs and are served at /images/docs/ */
+/** Handbook doc images in public/images/docs are served at /images/docs/ in dev and copied to dist on build. */
 function handbookDocsImagesPlugin(): Plugin {
   return {
     name: 'handbook-docs-images',

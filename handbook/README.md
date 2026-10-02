@@ -24,6 +24,7 @@ handbook/
 
 - Node IDs: [FIGMA.md](./FIGMA.md)
 - Implementation rules: [FIGMA_IMPLEMENTATION.md](./FIGMA_IMPLEMENTATION.md)
+- Component pages (Figma template → JSON + React): [docs/source/component-doc-from-figma.md](./docs/source/component-doc-from-figma.md)
 
 ## Scripts
 

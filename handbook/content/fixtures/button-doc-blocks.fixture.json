@@ -1,5 +1,5 @@
 {
-  "description": "Representative Pages CMS block output (blockKey: type). Used by validate-doc-blocks.",
+  "description": "Sample doc block list for validate-doc-blocks (richText, image, table, doDont, callout, interactiveExample).",
   "blocks": [
     {
       "type": "richText",

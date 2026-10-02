@@ -12,6 +12,8 @@ type Props = {
   leadingIconClass?: string;
   /** Primary fill or secondary outline — Figma danger variants */
   danger?: boolean;
+  /** Non-interactive preview (e.g. colour state canvas) */
+  static?: boolean;
   className?: string;
 };
 
@@ -27,45 +29,60 @@ export function FmsDocButton({
   iconClass = 'fa-regular fa-magnifying-glass',
   leadingIconClass,
   danger = false,
+  static: isStatic = false,
   className,
 }: Props) {
   const isIconOnly = variant === 'icon-only';
   const disabled = state === 'disabled';
   const loading = state === 'loading';
   const pressed = state === 'active';
+  const resolvedState = pressed ? 'active' : state;
+
+  const classNames = [
+    'fms-doc-btn',
+    `fms-doc-btn--${variant}`,
+    `fms-doc-btn--${size}`,
+    isIconOnly ? 'fms-doc-btn--icon-only' : '',
+    loading ? 'fms-doc-btn--loading' : '',
+    pressed ? 'fms-doc-btn--pressed' : '',
+    danger ? 'fms-doc-btn--danger' : '',
+    isStatic ? 'fms-doc-btn--static' : '',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  const content = loading ? (
+    <i className="fa-regular fa-spinner fa-spin fms-doc-btn__icon" aria-hidden />
+  ) : isIconOnly ? (
+    <i className={`${iconClass} fms-doc-btn__icon`} aria-hidden />
+  ) : (
+    <>
+      {leadingIconClass ? (
+        <i className={`${leadingIconClass} fms-doc-btn__icon`} aria-hidden />
+      ) : null}
+      <span className="fms-doc-btn__label">{label}</span>
+    </>
+  );
+
+  if (isStatic) {
+    return (
+      <div className={classNames} data-state={resolvedState} aria-hidden>
+        {content}
+      </div>
+    );
+  }
 
   return (
     <button
       type="button"
       disabled={disabled || loading}
       aria-busy={loading || undefined}
-      data-state={pressed ? 'active' : state}
-      className={[
-        'fms-doc-btn',
-        `fms-doc-btn--${variant}`,
-        `fms-doc-btn--${size}`,
-        isIconOnly ? 'fms-doc-btn--icon-only' : '',
-        loading ? 'fms-doc-btn--loading' : '',
-        pressed ? 'fms-doc-btn--pressed' : '',
-        danger ? 'fms-doc-btn--danger' : '',
-        className,
-      ]
-        .filter(Boolean)
-        .join(' ')}
+      data-state={resolvedState}
+      className={classNames}
       aria-label={isIconOnly ? label : undefined}
     >
-      {loading ? (
-        <i className="fa-regular fa-spinner fa-spin fms-doc-btn__icon" aria-hidden />
-      ) : isIconOnly ? (
-        <i className={`${iconClass} fms-doc-btn__icon`} aria-hidden />
-      ) : (
-        <>
-          {leadingIconClass ? (
-            <i className={`${leadingIconClass} fms-doc-btn__icon`} aria-hidden />
-          ) : null}
-          <span className="fms-doc-btn__label">{label}</span>
-        </>
-      )}
+      {content}
     </button>
   );
 }

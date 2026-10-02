@@ -19,7 +19,7 @@ const ALLOWED_HTML_TAGS = new Set([
   'blockquote',
 ]);
 
-/** Pages CMS rich-text defaults to Markdown; `format: html` is opt-in per field docs. */
+/** Rich text in JSON defaults to Markdown; `format: html` is opt-in. */
 export function inferRichTextFormat(body: string, explicit?: DocRichTextFormat): DocRichTextFormat {
   if (explicit === 'markdown' || explicit === 'html') return explicit;
   const trimmed = body.trim();

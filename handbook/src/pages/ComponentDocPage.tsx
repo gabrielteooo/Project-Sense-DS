@@ -1,27 +1,17 @@
 import { Navigate, useParams } from 'react-router-dom';
 import { getComponentDoc } from '../config/componentDocs';
-import { getComponentDocRaw } from '../config/componentDocRaw';
 import { ButtonDesignTab } from '../components/components/ButtonDesignTab';
 import { ComponentDesignTab } from '../components/components/ComponentDesignTab';
 import { ComponentDocTabs } from '../components/components/ComponentDocTabs';
 import { ComponentUpdatesTab } from '../components/components/ComponentUpdatesTab';
 import { ButtonUsageTab } from '../components/components/ButtonUsageTab';
 import { ComponentUsageTab } from '../components/components/ComponentUsageTab';
-import { ComponentPageTemplateDesignTab } from '../components/component-page-template/ComponentPageTemplateDesignTab';
-import { ComponentPageTemplateUsageTab } from '../components/component-page-template/ComponentPageTemplateUsageTab';
-import { ComponentPageTemplateUpdatesTab } from '../components/component-page-template/ComponentPageTemplateUpdatesTab';
-import { normalizeComponentPageTabs } from '../components/component-page-template/validateComponentPageTemplate';
-import { ButtonCodedSpecificationGuidelines } from '../components/components/ButtonCodedSpecificationGuidelines';
 import { HandbookPageHeader } from '../components/shell/HandbookPageHeader';
 import { useComponentDocTab } from '../hooks/useComponentDocTab';
-import { isComponentPageTemplateV2 } from '../types/componentPageTemplate';
 
 export function ComponentDocPage() {
   const { slug } = useParams<{ slug: string }>();
   const doc = slug ? getComponentDoc(slug) : undefined;
-  const raw = slug ? getComponentDocRaw(slug) : undefined;
-  const template = isComponentPageTemplateV2(raw) ? raw : undefined;
-  const tabs = template ? normalizeComponentPageTabs(template.tabs) : undefined;
   const { activeTab, setActiveTab } = useComponentDocTab('design');
 
   if (!slug || !doc) {
@@ -45,29 +35,11 @@ export function ComponentDocPage() {
         aria-labelledby={`component-tab-${activeTab}`}
         className="component-doc-page__panel"
       >
-        {template && tabs && activeTab === 'design' ? (
-          <ComponentPageTemplateDesignTab
-            tab={tabs.design}
-            codedAfterSections={
-              slug === 'button' ? <ButtonCodedSpecificationGuidelines /> : undefined
-            }
-          />
-        ) : null}
-        {template && tabs && activeTab === 'usage' ? (
-          <ComponentPageTemplateUsageTab tab={tabs.usage} />
-        ) : null}
-        {template && tabs && activeTab === 'updates' ? (
-          <ComponentPageTemplateUpdatesTab tab={tabs.updates} />
-        ) : null}
-        {!template && activeTab === 'design' && slug === 'button' ? <ButtonDesignTab /> : null}
-        {!template && activeTab === 'design' && slug !== 'button' ? (
-          <ComponentDesignTab doc={doc} />
-        ) : null}
-        {!template && activeTab === 'usage' && slug === 'button' ? <ButtonUsageTab /> : null}
-        {!template && activeTab === 'usage' && slug !== 'button' ? (
-          <ComponentUsageTab doc={doc} />
-        ) : null}
-        {!template && activeTab === 'updates' ? <ComponentUpdatesTab doc={doc} /> : null}
+        {activeTab === 'design' && slug === 'button' ? <ButtonDesignTab /> : null}
+        {activeTab === 'design' && slug !== 'button' ? <ComponentDesignTab doc={doc} /> : null}
+        {activeTab === 'usage' && slug === 'button' ? <ButtonUsageTab /> : null}
+        {activeTab === 'usage' && slug !== 'button' ? <ComponentUsageTab doc={doc} /> : null}
+        {activeTab === 'updates' ? <ComponentUpdatesTab doc={doc} /> : null}
       </div>
     </article>
   );

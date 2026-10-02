@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import buttonDoc from '../../../content/components/button.json';
 import { DocBlockList } from '../../doc-blocks/DocBlockRenderer';
-import { parseUsageCmsPilot } from '../../doc-blocks/loadUsageCmsPilot';
 import {
   ButtonUsageShowcase,
   type ButtonUsageShowcaseData,
   type UsageSize,
 } from './ButtonUsageShowcase';
+import type { DocBlockList as DocBlockListType } from '../../types/docBlocks';
 
 const SECTION_GAP = 32;
 
-/** Button — Usage tab (Figma 154:38298). Legacy sections + optional CMS pilot blocks. */
+/** Button — Usage tab (Figma 154:38298). Content from JSON; interactive showcases in React. */
 export function ButtonUsageTab() {
   const usage = buttonDoc.usage as typeof buttonDoc.usage & {
     figmaNodeId?: string;
@@ -18,14 +18,14 @@ export function ButtonUsageTab() {
     buttonUsage: { title: string; items: { term: string; body: string }[] };
     variantShowcases: ButtonUsageShowcaseData[];
     examples: { title: string };
-    cmsPilot?: unknown;
+    contentBlocks?: DocBlockListType;
   };
-
-  const cmsPilot = parseUsageCmsPilot(usage.cmsPilot);
 
   const [showcaseSizes, setShowcaseSizes] = useState<Record<string, UsageSize>>(() =>
     Object.fromEntries(usage.variantShowcases.map((s) => [s.id, s.sizeOptions[0]?.id ?? 'base'])),
   );
+
+  const contentBlocks = usage.contentBlocks?.length ? usage.contentBlocks : null;
 
   return (
     <div className="component-doc-tab component-doc-usage-tab component-doc-usage-tab--button">
@@ -38,17 +38,13 @@ export function ButtonUsageTab() {
         </ul>
       </section>
 
-      {cmsPilot ? (
+      {contentBlocks ? (
         <section
-          className="component-doc-section component-doc-usage-section component-doc-usage-section--cms-pilot"
+          className="component-doc-section component-doc-usage-section"
           style={{ marginTop: SECTION_GAP }}
-          aria-labelledby="button-usage-cms-pilot-title"
         >
-          <h2 className="colours-overview-section__title" id="button-usage-cms-pilot-title">
-            {cmsPilot.sectionTitle}
-          </h2>
           <DocBlockList
-            blocks={cmsPilot.blocks}
+            blocks={contentBlocks}
             interactive={{ buttonShowcases: usage.variantShowcases }}
           />
         </section>

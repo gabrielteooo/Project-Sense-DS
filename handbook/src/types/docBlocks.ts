@@ -1,4 +1,4 @@
-/** CMS-authored documentation blocks (Pages CMS pilot). */
+/** JSON-authored documentation blocks (Figma → content → handbook). */
 
 export type DocRichTextFormat = 'markdown' | 'html';
 

@@ -40,6 +40,7 @@ export function DocSegmentedControl<T extends string>({
             type="button"
             role="radio"
             aria-checked={selected}
+            tabIndex={selected ? 0 : -1}
             className={[
               'doc-segmented-control__option',
               selected ? 'doc-segmented-control__option--selected' : '',
@@ -49,6 +50,20 @@ export function DocSegmentedControl<T extends string>({
               .filter(Boolean)
               .join(' ')}
             onClick={() => onChange(option.value)}
+            onKeyDown={(event) => {
+              if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') {
+                return;
+              }
+              event.preventDefault();
+              const delta = event.key === 'ArrowRight' ? 1 : -1;
+              const nextIndex = (index + delta + options.length) % options.length;
+              onChange(options[nextIndex].value);
+              const group = event.currentTarget.parentElement;
+              const buttons = group?.querySelectorAll<HTMLButtonElement>(
+                '.doc-segmented-control__option',
+              );
+              buttons?.[nextIndex]?.focus();
+            }}
           >
             {option.label}
           </button>
