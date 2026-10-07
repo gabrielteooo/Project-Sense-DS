@@ -35,7 +35,7 @@ export function loadButtonDesignTabDocument(): DesignTabDocument {
         title: anatomy.title,
         headingLevel: 2,
         figure: {
-          src: '/images/docs/btn-anatomy-3.png',
+          src: '/images/docs/btn-anatomy-2.png?v=20261007',
           alt: anatomy.imageAlt ?? 'Button anatomy',
         },
         legend: anatomy.parts.map((p) => ({ label: p.label, description: p.description })),

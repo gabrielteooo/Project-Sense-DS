@@ -20,7 +20,7 @@ function handbookDocsImagesPlugin(): Plugin {
           next();
           return;
         }
-        res.setHeader('Cache-Control', 'public, max-age=86400');
+        res.setHeader('Cache-Control', 'no-cache');
         createReadStream(filePath).pipe(res);
       });
     },
