@@ -1,22 +1,35 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { createReadStream, existsSync } from 'node:fs';
+import { createReadStream, existsSync, statSync } from 'node:fs';
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 
 const repoRoot = path.resolve(__dirname, '..');
-const docsImagesDir = path.join(__dirname, 'public/images/docs');
+const handbookPublicDir = path.join(__dirname, 'public');
 
-/** Handbook doc images in public/images/docs are served at /images/docs/ in dev and copied to dist on build. */
-function handbookDocsImagesPlugin(): Plugin {
+/** URL prefixes served from handbook/public/ in dev and copied to dist on build. */
+const PUBLIC_STATIC_PREFIXES = ['/images/docs', '/components/button'] as const;
+
+function handbookPublicStaticPlugin(): Plugin {
   return {
-    name: 'handbook-docs-images',
+    name: 'handbook-public-static',
     configureServer(server) {
-      server.middlewares.use('/images/docs', (req, res, next) => {
+      server.middlewares.use((req, res, next) => {
         const pathname = (req.url ?? '').split('?')[0] ?? '';
+        const allowed = PUBLIC_STATIC_PREFIXES.some(
+          (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`),
+        );
+        if (!allowed) {
+          next();
+          return;
+        }
         const relative = pathname.replace(/^\/+/, '');
-        const filePath = path.normalize(path.join(docsImagesDir, relative));
-        if (!filePath.startsWith(docsImagesDir) || !existsSync(filePath)) {
+        const filePath = path.normalize(path.join(handbookPublicDir, relative));
+        if (
+          !filePath.startsWith(handbookPublicDir) ||
+          !existsSync(filePath) ||
+          !statSync(filePath).isFile()
+        ) {
           next();
           return;
         }
@@ -25,16 +38,20 @@ function handbookDocsImagesPlugin(): Plugin {
       });
     },
     closeBundle() {
-      if (!existsSync(docsImagesDir)) return;
-      const outDir = path.join(__dirname, 'dist/images/docs');
-      fs.mkdirSync(outDir, { recursive: true });
-      fs.cpSync(docsImagesDir, outDir, { recursive: true });
+      for (const prefix of PUBLIC_STATIC_PREFIXES) {
+        const segment = prefix.replace(/^\//, '');
+        const srcDir = path.join(handbookPublicDir, segment);
+        if (!existsSync(srcDir)) continue;
+        const outDir = path.join(__dirname, 'dist', segment);
+        fs.mkdirSync(outDir, { recursive: true });
+        fs.cpSync(srcDir, outDir, { recursive: true });
+      }
     },
   };
 }
 
 export default defineConfig({
-  plugins: [react(), handbookDocsImagesPlugin()],
+  plugins: [react(), handbookPublicStaticPlugin()],
   resolve: {
     alias: {
       '@content': path.resolve(__dirname, 'content'),

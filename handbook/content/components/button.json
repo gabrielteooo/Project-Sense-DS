@@ -181,7 +181,7 @@
       "figmaNodeId": "161:39626",
       "imageAlt": "Button structure diagram with padding, gap, and width annotations for Base size",
       "images": {
-        "base": "/images/docs/btn-structure-3.png"
+        "base": "/components/button/btn-structure.png"
       }
     },
     "spacingsBetweenButtons": {
@@ -507,7 +507,7 @@
         "title": "Anatomy",
         "headingLevel": 2,
         "figure": {
-          "src": "/images/docs/btn-anatomy-2.png?v=20261007",
+          "src": "/components/button/btn-anatomy-2.png",
           "alt": "Button anatomy diagram showing container, label, and icon callouts"
         },
         "legend": [
@@ -547,190 +547,38 @@
           },
           {
             "id": "structure",
-            "kind": "figureTable",
+            "kind": "controlledExample",
             "title": "Structure",
             "headingLevel": 3,
-            "sizeOptions": [
-              {
-                "id": "base",
-                "label": "Base"
-              },
-              {
-                "id": "small",
-                "label": "Small"
-              },
-              {
-                "id": "x-small",
-                "label": "X-Small"
-              }
-            ],
-            "defaultSize": "base",
-            "figuresBySize": {
-              "base": {
-                "src": "/images/docs/btn-structure-3.png",
-                "alt": "Button structure diagram with padding, gap, and width annotations for Base size"
-              }
-            },
-            "structureDemoId": "button-design-structure-canvas"
+            "description": "The button system uses a unified padding structure across all standard button variants (Primary, Secondary, and Tertiary). Layout spacing strictly varies by button size, ensuring visual harmony regardless of visual priority.",
+            "demoId": "button-design-structure"
+          },
+          {
+            "id": "button-group",
+            "kind": "figureTable",
+            "title": "Button Group",
+            "headingLevel": 3,
+            "description": "In button groups, the external spacing between adjacent buttons (inter-button gap) scales proportionally with the button size to maintain visual balance and clear touch-target separation.",
+            "figure": {
+              "src": "/components/button/btn-button-group.png?v=202610081152",
+              "alt": "Button group diagram showing inter-button gap scaling by button size"
+            }
           },
           {
             "id": "size",
-            "kind": "figureTable",
+            "kind": "controlledExample",
             "title": "Size",
             "headingLevel": 3,
-            "sizeOptions": [
-              {
-                "id": "base",
-                "label": "Base"
-              },
-              {
-                "id": "small",
-                "label": "Small"
-              },
-              {
-                "id": "x-small",
-                "label": "X-Small"
-              }
-            ],
-            "defaultSize": "base",
-            "figure": {
-              "src": "/images/docs/btn-specs-1.png",
-              "alt": "Button size specification diagram"
-            },
-            "tablesBySize": {
-              "base": {
-                "columns": [
-                  "Type",
-                  "Min Width",
-                  "Height",
-                  "Padding",
-                  "Gap",
-                  "Border Radius"
-                ],
-                "rows": [
-                  [
-                    "Primary",
-                    "55px",
-                    "40px",
-                    "16px",
-                    "8px",
-                    "8px"
-                  ],
-                  [
-                    "Secondary",
-                    "55px",
-                    "40px",
-                    "16px",
-                    "8px",
-                    "8px"
-                  ],
-                  [
-                    "Icon-only",
-                    "40px",
-                    "40px",
-                    "-",
-                    "-",
-                    "8px"
-                  ],
-                  [
-                    "Tertiary",
-                    "46px",
-                    "40px",
-                    "8px",
-                    "8px",
-                    "-"
-                  ]
-                ]
-              },
-              "small": {
-                "columns": [
-                  "Type",
-                  "Min Width",
-                  "Height",
-                  "Padding",
-                  "Gap",
-                  "Border Radius"
-                ],
-                "rows": [
-                  [
-                    "Primary",
-                    "55px",
-                    "32px",
-                    "12px",
-                    "8px",
-                    "8px"
-                  ],
-                  [
-                    "Secondary",
-                    "55px",
-                    "32px",
-                    "12px",
-                    "8px",
-                    "8px"
-                  ],
-                  [
-                    "Icon-only",
-                    "32px",
-                    "32px",
-                    "-",
-                    "-",
-                    "8px"
-                  ],
-                  [
-                    "Tertiary",
-                    "46px",
-                    "32px",
-                    "8px",
-                    "8px",
-                    "-"
-                  ]
-                ]
-              },
-              "x-small": {
-                "columns": [
-                  "Type",
-                  "Min Width",
-                  "Height",
-                  "Padding",
-                  "Gap",
-                  "Border Radius"
-                ],
-                "rows": [
-                  [
-                    "Primary",
-                    "55px",
-                    "24px",
-                    "8px",
-                    "4px",
-                    "6px"
-                  ],
-                  [
-                    "Secondary",
-                    "55px",
-                    "24px",
-                    "8px",
-                    "4px",
-                    "6px"
-                  ],
-                  [
-                    "Icon-only",
-                    "24px",
-                    "24px",
-                    "-",
-                    "-",
-                    "6px"
-                  ],
-                  [
-                    "Tertiary",
-                    "46px",
-                    "24px",
-                    "4px",
-                    "4px",
-                    "-"
-                  ]
-                ]
-              }
-            }
+            "description": "Buttons dynamically expand to hug their text content horizontally, while standalone icon buttons scale uniformly into fixed square targets. Each size applies consistent height and proportional corner radiuses to ensure visual balance throughout the interface.",
+            "demoId": "button-design-size"
+          },
+          {
+            "id": "typography",
+            "kind": "controlledExample",
+            "title": "Typography",
+            "headingLevel": 3,
+            "description": "Button labels use foundation text styles aligned to each button size. Font size and line height scale with the size tier; default label weight is Regular (400).",
+            "demoId": "button-design-typography"
           }
         ]
       }

@@ -18,17 +18,28 @@ Designers author in the shared Figma handbook template. After approval, implemen
 - **`sectionGroup`** — H2 wrapper with ordered H3 children
 - **`figureTable`** (child) — optional description, size control, figure, table; omitted when empty
 
+### Design tab template (all components)
+
+Canonical outline — copy from `content/design-tab/_template.designTab.json` (reference: Button `designTab` in `button.json`).
+
+| Order | Section | Kind |
+| --- | --- | --- |
+| 1 | Anatomy | `anatomy` |
+| 2 | Configuration | `controlledExample` |
+| 3 | Specification | `sectionGroup` |
+| 3a | Colour | `controlledExample` |
+| 3b | Structure | `controlledExample` |
+| 3c | *Component-specific* | `figureTable` or `controlledExample` — **optional** (Button: Button Group) |
+| 3d | Size | `controlledExample` |
+| 3e | Typography | `controlledExample` |
+
+**Assets:** `public/components/<slug>/` → `/components/<slug>/...`  
+**Demos:** `demoId` = `<slug>-design-<section>` in `designTabDemoRegistry.tsx`  
+**Figma nodes:** log frames/tables in `FIGMA.md`
+
 ### Button Design tab (`115:606`)
 
-1. Anatomy  
-2. Configuration (`button-design-configuration`)  
-3. Specification (group)  
-   - Colour (`button-design-colour`) — independent controls; table from `tokens/dist/components/button.resolved.json`  
-   - Structure — PNG per size when provided; else coded canvas fallback  
-   - Button group — **optional**; add a `figureTable` child only when Figma includes it  
-   - Size — diagram + dimension tables per size  
-
-Configuration and Colour controls are **independent** (separate React state).
+Pilot implementation of the template above. Configuration and Colour controls use **independent** React state. Colour table tokens resolve from `tokens/dist/components/button.resolved.json`.
 
 ## Usage / Updates
 
@@ -36,7 +47,8 @@ Unchanged on this pilot: `usage` + `ButtonUsageTab`, `updates` + `ComponentUpdat
 
 ## Next component
 
-1. Copy `designTab` shape from `button.json` (or run a loader like `loadButtonDesignTab.ts` for your slug).  
-2. Register demos in `designTabDemoRegistry.tsx`.  
-3. Point `ButtonDesignTab`-style entry at `DesignTabPage` + your document loader.  
-4. Export PNGs to `handbook/public/images/docs/` → `/images/docs/...`.
+1. Copy `content/design-tab/_template.designTab.json` into `content/components/<slug>.json` as `designTab` (or mirror `button.json` → `designTab`).  
+2. Provide Figma link + PNG exports for Anatomy, Structure, Size, and any component-specific figure; Typography is often table-only.  
+3. Register demos in `designTabDemoRegistry.tsx` for each `demoId`.  
+4. Wire Design tab to `DesignTabPage` + loader (see `loadButtonDesignTab.ts`).  
+5. Add Figma node IDs to `FIGMA.md`.

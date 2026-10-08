@@ -47,7 +47,7 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Contrast | `1:10808` |
 | Preview | `1:10805` |
 | Components — overview landing | `152:2536` |
-| Components — doc template (Design / Usage / Updates) | Design tab per component (Button `115:606`) |
+| Components — doc template (Design / Usage / Updates) | Design tab per component; JSON skeleton `handbook/content/design-tab/_template.designTab.json` (Button `115:606`) |
 | Components — Button (Design tab) | `115:606` |
 | Components — Button Design — Configuration dropdown | `239:4826` |
 | Components — Button Design — Configuration canvas | `154:38773` |
@@ -55,6 +55,9 @@ Design file: **6kT7I28zU5LC7cedwE87Ce** (FMS Design System Handbook)
 | Components — Button Design — Colour table | `246:7978` |
 | Components — Button anatomy figure | `153:7515` |
 | Components — Button structure (Base) | `161:39626` |
+| Components — Button Design — Structure table | `246:8057` |
+| Components — Button Design — Size table | `251:10041` |
+| Components — Button Design — Typography | `251:10769` |
 | Components — Button matrix (text + label; sizes / variants / states) | `154:13254` |
 | Components — Button matrix (icon-only; sizes / variants / states) | `154:13400` |
 | Components — Button Design — States | `153:9515` |

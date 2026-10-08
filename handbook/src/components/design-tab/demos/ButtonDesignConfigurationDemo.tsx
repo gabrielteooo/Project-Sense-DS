@@ -95,7 +95,6 @@ export function ButtonDesignConfigurationDemo() {
                 size={buttonSize}
                 label={entry.caption}
               />
-              <span className="design-tab-config-canvas__caption">{entry.caption}</span>
             </div>
           ))}
         </div>

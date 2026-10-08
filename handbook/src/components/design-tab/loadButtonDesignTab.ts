@@ -23,8 +23,7 @@ export function loadButtonDesignTabDocument(): DesignTabDocument {
     return doc.designTab;
   }
 
-  const { anatomy, specificationGuidelines, structure } = doc.design;
-  const sizeOptions = specificationGuidelines.sizeOptions;
+  const { anatomy, structure } = doc.design;
 
   return {
     figmaNodeId: doc.figmaNodeId,
@@ -35,7 +34,7 @@ export function loadButtonDesignTabDocument(): DesignTabDocument {
         title: anatomy.title,
         headingLevel: 2,
         figure: {
-          src: '/images/docs/btn-anatomy-2.png?v=20261007',
+          src: '/components/button/btn-anatomy-2.png',
           alt: anatomy.imageAlt ?? 'Button anatomy',
         },
         legend: anatomy.parts.map((p) => ({ label: p.label, description: p.description })),
@@ -62,33 +61,42 @@ export function loadButtonDesignTabDocument(): DesignTabDocument {
           },
           {
             id: 'structure',
-            kind: 'figureTable',
+            kind: 'controlledExample',
             title: structure.title,
             headingLevel: 3,
-            sizeOptions,
-            defaultSize: 'base',
-            figuresBySize: structure.images
-              ? Object.fromEntries(
-                  Object.entries(structure.images).map(([size, src]) => [
-                    size,
-                    { src, alt: structure.imageAlt },
-                  ]),
-                )
-              : undefined,
-            structureDemoId: 'button-design-structure-canvas',
+            description:
+              'The button system uses a unified padding structure across all standard button variants (Primary, Secondary, and Tertiary). Layout spacing strictly varies by button size, ensuring visual harmony regardless of visual priority.',
+            demoId: 'button-design-structure',
+          },
+          {
+            id: 'button-group',
+            kind: 'figureTable',
+            title: 'Button Group',
+            headingLevel: 3,
+            description:
+              'In button groups, the external spacing between adjacent buttons (inter-button gap) scales proportionally with the button size to maintain visual balance and clear touch-target separation.',
+            figure: {
+              src: '/components/button/btn-button-group.png?v=202610081152',
+              alt: 'Button group diagram showing inter-button gap scaling by button size',
+            },
           },
           {
             id: 'size',
-            kind: 'figureTable',
+            kind: 'controlledExample',
             title: 'Size',
             headingLevel: 3,
-            sizeOptions,
-            defaultSize: specificationGuidelines.defaultSize ?? 'base',
-            figure: {
-              src: '/images/docs/btn-specs-1.png',
-              alt: 'Button size specification diagram',
-            },
-            tablesBySize: specificationGuidelines.tables,
+            description:
+              'Buttons dynamically expand to hug their text content horizontally, while standalone icon buttons scale uniformly into fixed square targets. Each size applies consistent height and proportional corner radiuses to ensure visual balance throughout the interface.',
+            demoId: 'button-design-size',
+          },
+          {
+            id: 'typography',
+            kind: 'controlledExample',
+            title: 'Typography',
+            headingLevel: 3,
+            description:
+              'Button labels use foundation text styles aligned to each button size. Font size and line height scale with the size tier; default label weight is Regular (400).',
+            demoId: 'button-design-typography',
           },
         ],
       },

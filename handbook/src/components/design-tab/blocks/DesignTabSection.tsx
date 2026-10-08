@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import type { DesignTabHeadingLevel } from '../../../types/designTab';
 
 export const DESIGN_TAB_SECTION_GAP = 40;
-const SUBSECTION_GAP = 32;
+const SUBSECTION_GAP = 40;
 
 type Props = {
   id: string;

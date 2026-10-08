@@ -3,11 +3,17 @@ import { ButtonAnatomyExample } from '../../components/ButtonAnatomyExample';
 import { ButtonStructureExample } from '../../components/ButtonStructureExample';
 import { ButtonDesignColourDemo } from './ButtonDesignColourDemo';
 import { ButtonDesignConfigurationDemo } from './ButtonDesignConfigurationDemo';
+import { ButtonDesignStructureDemo } from './ButtonDesignStructureDemo';
+import { ButtonDesignSizeDemo } from './ButtonDesignSizeDemo';
+import { ButtonDesignTypographyDemo } from './ButtonDesignTypographyDemo';
 
 export type DesignTabDemoId =
   | 'button-design-configuration'
   | 'button-design-colour'
   | 'button-design-anatomy-canvas'
+  | 'button-design-structure'
+  | 'button-design-size'
+  | 'button-design-typography'
   | 'button-design-structure-canvas';
 
 export type DesignTabDemoDefinition = {
@@ -37,6 +43,24 @@ export const DESIGN_TAB_DEMO_REGISTRY: DesignTabDemoDefinition[] = [
     Component: () => (
       <ButtonAnatomyExample ariaLabel="Button anatomy diagram showing container, label, and icon callouts" />
     ),
+  },
+  {
+    id: 'button-design-structure',
+    label: 'Button structure specification',
+    componentSlug: 'button',
+    Component: ButtonDesignStructureDemo,
+  },
+  {
+    id: 'button-design-size',
+    label: 'Button size specification',
+    componentSlug: 'button',
+    Component: ButtonDesignSizeDemo,
+  },
+  {
+    id: 'button-design-typography',
+    label: 'Button typography specification',
+    componentSlug: 'button',
+    Component: ButtonDesignTypographyDemo,
   },
   {
     id: 'button-design-structure-canvas',

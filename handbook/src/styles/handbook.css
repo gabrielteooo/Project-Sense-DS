@@ -21,10 +21,6 @@ body {
 .handbook-app-shell {
   --handbook-global-header-height: 77px;
   --handbook-layout-max-width: 1560px;
-  /* Handbook 16px body copy — line height 32px (overrides token 24px in-app) */
-  --fms-typography-line-height-base: 32px;
-  --fms-text-base-normal-line-height: 32px;
-  --fms-text-base-strong-line-height: 32px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -259,7 +255,7 @@ body {
   overflow-y: auto;
   overscroll-behavior: contain;
   font-size: var(--fms-typography-font-size-base, 16px);
-  line-height: var(--fms-typography-line-height-base, 32px);
+  line-height: var(--fms-typography-line-height-base, 24px);
   font-weight: 400;
 }
 
@@ -476,7 +472,7 @@ body {
 .handbook-page-header__description {
   display: flex;
   flex-direction: column;
-  gap: var(--fms-typography-line-height-base, 32px);
+  gap: var(--fms-typography-line-height-base, 24px);
   width: 100%;
   max-width: var(--handbook-base-colour-table-max-width, 1080px);
 }
@@ -488,7 +484,7 @@ body {
 .handbook-page-header__description-p {
   margin: 0;
   font-size: var(--fms-typography-font-size-base, 16px);
-  line-height: var(--fms-typography-line-height-base, 32px);
+  line-height: var(--fms-typography-line-height-base, 24px);
   font-weight: 400;
   color: color-mix(
     in srgb,
@@ -517,7 +513,7 @@ body {
   flex-direction: column;
   gap: var(--fms-space-margin-margin-lg, 24px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -531,7 +527,7 @@ body {
   margin: 0 0 var(--fms-space-margin-margin-xs, 8px);
   font-family: inherit;
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -541,7 +537,7 @@ body {
   margin: 0;
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: color-mix(
     in srgb,
@@ -560,7 +556,7 @@ body {
   margin: 0;
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -573,7 +569,7 @@ body {
   margin: 0;
   font-family: inherit;
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -590,7 +586,7 @@ body {
 .typography-guidelines__item {
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: color-mix(
     in srgb,
@@ -659,7 +655,7 @@ body {
   max-width: var(--handbook-base-colour-table-max-width, 1080px);
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: color-mix(
     in srgb,
@@ -737,7 +733,7 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--fms-space-margin-margin-xl, 32px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
 }
 
 .colours-overview-principles__item {
@@ -748,7 +744,7 @@ body {
   margin: 0 0 var(--fms-space-margin-margin-xs, 8px);
   font-family: inherit;
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -757,7 +753,7 @@ body {
   margin: 0;
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: color-mix(
     in srgb,
@@ -779,7 +775,7 @@ body {
   margin: 0 0 var(--fms-space-margin-margin-xs, 8px);
   font-family: inherit;
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -788,7 +784,7 @@ body {
   margin: 0;
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: color-mix(
     in srgb,
@@ -820,7 +816,7 @@ body {
 .get-started-topics__item-title {
   margin: 0 0 var(--fms-space-margin-margin-xs, 8px);
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -829,7 +825,7 @@ body {
 .get-started-topics__item-body {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: color-mix(
     in srgb,
     var(--fms-colors-neutral-text-color-text, #000) 55%,
@@ -867,20 +863,20 @@ body {
 .state-persistence-topic__confirmed {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text-description, rgba(0, 0, 0, 0.55));
 }
 
 .state-persistence-topic__paragraph {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
 .state-persistence-topic__table .base-colour-table td {
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   vertical-align: top;
 }
 
@@ -905,7 +901,7 @@ body {
 .state-persistence-topic__footnote {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -954,7 +950,7 @@ body {
   padding-left: var(--fms-space-padding-padding-lg, 24px);
   list-style: decimal;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -1081,7 +1077,7 @@ body {
 .writing-guidelines__paragraph {
   margin: 0 0 var(--fms-space-margin-margin-md, 16px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: 32px;
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: #141414;
 }
 
@@ -1094,7 +1090,7 @@ body {
 .writing-guidelines__subheading {
   margin: 0 0 var(--fms-space-margin-margin-xs, 8px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: 32px;
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: #141414;
 }
 
@@ -1103,7 +1099,7 @@ body {
   padding-left: var(--fms-space-padding-padding-lg, 24px);
   list-style: disc;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: 32px;
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: #141414;
 }
 
@@ -1260,7 +1256,7 @@ body {
 .elevation-overview-section__body {
   margin: 0 0 var(--fms-space-margin-margin-lg, 24px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: var(--fms-colors-neutral-text-color-text-description, rgba(0, 0, 0, 0.55));
 }
@@ -1346,7 +1342,7 @@ body {
   margin: 0;
   max-width: 1040px;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -1495,7 +1491,7 @@ body {
 .layout-grid-breakpoint__description {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: var(--fms-colors-neutral-text-color-text-description, rgba(0, 0, 0, 0.55));
 }
@@ -1557,7 +1553,7 @@ body {
 .icons-overview-section__body {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -1589,7 +1585,7 @@ body {
 .icons-overview-showcase__label {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -1598,7 +1594,7 @@ body {
   padding-left: var(--fms-space-padding-padding-lg, 24px);
   list-style: disc;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: 32px;
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -1609,7 +1605,7 @@ body {
 .icons-overview-usage__intro {
   margin: 0 0 var(--fms-space-margin-margin-lg, 24px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: 32px;
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -1622,7 +1618,7 @@ body {
 
 .icons-overview-usage__caption {
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: color-mix(
     in srgb,
@@ -1690,7 +1686,7 @@ body {
   margin: 0;
   padding-left: var(--fms-space-padding-padding-lg, 24px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
 }
 
 .icons-dev-guide__step-item {
@@ -1702,7 +1698,7 @@ body {
 .icons-dev-guide__prose {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -1715,7 +1711,7 @@ body {
 .icons-dev-guide__examples-title {
   margin: 0;
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -1791,13 +1787,19 @@ body {
 .icons-dev-guide__topic-label {
   margin: 0;
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
 .handbook-doc-table th,
 .handbook-doc-table td {
+  border-bottom: none;
+}
+
+/* Merged size / structure cells — vertical divider to Property column (Figma table) */
+.handbook-doc-table td[rowspan] {
+  border-right: 1px solid var(--fms-colors-neutral-border-color-split, #e2e2e2);
   border-bottom: none;
 }
 
@@ -1811,7 +1813,7 @@ body {
   color: var(--fms-colors-neutral-color-white, #fff);
   font-family: 'Ubuntu Mono', ui-monospace, monospace;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   overflow-x: auto;
 }
 
@@ -1848,7 +1850,7 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--fms-space-margin-margin-xl, 32px);
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
 }
 
 .spacing-principles__item {
@@ -1858,7 +1860,7 @@ body {
 .spacing-principles__item-title {
   margin: 0 0 var(--fms-space-margin-margin-xs, 8px);
   font-size: var(--fms-text-base-strong-font-size, 16px);
-  line-height: var(--fms-text-base-strong-line-height, 32px);
+  line-height: var(--fms-text-base-strong-line-height, 24px);
   font-weight: var(--fms-text-base-strong-font-weight, 600);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
@@ -1866,7 +1868,7 @@ body {
 .spacing-principles__item-body {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
   color: color-mix(
     in srgb,
@@ -2041,11 +2043,19 @@ body {
 
 .base-colour-table td {
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: var(--fms-text-base-normal-font-weight, 400);
 }
 
 .base-colour-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/*
+ * Doc spec tables: .base-colour-table td borders override .handbook-doc-table above.
+ * Rowspan size cells must not get a row divider mid-merge (collapsed border artifact).
+ */
+.base-colour-table.handbook-doc-table td[rowspan] {
   border-bottom: none;
 }
 
@@ -2263,7 +2273,7 @@ body {
   background: transparent;
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   font-weight: 400;
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   cursor: pointer;
@@ -2310,6 +2320,10 @@ body {
 
 .component-doc-subsection .component-doc-h3 {
   margin-bottom: 8px;
+}
+
+.component-doc-h3:has(+ .component-doc-section__body) {
+  margin-bottom: 16px;
 }
 
 .component-doc-figure-block {
@@ -2367,13 +2381,42 @@ body {
 }
 
 .component-doc-figure-block--structure {
-  overflow: visible;
   align-items: center;
   justify-content: center;
-  min-height: 200px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 100%;
+  height: 320px;
+  max-height: 320px;
+  min-height: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.component-doc-figure-block--structure,
+.component-doc-figure-block--structure .design-tab-figure--embedded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.component-doc-figure-block--structure .design-tab-figure__img {
+  display: block;
+  width: 80%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-inline: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
 .component-doc-figure-block--variants,
 .component-doc-figure-block--states {
   padding: 32px 24px;
@@ -2713,7 +2756,7 @@ body {
   border-radius: 8px;
   background: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: #fff;
 }
 
@@ -2821,7 +2864,7 @@ body {
   margin: 24px 0 0;
   padding-left: 1.25em;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   list-style: decimal;
 }
@@ -2857,14 +2900,14 @@ body {
   border-radius: 8px;
   background: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: #fff;
 }
 
 .component-doc-anatomy-legend__text {
   margin: 0;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -2908,7 +2951,7 @@ body {
   background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   cursor: pointer;
 }
@@ -2973,10 +3016,10 @@ body {
 }
 
 .component-doc-section__body {
-  margin: 0 0 16px;
-  max-width: 720px;
+  margin: 0 0 24px;
+  max-width: 1080px;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -3001,7 +3044,7 @@ body {
   grid-template-columns: 140px 1fr;
   gap: 16px;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
 }
 
 .component-doc-anatomy__term {
@@ -3125,7 +3168,7 @@ body {
   margin: 0;
   padding-left: 24px;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
 }
 
@@ -3258,7 +3301,7 @@ body {
   padding-inline: 16px;
   gap: 8px;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   border-radius: 8px;
 }
 
@@ -3494,7 +3537,7 @@ body {
   background: var(--fms-colors-neutral-bg-color-bg-container, #fff);
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   cursor: pointer;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
@@ -3537,7 +3580,7 @@ body {
   background: transparent;
   font-family: inherit;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text, rgba(0, 0, 0, 0.88));
   text-align: left;
   cursor: pointer;
@@ -3609,6 +3652,57 @@ body {
 
 .button-colour-spec-table__col--token {
   width: 360px;
+}
+
+.button-structure-spec-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.button-structure-spec-table tbody td {
+  vertical-align: middle;
+}
+
+.button-structure-spec-table__col--token {
+  width: 360px;
+}
+
+.button-size-spec-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.button-size-spec-table tbody td {
+  vertical-align: middle;
+}
+
+.button-typography-spec-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.button-typography-spec-table tbody td {
+  vertical-align: middle;
+}
+
+.button-typography-spec-table__col--size {
+  width: 14%;
+}
+
+.button-typography-spec-table__col--element {
+  width: 18%;
+}
+
+.button-typography-spec-table__col--font-size {
+  width: 16%;
+}
+
+.button-typography-spec-table__col--font-weight {
+  width: 22%;
+}
+
+.button-typography-spec-table__col--token {
+  width: 30%;
 }
 
 @media (max-width: 768px) {
@@ -3733,7 +3827,7 @@ body {
 .doc-block-image__caption {
   margin-top: 8px;
   font-size: var(--fms-text-base-normal-font-size, 16px);
-  line-height: var(--fms-text-base-normal-line-height, 32px);
+  line-height: var(--fms-text-base-normal-line-height, 24px);
   color: var(--fms-colors-neutral-text-color-text-description, rgba(0, 0, 0, 0.55));
 }
 
