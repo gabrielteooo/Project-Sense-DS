@@ -1,7 +1,7 @@
 {
   "slug": "button",
   "pageTitle": "Button",
-  "pageDescription": "To trigger an operation",
+  "pageDescription": "To trigger an operation such as actions in forms, dialogs and more",
   "figmaNodeId": "115:606",
   "design": {
     "anatomy": {
@@ -28,36 +28,150 @@
       "title": "Specification guidelines",
       "defaultSize": "base",
       "sizeOptions": [
-        { "id": "base", "label": "Base" },
-        { "id": "small", "label": "Small" },
-        { "id": "x-small", "label": "X-Small" }
+        {
+          "id": "base",
+          "label": "Base"
+        },
+        {
+          "id": "small",
+          "label": "Small"
+        },
+        {
+          "id": "x-small",
+          "label": "X-Small"
+        }
       ],
       "tables": {
         "base": {
-          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "columns": [
+            "Type",
+            "Min Width",
+            "Height",
+            "Padding",
+            "Gap",
+            "Border Radius"
+          ],
           "rows": [
-            ["Primary", "55px", "40px", "16px", "8px", "8px"],
-            ["Secondary", "55px", "40px", "16px", "8px", "8px"],
-            ["Icon-only", "40px", "40px", "-", "-", "8px"],
-            ["Tertiary", "46px", "40px", "8px", "8px", "-"]
+            [
+              "Primary",
+              "55px",
+              "40px",
+              "16px",
+              "8px",
+              "8px"
+            ],
+            [
+              "Secondary",
+              "55px",
+              "40px",
+              "16px",
+              "8px",
+              "8px"
+            ],
+            [
+              "Icon-only",
+              "40px",
+              "40px",
+              "-",
+              "-",
+              "8px"
+            ],
+            [
+              "Tertiary",
+              "46px",
+              "40px",
+              "8px",
+              "8px",
+              "-"
+            ]
           ]
         },
         "small": {
-          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "columns": [
+            "Type",
+            "Min Width",
+            "Height",
+            "Padding",
+            "Gap",
+            "Border Radius"
+          ],
           "rows": [
-            ["Primary", "55px", "32px", "12px", "8px", "8px"],
-            ["Secondary", "55px", "32px", "12px", "8px", "8px"],
-            ["Icon-only", "32px", "32px", "-", "-", "8px"],
-            ["Tertiary", "46px", "32px", "8px", "8px", "-"]
+            [
+              "Primary",
+              "55px",
+              "32px",
+              "12px",
+              "8px",
+              "8px"
+            ],
+            [
+              "Secondary",
+              "55px",
+              "32px",
+              "12px",
+              "8px",
+              "8px"
+            ],
+            [
+              "Icon-only",
+              "32px",
+              "32px",
+              "-",
+              "-",
+              "8px"
+            ],
+            [
+              "Tertiary",
+              "46px",
+              "32px",
+              "8px",
+              "8px",
+              "-"
+            ]
           ]
         },
         "x-small": {
-          "columns": ["Type", "Min Width", "Height", "Padding", "Gap", "Border Radius"],
+          "columns": [
+            "Type",
+            "Min Width",
+            "Height",
+            "Padding",
+            "Gap",
+            "Border Radius"
+          ],
           "rows": [
-            ["Primary", "55px", "24px", "8px", "4px", "6px"],
-            ["Secondary", "55px", "24px", "8px", "4px", "6px"],
-            ["Icon-only", "24px", "24px", "-", "-", "6px"],
-            ["Tertiary", "46px", "24px", "4px", "4px", "-"]
+            [
+              "Primary",
+              "55px",
+              "24px",
+              "8px",
+              "4px",
+              "6px"
+            ],
+            [
+              "Secondary",
+              "55px",
+              "24px",
+              "8px",
+              "4px",
+              "6px"
+            ],
+            [
+              "Icon-only",
+              "24px",
+              "24px",
+              "-",
+              "-",
+              "6px"
+            ],
+            [
+              "Tertiary",
+              "46px",
+              "24px",
+              "4px",
+              "4px",
+              "-"
+            ]
           ]
         }
       }
@@ -65,7 +179,10 @@
     "structure": {
       "title": "Structure",
       "figmaNodeId": "161:39626",
-      "imageAlt": "Button structure diagram with padding, gap, and width annotations for Base size"
+      "imageAlt": "Button structure diagram with padding, gap, and width annotations for Base size",
+      "images": {
+        "base": "/components/button/btn-structure.png"
+      }
     },
     "spacingsBetweenButtons": {
       "title": "Spacings between buttons"
@@ -76,10 +193,22 @@
         "title": "Variants",
         "description": "Button variants communicate hierarchy and help users identify the primary action on a screen.",
         "items": [
-          { "variant": "primary", "label": "Primary action" },
-          { "variant": "secondary", "label": "Secondary action" },
-          { "variant": "tertiary", "label": "Tertiary action" },
-          { "variant": "link", "label": "Link action" }
+          {
+            "variant": "primary",
+            "label": "Primary action"
+          },
+          {
+            "variant": "secondary",
+            "label": "Secondary action"
+          },
+          {
+            "variant": "tertiary",
+            "label": "Tertiary action"
+          },
+          {
+            "variant": "link",
+            "label": "Link action"
+          }
         ]
       },
       "states": {
@@ -87,10 +216,22 @@
         "figmaNodeId": "153:9515",
         "figmaRadioGroupNodeId": "153:9520",
         "options": [
-          { "id": "default", "label": "Default" },
-          { "id": "disabled", "label": "Disabled" },
-          { "id": "loading", "label": "Loading" },
-          { "id": "active", "label": "Active" }
+          {
+            "id": "default",
+            "label": "Default"
+          },
+          {
+            "id": "disabled",
+            "label": "Disabled"
+          },
+          {
+            "id": "loading",
+            "label": "Loading"
+          },
+          {
+            "id": "active",
+            "label": "Active"
+          }
         ]
       }
     }
@@ -105,8 +246,10 @@
         "Button labels should be in sentence case. When a button label contains an established business term, product name, process name, or acronym, preserve the capitalisation used by the business or product, even if this results in title-case styling."
       ],
       "dosDonts": {
-        "columns": ["Do", "Don't"],
-        "rows": []
+        "columns": [
+          "Do",
+          "Don't"
+        ]
       }
     },
     "buttonUsage": {
@@ -139,8 +282,7 @@
       ]
     },
     "usage": {
-      "title": "Usage",
-      "items": []
+      "title": "Usage"
     },
     "variantShowcases": [
       {
@@ -148,9 +290,18 @@
         "title": "Primary Button",
         "description": "Used as default CTA (Call-to-Action) buttons used in FMS. There are various labels and names for the CTA buttons. The examples on the left are some of the common names used.",
         "sizeOptions": [
-          { "id": "base", "label": "Base" },
-          { "id": "small", "label": "Small" },
-          { "id": "x-small", "label": "X-Small" }
+          {
+            "id": "base",
+            "label": "Base"
+          },
+          {
+            "id": "small",
+            "label": "Small"
+          },
+          {
+            "id": "x-small",
+            "label": "X-Small"
+          }
         ],
         "contextBySize": {
           "base": "Base (size) are for primary actions on edit drawers, modals, forms and edit page headers.",
@@ -158,11 +309,27 @@
           "x-small": "X-Small (size) are for primary actions on edit drawers, modals, forms and edit page headers."
         },
         "buttons": [
-          { "label": "Next", "variant": "primary" },
-          { "label": "Save", "variant": "primary" },
-          { "label": "Save and next", "variant": "primary" },
-          { "label": "Close", "variant": "primary" },
-          { "label": "Delete", "variant": "primary", "danger": true }
+          {
+            "label": "Next",
+            "variant": "primary"
+          },
+          {
+            "label": "Save",
+            "variant": "primary"
+          },
+          {
+            "label": "Save and next",
+            "variant": "primary"
+          },
+          {
+            "label": "Close",
+            "variant": "primary"
+          },
+          {
+            "label": "Delete",
+            "variant": "primary",
+            "danger": true
+          }
         ]
       },
       {
@@ -170,9 +337,18 @@
         "title": "Secondary Button",
         "description": "Used for supporting actions that are important to the user but are not the primary action in a given context. They are used as an alternative and to give the primary action more emphasis. They are also associated with negative actions such as Cancel and Delete.",
         "sizeOptions": [
-          { "id": "base", "label": "Base" },
-          { "id": "small", "label": "Small" },
-          { "id": "x-small", "label": "X-Small" }
+          {
+            "id": "base",
+            "label": "Base"
+          },
+          {
+            "id": "small",
+            "label": "Small"
+          },
+          {
+            "id": "x-small",
+            "label": "X-Small"
+          }
         ],
         "contextBySize": {
           "base": "Base (size) are for secondary actions on edit drawers, accordions, modals and edit page headers and global filters.",
@@ -181,10 +357,22 @@
         },
         "rows": [
           [
-            { "label": "Cancel", "variant": "secondary" },
-            { "label": "More filters", "variant": "secondary" },
-            { "label": "Back to page", "variant": "secondary" },
-            { "label": "Save and add another", "variant": "secondary" }
+            {
+              "label": "Cancel",
+              "variant": "secondary"
+            },
+            {
+              "label": "More filters",
+              "variant": "secondary"
+            },
+            {
+              "label": "Back to page",
+              "variant": "secondary"
+            },
+            {
+              "label": "Save and add another",
+              "variant": "secondary"
+            }
           ],
           [
             {
@@ -192,10 +380,25 @@
               "variant": "secondary",
               "leadingIconClass": "fa-regular fa-pen"
             },
-            { "label": "Edit threshold", "variant": "secondary" },
-            { "label": "Reject", "variant": "secondary", "danger": true },
-            { "label": "Delete", "variant": "secondary", "danger": true },
-            { "label": "Mark all as read", "variant": "secondary", "danger": true }
+            {
+              "label": "Edit threshold",
+              "variant": "secondary"
+            },
+            {
+              "label": "Reject",
+              "variant": "secondary",
+              "danger": true
+            },
+            {
+              "label": "Delete",
+              "variant": "secondary",
+              "danger": true
+            },
+            {
+              "label": "Mark all as read",
+              "variant": "secondary",
+              "danger": true
+            }
           ]
         ]
       },
@@ -204,8 +407,14 @@
         "title": "Tertiary Button",
         "description": "Tertiary buttons are used as a lower priority and/or optional action and they given less visual emphasis than primary and secondary buttons.",
         "sizeOptions": [
-          { "id": "base", "label": "Base" },
-          { "id": "x-small", "label": "X-Small" }
+          {
+            "id": "base",
+            "label": "Base"
+          },
+          {
+            "id": "x-small",
+            "label": "X-Small"
+          }
         ],
         "contextBySize": {
           "base": "Base (size) are used for optional actions in a data table and edit drawers.",
@@ -213,35 +422,166 @@
         },
         "wrap": true,
         "buttons": [
-          { "label": "Reset", "variant": "tertiary" },
-          { "label": "Cancel", "variant": "tertiary" },
-          { "label": "Edit", "variant": "tertiary" },
-          { "label": "Delete", "variant": "tertiary" },
-          { "label": "Expand", "variant": "tertiary" },
-          { "label": "Collapse", "variant": "tertiary" },
-          { "label": "View more", "variant": "tertiary" },
-          { "label": "View details", "variant": "tertiary" }
+          {
+            "label": "Reset",
+            "variant": "tertiary"
+          },
+          {
+            "label": "Cancel",
+            "variant": "tertiary"
+          },
+          {
+            "label": "Edit",
+            "variant": "tertiary"
+          },
+          {
+            "label": "Delete",
+            "variant": "tertiary"
+          },
+          {
+            "label": "Expand",
+            "variant": "tertiary"
+          },
+          {
+            "label": "Collapse",
+            "variant": "tertiary"
+          },
+          {
+            "label": "View more",
+            "variant": "tertiary"
+          },
+          {
+            "label": "View details",
+            "variant": "tertiary"
+          }
         ]
       }
     ],
     "examples": {
-      "title": "Examples",
-      "items": []
+      "title": "Examples"
     }
   },
   "updates": {
     "changelog": {
       "title": "Updates",
-      "columns": ["Date", "Version", "Description"],
-      "rows": [["29 Sep 2025", "0.2.0", "Design tab aligned to Figma 115:606."]]
+      "columns": [
+        "Date",
+        "Version",
+        "Description"
+      ],
+      "rows": [
+        [
+          "29 Sep 2025",
+          "0.2.0",
+          "Design tab aligned to Figma 115:606."
+        ]
+      ]
     },
     "roadmap": {
       "title": "Roadmap",
-      "columns": ["Planned item", "Status", "Target"],
+      "columns": [
+        "Planned item",
+        "Status",
+        "Target"
+      ],
       "rows": [
-        ["Spacings between buttons diagram", "Planned", "Q4 2025"],
-        ["Small / X-Small structure diagrams", "Planned", "Q4 2025"]
+        [
+          "Spacings between buttons diagram",
+          "Planned",
+          "Q4 2025"
+        ],
+        [
+          "Small / X-Small structure diagrams",
+          "Planned",
+          "Q4 2025"
+        ]
       ]
     }
+  },
+  "designTab": {
+    "figmaNodeId": "115:606",
+    "sections": [
+      {
+        "id": "anatomy",
+        "kind": "anatomy",
+        "title": "Anatomy",
+        "headingLevel": 2,
+        "figure": {
+          "src": "/components/button/btn-anatomy-2.png",
+          "alt": "Button anatomy diagram showing container, label, and icon callouts"
+        },
+        "legend": [
+          {
+            "label": "Container",
+            "description": "Defines hit area, background, border, and corner radius."
+          },
+          {
+            "label": "Label",
+            "description": "Action text using base text style (Inter, 16px / 24px line height on medium size)."
+          },
+          {
+            "label": "Icon",
+            "description": "Font Awesome glyph aligned to the label; icon-only buttons omit the label."
+          }
+        ]
+      },
+      {
+        "id": "configuration",
+        "kind": "controlledExample",
+        "title": "Configuration",
+        "headingLevel": 2,
+        "demoId": "button-design-configuration"
+      },
+      {
+        "id": "specification",
+        "kind": "sectionGroup",
+        "title": "Specification",
+        "headingLevel": 2,
+        "children": [
+          {
+            "id": "colour",
+            "kind": "controlledExample",
+            "title": "Colour",
+            "headingLevel": 3,
+            "demoId": "button-design-colour"
+          },
+          {
+            "id": "structure",
+            "kind": "controlledExample",
+            "title": "Structure",
+            "headingLevel": 3,
+            "description": "The button system uses a unified padding structure across all standard button variants (Primary, Secondary, and Tertiary). Layout spacing strictly varies by button size, ensuring visual harmony regardless of visual priority.",
+            "demoId": "button-design-structure"
+          },
+          {
+            "id": "button-group",
+            "kind": "figureTable",
+            "title": "Button Group",
+            "headingLevel": 3,
+            "description": "In button groups, the external spacing between adjacent buttons (inter-button gap) scales proportionally with the button size to maintain visual balance and clear touch-target separation.",
+            "figure": {
+              "src": "/components/button/btn-button-group.png?v=202610081152",
+              "alt": "Button group diagram showing inter-button gap scaling by button size"
+            }
+          },
+          {
+            "id": "size",
+            "kind": "controlledExample",
+            "title": "Size",
+            "headingLevel": 3,
+            "description": "Buttons dynamically expand to hug their text content horizontally, while standalone icon buttons scale uniformly into fixed square targets. Each size applies consistent height and proportional corner radiuses to ensure visual balance throughout the interface.",
+            "demoId": "button-design-size"
+          },
+          {
+            "id": "typography",
+            "kind": "controlledExample",
+            "title": "Typography",
+            "headingLevel": 3,
+            "description": "Button labels use foundation text styles aligned to each button size. Font size and line height scale with the size tier; default label weight is Regular (400).",
+            "demoId": "button-design-typography"
+          }
+        ]
+      }
+    ]
   }
 }

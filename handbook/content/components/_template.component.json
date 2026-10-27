@@ -1,0 +1,46 @@
+{
+  "slug": "component-slug",
+  "pageTitle": "Component name",
+  "pageDescription": "One line about when to use this component",
+  "figmaNodeId": "",
+  "design": {
+    "anatomy": {
+      "title": "Anatomy",
+      "figmaNodeId": "",
+      "imageKey": "anatomy",
+      "imageAlt": "",
+      "parts": [{ "label": "Part", "description": "" }]
+    },
+    "specificationGuidelines": {
+      "title": "Specification guidelines",
+      "defaultSize": "base",
+      "sizeOptions": [{ "id": "base", "label": "Base" }],
+      "tables": {
+        "base": { "columns": [], "rows": [] }
+      }
+    },
+    "structure": {
+      "title": "Structure",
+      "figmaNodeId": "",
+      "imageAlt": "",
+      "images": {}
+    },
+    "spacingsBetweenButtons": { "title": "Spacings between buttons" },
+    "buttonTypes": {
+      "title": "Button Types",
+      "variants": { "title": "Variants", "description": "", "items": [] },
+      "states": { "title": "States", "options": [] }
+    }
+  },
+  "usage": {
+    "figmaNodeId": "",
+    "guidelines": { "title": "Guideline", "bullets": [] },
+    "buttonUsage": { "title": "Button Usage", "items": [] },
+    "variantShowcases": [],
+    "examples": { "title": "Examples" }
+  },
+  "updates": {
+    "changelog": { "title": "Updates", "columns": [], "rows": [] },
+    "roadmap": { "title": "Roadmap", "columns": [], "rows": [] }
+  }
+}

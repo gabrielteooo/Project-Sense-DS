@@ -1,0 +1,78 @@
+{
+  "figmaNodeId": "FIGMA_COMPONENT_DESIGN_TAB_NODE_ID",
+  "sections": [
+    {
+      "id": "anatomy",
+      "kind": "anatomy",
+      "title": "Anatomy",
+      "headingLevel": 2,
+      "figure": {
+        "src": "/components/COMPONENT_SLUG/COMPONENT_SLUG-anatomy.png",
+        "alt": "Describe the anatomy diagram callouts"
+      },
+      "legend": [
+        {
+          "label": "Part name",
+          "description": "What this part is and how it behaves."
+        }
+      ]
+    },
+    {
+      "id": "configuration",
+      "kind": "controlledExample",
+      "title": "Configuration",
+      "headingLevel": 2,
+      "demoId": "COMPONENT_SLUG-design-configuration"
+    },
+    {
+      "id": "specification",
+      "kind": "sectionGroup",
+      "title": "Specification",
+      "headingLevel": 2,
+      "children": [
+        {
+          "id": "colour",
+          "kind": "controlledExample",
+          "title": "Colour",
+          "headingLevel": 3,
+          "demoId": "COMPONENT_SLUG-design-colour"
+        },
+        {
+          "id": "structure",
+          "kind": "controlledExample",
+          "title": "Structure",
+          "headingLevel": 3,
+          "description": "Optional intro copy from Figma (spacing, layout rules).",
+          "demoId": "COMPONENT_SLUG-design-structure"
+        },
+        {
+          "id": "component-specific",
+          "kind": "figureTable",
+          "title": "Component-specific section title",
+          "headingLevel": 3,
+          "description": "Optional intro copy from Figma. Omit this entire block when the component has no extra spec section.",
+          "figure": {
+            "src": "/components/COMPONENT_SLUG/COMPONENT_SLUG-specific.png",
+            "alt": "Describe the diagram"
+          }
+        },
+        {
+          "id": "size",
+          "kind": "controlledExample",
+          "title": "Size",
+          "headingLevel": 3,
+          "description": "Optional intro copy from Figma (sizing behaviour).",
+          "demoId": "COMPONENT_SLUG-design-size"
+        },
+        {
+          "id": "typography",
+          "kind": "controlledExample",
+          "title": "Typography",
+          "headingLevel": 3,
+          "description": "Optional intro copy from Figma (text styles per size).",
+          "demoId": "COMPONENT_SLUG-design-typography"
+        }
+      ]
+    }
+  ]
+}
