@@ -2,10 +2,17 @@
   "name": "fms-ds-handbook",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "packages/fms-ui"
+  ],
   "scripts": {
     "tokens:build": "node scripts/tokens-build.mjs",
     "handbook:dev": "npm run dev --prefix handbook",
     "handbook:build": "npm run build --prefix handbook",
-    "build": "npm run tokens:build && npm run handbook:build"
+    "build": "npm run tokens:build && npm run handbook:build",
+    "storybook": "npm run storybook -w @fms/ui",
+    "storybook:build": "npm run build-storybook -w @fms/ui",
+    "fms-ui:typecheck": "npm run typecheck -w @fms/ui",
+    "figma:connect:publish": "figma connect publish -c figma.config.json"
   }
 }

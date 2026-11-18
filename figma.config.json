@@ -1,0 +1,13 @@
+{
+  "codeConnect": {
+    "parser": "react",
+    "label": "React",
+    "include": ["packages/fms-ui/src/**/*.figma.ts"],
+    "paths": {
+      "@fms/ui": ["packages/fms-ui/src"]
+    },
+    "importPaths": {
+      "packages/fms-ui/src/**": "@fms/ui"
+    }
+  }
+}

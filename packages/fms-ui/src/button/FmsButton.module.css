@@ -1,0 +1,45 @@
+.fmsBtn {
+  font-weight: 400;
+}
+
+.fmsBtn:global(.ant-btn-text):not(:disabled):not(:global(.ant-btn-dangerous)) {
+  color: var(--ant-color-primary);
+}
+
+.fmsBtn:global(.ant-btn-text):not(:disabled):not(:global(.ant-btn-dangerous)):hover,
+.fmsBtn:global(.ant-btn-text):not(:disabled):not(:global(.ant-btn-dangerous)):focus-visible {
+  color: var(--ant-color-primary-hover);
+}
+
+.fmsBtn:global(.ant-btn-text):not(:disabled):not(:global(.ant-btn-dangerous)):active {
+  color: var(--ant-color-primary-active);
+}
+
+.fmsBtn:global(.ant-btn-text.ant-btn-dangerous):not(:disabled):active {
+  color: var(--ant-color-error-active);
+  background-color: var(--ant-color-error-bg-hover);
+}
+
+.fmsBtn:global(.ant-btn-link) {
+  height: auto;
+  padding-inline: 0;
+  text-decoration: underline;
+}
+
+.fmsBtn:global(.ant-btn-link):not(:disabled):hover,
+.fmsBtn:global(.ant-btn-link):not(:disabled):focus-visible {
+  text-decoration: underline;
+}
+
+.iconOnly:global(.ant-btn) {
+  min-width: unset;
+  aspect-ratio: 1;
+  padding-inline: 0;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}

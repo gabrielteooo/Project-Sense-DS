@@ -6,5 +6,10 @@
 handbook/node_modules/
 handbook/dist/
 
+node_modules/
+packages/*/node_modules/
+packages/*/storybook-static/
+packages/*/dist/
+
 # Accidental nested copy of handbook assets (use handbook/public/ instead)
 handbook/handbook/

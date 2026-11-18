@@ -1,0 +1,28 @@
+.frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: var(--ant-font-size);
+  font-style: normal;
+}
+
+.defaultTone {
+  color: var(--ant-color-icon);
+}
+
+.defaultTone.hoverable:hover {
+  color: var(--ant-color-icon-hover);
+}
+
+.primaryTone {
+  color: var(--ant-color-primary);
+}
+
+.onDark {
+  color: var(--ant-color-text-light-solid);
+}
+
+.inherit {
+  color: inherit;
+}

@@ -1,0 +1,34 @@
+.fmsBadge {
+  display: inline-flex;
+}
+
+.fmsBadge :global(.ant-badge-count),
+.fmsBadge :global(.ant-badge-count-sm) {
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.fmsBadge :global(.ant-badge-count-sm) {
+  line-height: var(--ant-badge-indicator-height-sm, 16px);
+}
+
+/* Colors.Brand.Primary — foundation `colorPrimaryBg` / seed `colorPrimary` */
+.colorPrimary :global(.ant-badge-count) {
+  background: var(--ant-color-primary-bg, #c7ebea);
+  color: var(--ant-color-primary, #00636a);
+  border-color: var(--ant-color-primary-bg, #c7ebea);
+  box-shadow: none;
+}
+
+.colorPrimary :global(.ant-badge-count) :global(.ant-scroll-number-only-unit) {
+  color: var(--ant-color-primary, #00636a);
+}
+
+.colorPrimary :global(.ant-badge-dot) {
+  background: var(--ant-color-primary-bg, #c7ebea);
+  border: 1px solid var(--ant-color-primary, #00636a);
+  box-sizing: border-box;
+  box-shadow: none;
+}

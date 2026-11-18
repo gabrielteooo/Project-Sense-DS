@@ -1,0 +1,36 @@
+.fmsBreadcrumb {
+  font-weight: 400;
+}
+
+.fmsBreadcrumb :global(.ant-breadcrumb-link) {
+  display: inline-flex;
+  align-items: center;
+}
+
+.itemLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ant-margin-xxs, 4px);
+}
+
+.standaloneLink {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  border-radius: var(--ant-border-radius-sm, 4px);
+  padding: 0 var(--ant-padding-xxs, 4px);
+  margin-inline: calc(var(--ant-margin-xxs, 4px) * -1);
+  text-decoration: none;
+}
+
+.standaloneLink:hover {
+  background-color: var(--ant-color-bg-text-hover);
+}
+
+.standaloneCurrent {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ant-breadcrumb-last-item-color, rgba(0, 0, 0, 0.55));
+  padding: 0 var(--ant-padding-xxs, 4px);
+  margin-inline: calc(var(--ant-margin-xxs, 4px) * -1);
+}
